@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    line-height: 1.5;
+}
+sup{
+    color: red;
+    font-size: 12px;
+}
+.grid-container{
+    width: 70vw;
+    height: 90vh;
+    margin: auto;
+    margin-top: 5vh;
+    background-color: #fff;
+    border-radius: 20px;
+    display: grid;
+    grid-template: 100% / 50% auto;
+    text-align: center;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+.sign-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20%;
+    justify-content: center;
+}
+#sign-in h2{
+    margin-bottom: 50px;
+}
+.sign-content h2{
+    margin-top: 0;
+}
+.sign-content ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+#sign-in ul{
+    margin-bottom: 20px;
+}
+.sign-content ul li{
+    float: left;
+}
+.sign-content ul li a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    margin: 5px;
+    padding-top: 10px;
+    transition: all ease .5s;
+}
+.sign-content ul li a:hover{
+    background-color: rgb(50, 190, 255);
+    color: #fff;
+}
+label{
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+input{
+    display: block;
+    border: none;
+    border-bottom: solid 1pt #aaa;
+    outline: none;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+span{
+    display: block;
+    text-align: right;
+    font-size: 10px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+input[type="submit"]{
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(50, 190, 255), rgb(226, 55, 215) );
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    margin: 0;
+}
+button{
+    text-align: center;
+    border: solid 1.5pt #fff;
+    background-color: transparent;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 30px;
+    margin: 15px 20px;
+}
+input::placeholder{
+    color: #ccc;
+}
+.sign-content-hide{
+    background-image: linear-gradient(to right bottom, rgb(50, 190, 255), rgb(226, 55, 215) );
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 20%;
+}
+#sign-in-hide{
+    border-radius: 0 20px 20px 0;
+}
+#sign-up-hide{
+    border-radius: 20px 0 0 20px;
+}
+.sign-content-hide p:nth-child(3){
+    margin-top: 30px;
+    font-style: italic;
+}
+.sign-content-hide a{
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    padding-top: 10%;
+    font-style: italic;
+}
+.sign-content-hide i{
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all ease .5s;
+}
+.sign-content-hide a:hover i{
+    opacity: 1;
+    transform: translateX(0);
+}
+#subtn{
+    margin-top: 30px;
+}
+.input p{
+    font-size: 10px;
+    text-align: left;
+    font-style: italic;
+    color: rgb(226, 55, 215);
+    margin-top: -12px;
+}
