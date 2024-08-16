@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Thư viện button: button-text; button-line(-radius); button-mau(-radius); -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/bootstrap-4.4.1.css">
+    <link rel="stylesheet" href="../Css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../Css/Icon/all.min.css">
+    <link rel="stylesheet" href="../Css/thuvien.css">
+    <link rel="stylesheet" href="../Css/codemau.css">
+    <link rel="stylesheet" href="../Css/cart.css">
+    <link rel="icon" href="../Element/Logo/IconForWeb.ico">
+    <script src="../Js/jquery-3.4.1.min.js"></script>
+    <script src="../Js/popper.min.js"></script>
+    <script src="../Js/bootstrap-4.4.1.js"></script>
+    <script src="../Js/owl.carousel.min.js"></script>
+    <script src="../Js/mau.js"></script>
+    <script src="../Js/cart.js"></script>
+    <title>HARMONY</title>
+</head>
+<body>
+<!-- Backtotop -->
+<button id="back-to-top" title="Go to top"><i class="fa-light fa-angle-up"></i></button>
+<!-- Sign -->
+<div class="blur-bg-overlay d-none d-lg-block"></div>
+<div class="form-popup d-none d-lg-block">
+    <div class="border">
+        <span class="close"><i class="fa-light fa-x" style="color: #162a2c;"></i></span>
+        <div class="form-details">
+            <h2>Welcome</h2>
+            <p> Log in or sign up for an account. Furniture shopping is about to get exciting, and we wouldn’t want you to miss out on anything.</p>
+        </div>
+        <div class="form-box login">
+            <div class="form-content">
+                <h6>Quick Login</h6>
+                <div class="quick-login">
+                    <button class="social-btn facebook-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/icons-brand-facebook-1.svg" alt="Facebook" />
+                        Sign in with Facebook
+                    </button>
+                    <button class="social-btn apple-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/8ed3d547-94ff-48e1-9f20-8c14a7030a02-2000x2000-1@2x.png" alt="Apple" />
+                        Sign in with Apple
+                    </button>
+                    <button class="social-btn google-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/1298745-google-brand-branding-logo-network-icon-1@2x.png" alt="Google" />
+                        Sign in with Google
+                    </button>
+                </div>
+            </div>
+            <div class="form-content">
+                <h6>Login with Email</h6>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass"> Forgot password ?</a>
+                    <button type="submit"> Log in</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account ?
+                    <a href="#" id="signup-link" id="open-login-popup">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-content">
+                <h6>Quick Login</h6>
+                <div class="quick-login">
+                    <button class="social-btn facebook-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/icons-brand-facebook-1.svg" alt="Facebook" />
+                        Sign in with Facebook
+                    </button>
+                    <button class="social-btn apple-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/8ed3d547-94ff-48e1-9f20-8c14a7030a02-2000x2000-1@2x.png" alt="Apple" />
+                        Sign in with Apple
+                    </button>
+                    <button class="social-btn google-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/1298745-google-brand-branding-logo-network-icon-1@2x.png" alt="Google" />
+                        Sign in with Google
+                    </button>
+                </div>
+            </div>
+            <div class="form-content">
+                <h6>Sign up with Email</h6>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Usename</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Confirm Password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#">Terms & Condition</a>
+                        </label>
+                    </div>
+                    <button type="submit"> Sign Up </button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account ?
+                    <a href="#" id="signin-link">Sign in</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box forgot-password">
+            <div class="form-content">
+                <h2> Reset Password </h2>
+                <p>Enter the email address associated with your account, and we’ll email you a link to reset your password.</p>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="policy-text">
+                    </div>
+                    <button type="submit"> Send Reset Link </button>
+                </form>
+                <div class="bottom-link">
+                    Back to 
+                    <a href="#" id="forgot-password-link">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!--sign-->
+
+
+
+
+    <!--Chat button-->
+<div class="chat-button" onclick="toggleMessages()">
+    <i class="fa-solid fa-comment"></i>
+    <span class="notification-badge">2</span>
+ </div>
+ <!-- Chat Box -->
+ <div class="messages-container" id="messagesContainer">
+     <div class="messages-header">
+         <p>Message</p>
+         <div class="close-button" onclick="closeMessages()">
+             <i class="fa-solid fa-xmark"></i>
+         </div>
+     </div>
+     <div class="message-height">
+         <div class="message">
+             <img src="../Element/User-Image/User.jpg" alt="User Image">
+             <div class="message-content">
+                 <div class="message-title">Nice choice! If you have any questions</div>
+                 <div class="message-time">Harmony • 3d ago</div>
+             </div>
+         </div>
+         <div class="message">
+            <img src="../Element/User-Image/User.jpg" alt="User Image">
+             <div class="message-content">
+                 <div class="message-title">Did you know? For orders over £2500 GBP</div>
+                 <div class="message-time">Sales Team • 1w ago</div>
+             </div>
+         </div>
+     </div>
+     <a href="https://www.facebook.com/trangiabao29">
+     <div class="send-message">Send us a message</div>
+     </a>
+ </div>
+
+    <!-- Phần tử loading -->
+    <div id="loading">
+        <div class="letter">H</div>
+        <div class="letter">A</div>
+        <div class="letter">R</div>
+        <div class="letter">M</div>
+        <div class="letter">O</div>
+        <div class="letter">N</div>
+        <div class="letter">Y</div>
+    </div>
+    <!-- Phần tử loading -->
+
+
+<!-- the-thong-navi -->
+<div id="the-tong-navi">
+<!-- ============================== Navi Popup ============================== -->
+<div class="d-lg-none" id="overlay"></div><!--Overplay-->
+<div id="mySidenav" class="sidenavi d-lg-none">
+    <div class="navbars-top">
+        <div class="navbar">
+            <span class="nav-home">
+                <a class="nav-logo" href="../Src/HomePage.html"><img src="../Element/Logo/logo_Icon_Dark.png" alt=""></a>
+            </span>
+            <span class="nav-action">
+                <a href="../Src/Cart.html">
+                    <i class="fa-light fa-cart-shopping"></i>
+                </a>
+            </span>
+        </div>
+    </div><!--navbars-top-->
+    <div class="bg-navbar-btn">
+        <div class="navbar-btn">
+            <button onclick="navigateToPage1()" class="btn-nav">My Wishlist <i class="fa-regular fa-heart"></i> </button>
+            <button onclick="navigateToPage2()" class="btn-nav">My Account <i class="fa-light fa-user"></i> </button>
+        </div>
+    </div><!--navbars-button-->
+    <div class="navbar-pannel">
+        <div id="pannel-1">
+            <div class="bg-list-item1">
+                <div class="list-item">
+                    <a href="../Src/HomePage.html">Home</a>
+                    <div class="bg-icon-listitem">
+                        <i class="fa-light fa-house"></i>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/about-all.html">About us</a>
+                    <div class="bg-icon-listitem">
+                        <i class="fa-light fa-users"></i>
+                    </div>
+                </div>
+                <div id="btn-next-furnitures" class="list-item">
+                    <a href="../Src/Product-All.html">Funitures</a>
+                    <div class="bg-icon-listitem">
+                        <i class="fa-light fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/StorageLocator.html">Stores</a>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Concepts.html">Concepts</a>
+                </div>
+            </div><!-- bg-list-item -->
+        </div><!--pannel 1-->
+        <div id="pannel-2">
+            <div class="navbar-header">
+                <button id="btn-back-furnitures">
+                    <a href=""><i class="fa-light fa-angle-left"></i></a>
+                    <a href="">Furnitures</a>
+                </button>
+            </div><!-- btn-pannel-2 -->
+            <div class="bg-list-item2">
+                <div class="list-item">
+                    <a href="../Src/Product-Sofas.html">Sofas</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/Sofas.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Product-LoungeChairs.html">Lounge Chairs</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/LoungeChairs.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Product-Table.html">Tables</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/Table.svg" alt="">
+
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Product-Lightning.html">Lighting</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/Lighting.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Product-Beds.html">Beds</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/beds.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Product-Chair.html">Chairs</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/Chairs.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Product-Storage-Shelving.html">Storages & Shelving</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/Storage&Shelving.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Product-Mirror.html">Mirrors</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/Mirror.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a class="title-nav" href="../Src/Product-All.html">See All Furnitures</a>
+                </div>
+            </div><!-- bg-list-item -->
+            <hr class="nav-line">
+            <div class="list-btn">
+                <a class="title-nav" href="">Featured</a>
+                <div id="btn-first" class="btn">
+                    <a href="../Src/offers.html">
+                        <button class="button-line">Offers</button>
+                    </a>
+                    <a href="../Src/In-Stock.html">
+                        <button class="button-line">In Stock</button>
+                    </a>
+                </div>
+                <div class="btn">
+                    <a id="btn-fix" href="../Src/New-Arrivals.html">
+                        <button  class="button-line">New arrivals</button>
+                    </a>
+                </div>
+            </div>
+            <hr class="nav-line">
+            <div class="list-btn">
+                <a class="title-nav" href="">Explore</a>
+                <div id="btn-first" class="btn">
+                    <a href="../Src/Gift.html">
+                        <button class="button-line">Gifts</button>
+                    </a>
+                    <a href="../Src/BuyingGuide.html">
+                        <button class="button-line">Buying Guides</button>
+                    </a>
+                </div>
+            </div>
+            <div class="fix-image-navi">
+                <a style="text-decoration: none; color: var(--primary-color);" href="../Src/Product-Newaddition-Sofas.html" class="nav-img">
+                    <img src="../Element/Addition/sofaddition.webp" alt="">
+                    <p>Sofas : New additions</p>
+                </a>
+                <a style="text-decoration: none; color: var(--primary-color)" href="../Src/Product-Newaddition-Mirror.html" class="nav-img">
+                    <img src="../Element/Addition/mirroraddition.webp" alt="">
+                    <p>Mirrors : New additions</p>
+                </a>
+            </div>
+        </div><!--pannel 2-->
+    </div>
+</div>
+<!-- ============================== Navi Popup ============================== -->
+
+
+   <!-- ============================== logo ============================== -->
+   <div class="d-lg-block d-none container">
+       <div class="row justify-content-center">
+           <a href="../Src/HomePage.html">
+               <div class="bg-logo">
+               </div>
+           </a>
+       </div>
+   </div> <!--Logo-->
+   <!-- ============================== logo ============================== -->
+
+
+   <!-- ============================== Navi ============================== -->
+   <div class="d-lg-block d-none">
+       <div class=" container-fluid" id="bg-header">
+           <div class="container">
+               <div class="row">
+                   <div class="col-xl-8
+                               col-lg-8" id="bg-navi">
+                       <ul>
+                           <li><a class="link-top" href="../Src/HomePage.html">HOME</a></li>
+                           <li><a class="link-top" href="../Src/about-all.html">ABOUT US</a>
+                               <div class="drop-down">
+                                   <div class="container content">
+                                       <div class="col-xl-3 
+                                                   col-lg-3 dd-col">
+                                           <span class="dd-list-header has-child">Featured</span>
+                                           <a class="dd-list-link" href="../Src/offers.html">Offers</a>
+                                           <a class="dd-list-link" href="../Src/In-Stock.html">In stock</a>
+                                           <a class="dd-list-link" href="../Src/New-Arrivals.html">New arrivals</a>
+                                           <span class="dd-list-header has-child">Explore</span>
+                                           <a class="dd-list-link" href="../Src/Gift.html">Gift</a>
+                                           <a class="dd-list-link" href="../Src/BuyingGuide.html">Buying Guide</a>
+                                           <a class="dd-footer-link has-child" href="../Src/Wishlist.html">My Wishlist</a>
+                                           <a class="dd-footer-link has-child" href="../Src/Account/account.html">My Account</a>
+                                       </div> <!--DD trái-->
+                                       <div class="col-xl-6
+                                                   col-lg-6 dd-col">
+                                           <span class="dd-list-header">About Us</span>
+                                           <div class="dd-subcol-all">
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../Src/introduction.html">Introduction</a>
+                                                   <a class="dd-list-link" href="../Src/our history.html">Our History</a>
+                                               </div>
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../Src/team.html">Join our team</a>
+                                               </div>
+                                           </div>
+                                       </div> <!--DD giữa-->
+                                       <div class="col-xl-3
+                                                   col-lg-3 dd-col">
+                                           <span class="dd-list-header">Explore</span>
+                                           <div class="dd-image">
+                                               <a href="../Src/Product-Newaddition-Sofas.html">
+                                                   <img src="../Element/Addition/sofaddition.webp" alt="Ảnh">
+                                               </a>
+                                               <p class="dd-image-caption">Sofas : New additions</p>
+                                           </div>
+                                           <div class="dd-image">
+                                               <a href="../Src/Product-Newaddition-Mirrow.html">
+                                                   <img src="../Element/Addition/mirroraddition.webp" alt="Ảnh">
+                                               </a>
+                                               <p class="dd-image-caption">Mirrors : New additions</p>
+                                           </div>
+                                       </div> <!--DD phải-->
+                                   </div><!--Bg Content dd-->
+                               </div><!--Bg Drop Down Menu--></li>
+                           <li><a class="link-top" href="../Src/Product-All.html">FURNITURE</a>
+                           <div class="drop-down">
+                               <div class="container content">
+                                   <div class="col-xl-3 
+                                               col-lg-3 dd-col">
+                                        <span class="dd-list-header has-child">Featured</span>
+                                        <a class="dd-list-link" href="../Src/offers.html">Offers</a>
+                                        <a class="dd-list-link" href="../Src/In-Stock.html">In stock</a>
+                                        <a class="dd-list-link" href="../Src/New-Arrivals.html">New arrivals</a>
+                                        <span class="dd-list-header has-child">Explore</span>
+                                        <a class="dd-list-link" href="../Src/Gift.html">Gift</a>
+                                        <a class="dd-list-link" href="../Src/BuyingGuide.html">Buying Guide</a>
+                                        <a class="dd-footer-link has-child" href="../Src/Wishlist.html">My Wishlist</a>
+                                        <a class="dd-footer-link has-child" href="../Src/Account/account.html">My Account</a>
+                                   </div> <!--DD trái-->
+                                   <div class="col-xl-6
+                                               col-lg-6 dd-col">
+                                       <span class="dd-list-header">Shop Furniture</span>
+                                       <div class="dd-subcol-all">
+                                           <div class="dd-subcol">
+                                               <a class="dd-list-link" href="../Src/Product-Sofas.html"><img class="icon" src="../Element/IconFunirure/Sofas.svg" alt="">Sofas</a>
+                                               <a class="dd-list-link" href="../Src/Product-LoungeChairs.html"><img class="icon" src="../Element/IconFunirure/LoungeChairs.svg" alt="">Lounge Chairs</a>
+                                               <a class="dd-list-link" href="../Src/Product-Table.html"><img class="icon" src="../Element/IconFunirure/Table.svg" alt="">Tables</a>
+                                               <a class="dd-list-link" href="../Src/Product-Lightning.html"><img class="icon" src="../Element/IconFunirure/Lighting.svg" alt="">Lighting</a>
+                                           </div>
+                                           <div class="dd-subcol">
+                                               <a class="dd-list-link" href="../Src/Product-Beds.html"><img class="icon" src="../Element/IconFunirure/beds.svg" alt="">Beds</a>
+                                               <a class="dd-list-link" href="../Src/Product-Chair.html"><img class="icon" src="../Element/IconFunirure/Chairs.svg" alt="">Chairs</a>
+                                               <a class="dd-list-link" href="../Src/Product-Storage-Shelving.html"><img class="icon" src="../Element/IconFunirure/Storage&Shelving.svg" alt="">Storage & Shelving</a>
+                                               <a class="dd-list-link" href="../Src/Product-Mirror.html"><img class="icon" src="../Element/IconFunirure/Mirror.svg" alt="">Mirrors</a>
+                                           </div>
+                                       </div> 
+                                       <a class="dd-list-link highlighted" href="../Src/Product-All.html">See All Furniture</a>
+                                   </div> <!--DD giữa-->
+                                   <div class="col-xl-3
+                                               col-lg-3 dd-col">
+                                       <span class="dd-list-header">Explore</span>
+                                       <div class="dd-image">
+                                           <a href="../Src/Product-Newaddition-Sofas.html">
+                                               <img src="../Element/Addition/sofaddition.webp" alt="Ảnh">
+                                           </a>
+                                           <p class="dd-image-caption">Sofas : New additions</p>
+                                       </div>
+                                       <div class="dd-image">
+                                           <a href="../Src/Product-Newaddition-Mirror.html">
+                                               <img src="../Element/Addition/mirroraddition.webp" alt="Ảnh">
+                                           </a>
+                                           <p class="dd-image-caption">Mirrors : New additions</p>
+                                       </div>
+                                   </div> <!--DD phải-->
+                               </div><!--Bg Content dd-->
+                           </div><!--Bg Drop Down Menu-->
+                           </li>
+                           <li><a class="link-top" href="../Src/StorageLocator.html">STORES</a></li>
+                           <li><a class="link-top" href="../Src/Concepts.html">CONCEPTS</a></li>
+                       </ul>
+                   </div><!--Phần navi menu-->
+   
+                   <div class="col-xl-2 offset-xl-2
+                               col-lg-3 offset-lg-1" id="bg-icon">
+                       <ul>
+                           <li><a href="../Src/Cart.html"><i class="fa-light fa-cart-shopping"></i></a></li>
+                           <li><i id="popup-icon" class="fa-light fa-user"></i></li>
+                           <li><i id="triggle-search" class="fa-light fa-magnifying-glass"></i></li>
+                       </ul>
+                   </div><!--Bộ 3 icon-->
+               </div>
+           </div>
+       </div>
+   </div><!--Ẩn navi ở phiên bản dưới lg-->
+   <!-- ============================== Navi ============================== -->
+</div><!-- the-tong-navi -->
+
+
+<div id="main">
+    <!-- ============================== Navi For Medium And Mobile ============================== -->
+    <div class="d-lg-none container"  >
+        <div id="bg-navi-ver-small">
+            <div class="col-md-3
+                        col-sm-3
+                        col-3 " id="icon-trai">
+                <i id="click-here-to-open" class="fa-light fa-bars"></i>
+            </div>
+            <div class="col-md-6
+                        col-sm-6 
+                        col-6">
+                    <a href="../Src/HomePage.html">
+                        <div id="bg-logo-ver-small">
+                        </div>
+                    </a>
+            </div>
+            <div class="col-md-3
+                        col-sm-3
+                        col-3" id="icon-phai">
+                <ul>
+                    <li><a href="../Src/Cart.html"><i class="fa-light fa-cart-shopping"></i></a></li>
+                    <li><a href="../Src/Account/signin.html"><i class="fa-light fa-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- Thanh navi -->
+    <div class="d-lg-none">
+        <form class="form-search container-fluid">
+            <label for="search">
+                <input required="" autocomplete="off" placeholder="Search..." id="search" type="text">
+                <div class="icon">
+                    <i class="fa-light fa-magnifying-glass"></i>
+                </div>
+                <button type="reset" class="close-btn">
+                    <svg viewBox="0 0 20 20" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </label>
+        </form>
+    </div><!-- Thanh Search -->
+    <!-- ============================== Navi For Medium And Mobile ============================== -->
+
+
+
+<!-- Search-Lon
+===================================================== -->
+<div class="form-search-lon">
+    <form class="d-none d-lg-block form-search-xllg container-fluid">
+        <label for="search">
+            <input required="" autocomplete="off" placeholder="Search..." id="search" type="text">
+            <div class="icon">
+                <i class="fa-light fa-magnifying-glass"></i>
+            </div>
+            <button type="reset" class="close-btn">
+                <i class="fa-light fa-x"></i>
+            </button>
+        </label>
+    </form>
+</div>
+<!-- Search-Lon
+===================================================== -->
+
+
+
+<!-- Code trong này nha -->
+
+
+
+
+
+
+
+
+
+ <!-- breadcrum -->
+ <div class="container">
+    <div class="row">
+        <ul class="breadcrumb">
+            <li><a href="../Src/HomePage.html">Home</a></li>
+            <li>Cart</li> 
+        </ul>
+    </div>
+</div> <!--breadcrum-->
+
+
+
+<!-- Title Cart -->
+<div class="container-fluid">
+    <div class="container">
+        <div class="Header-wishlist">
+            <p class="title">Cart</p>
+            <p class="caption">Product you have selected</p>
+        </div>
+    </div>
+</div><!-- Title Cart -->
+
+
+
+<!-- Content -->
+ <div class="container">
+    <div class="row" id="Background-cart">
+        <div class="col-xl-8
+                    col-lg-8
+                    col-md-12
+                    col-sm-12
+                    col-12 Product-Cart">
+            <!-- Start -->
+            <div class="row">
+                <div class="col-xl-4
+                            col-lg-5
+                            col-md-5
+                            col-sm-5
+                            col-4 Product-Cart-Img">
+                    <img src="../Image/ProductImage/AnhSpLe/Beds/Crescent_Bed/png.png" alt="">
+                </div>
+                <div class="col-xl-8
+                            col-lg-7
+                            col-md-7
+                            col-sm-7
+                            col-8 Product-Cart-Info">
+                    <div class="Cart-Name">
+                        <p>Dawson Queen Size Bed</p>
+                        <a href="../Src/HomePage.html">
+                            <i class="fa-light fa-xmark"></i>
+                        </a>
+                    </div>
+                    <div class="Cart-Detail">
+                        <p>Size: 1.4m</p>
+                        <p>Color: White</p>
+                        <p>Delivery Estimated: From India</p>
+                    </div>
+                    <div class="Cart-Quantity-Price">
+                        <div class="quantity-container">
+                            <div class="quantity-selector">
+                                <button id="decrease" onclick="decreaseQuantity()">-</button>
+                                <input id="quantity" name="quantity" value="1" min="1">
+                                <button id="increase" onclick="increaseQuantity()">+</button>
+                            </div>
+                            <div class="Cart-Price">
+                                <p>$1,499</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End -->
+        </div>
+        <div class="col-xl-4
+                    col-lg-4
+                    col-md-12
+                    col-sm-12
+                    col-12 Summary-Bg">
+           <div class="Summary-Title">
+                <p>Cart Summary</p>
+           </div>
+           <div class="Summary-Total">
+                <p class="Total-Title">Subtotal:</p>
+                <p class="Total-Price">$1,499</p>
+           </div> 
+           <div class="Summary-Coupon">
+                <div class="form-input">
+                    <input type="text" placeholder="Enter coupon code">
+                </div>
+                <div class="Form-hide">
+                    <span class="Form-hide-add">Add Coupon Code</span>
+                    <i class="Form-hide-Login">Log in to view your coupons</i>
+                </div>
+                <div  class="button-plus">
+                    <i class="fa-light fa-plus"></i>
+                </div>
+           </div>
+
+           <div class="Summary-Tax">
+                <p class="Tax-Title">Sales Tax:</p>
+                <p class="Tax-Price">$123,1</p>
+           </div>
+           <div class="Summary-Deliver">
+                <p>Deliver to:</p>
+                <div class="Deliver-Selection">
+                    <div class="custom-select">
+                        <select>
+                          <option value="0">Select Country</option>
+                          <option value="1">VietNam</option>
+                          <option value="2">India</option>
+                        </select>
+                      </div>
+                    <div class="selector-price">
+                        <p>$1,200</p>
+                    </div>
+                </div>
+           </div>
+           <div class="Summary-Footer">
+                <div class="Summary-Footer-Info">
+                    <p class="Footer-Title">Total (incl taxes & shipping)</p>
+                    <p class="Footer-Price">$1,422.41</p>
+                </div>
+                <div class="Summary-Btn">
+                    <a href="../Src/payment/payment.html">
+                        <button class="button-mau-radius">Continue To Checkout</button>
+                    </a>
+                </div>
+           </div>
+        </div>
+    </div>
+ </div>
+
+
+
+
+
+
+
+ <div class="container">
+    <div class="row">
+        <div class="col-xl-12 recomment">
+            <h3>You may also like</h3>
+            <div class="mui-ten">
+                <div class="arrow left-arrow" id="prevBtn"><i class="fa-light fa-angle-left" style="color: #162a2c;"></i></div>
+                <div class="arrow right-arrow" id="nextBtn"><i class="fa-light fa-angle-right" style="color: #162a2c;"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="owl-carousel" >
+        <a href="../Src/detail/Madison.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../Image/Detail_Img/ProductCustom/BedRoom-2/Bed/Madison-Bed-Bisque-Det/png.png" class="img-fluid default">
+            <img src="../Image/Detail_Img/ProductCustom/BedRoom-2/Bed/Madison-Bed-Bisque-Det/Madison-Bed-Bisque-Set_1-1655973031.jpg" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Madison</p>
+                <p class="t2">Madison Bed
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$899 </p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div> <!--cost-->
+            <div class="t5">
+                Characterized by its biscuit tufted headboard, the Madison Bed brings comfort and…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 5 in stock
+            </div>
+        </a>
+        <a href="../Src/detail/Sed-bed.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../Image/Detail_Img/ProductCustom/BedRoom-1/Bed/Seb_Bed/png.png" class="img-fluid default">
+            <img src="../Image/Detail_Img/ProductCustom/BedRoom-1/Bed/Seb_Bed/Seb-King-Size-Bed-Lifestyle-Crop.webp" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Rustic</p>
+                <p class="t2">Seb Bed
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$999  </p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div> <!--cost-->
+            <div class="t5">
+                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 2 in stock
+            </div>
+        </a>
+        <a href="../Src/detail/Set-Nightstand.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../Image/Detail_Img/ProductCustom/BedRoom-1/Storage/Seb_Nightstand/png.png" class="img-fluid default">
+            <img src="../Image/Detail_Img/ProductCustom/BedRoom-1/Storage/Seb_Nightstand/bedsidetable-room2.png" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Rustic </p>
+                <p class="t2">Seb Nightstand 
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$359 </p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div> <!--cost-->
+            <div class="t5">
+                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 5 in stock
+            </div>
+        </a>
+        <a href="../Src/detail/Madison-Ottoman.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../Image/Detail_Img/ProductCustom/BedRoom-2/Sofa/Madison_Ottoman/171889771433417286.png" class="img-fluid default">
+            <img src="../Image/Detail_Img/ProductCustom/BedRoom-2/Sofa/Madison_Ottoman/Madison-Ottoman-Bisque-Set_1.jpg" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Madison</p>
+                <p class="t2">Madison Ottoman
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$349</p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div> <!--cost-->
+            <div class="t5">
+                Madison is a quintessential mid-century modern sofa with classic biscuit tufting, round​…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 9 in stock
+            </div>
+        </a>
+        <a href="../Src/detail/Seb-chair.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../Image/Detail_Img/ProductCustom/DiningRoom-1/Chair/Seb_Chair_Dark_Graphite/Chair.png" class="img-fluid default">
+            <img src="../Image/Detail_Img/ProductCustom/DiningRoom-1/Chair/Seb_Chair_Dark_Graphite/Seb-Chair-Dark-Graphite-Square-Set_2-1663208786.webp" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Rustic</p>
+                <p class="t2">Seb Chair
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$538</p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div>
+            <div class="t5">
+                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 6 in stock
+            </div>
+        </a>
+        <a href="../Src/detail/Seb-Storage.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../Image/Detail_Img/ProductCustom/DiningRoom-1/Storage/Seb_Nightstand_Storage/png.png" class="img-fluid default">
+            <img src="../Image/Detail_Img/ProductCustom/DiningRoom-1/Storage/Seb_Nightstand_Storage/Seb-Sideboard-160cm-Lifestyle-Crop.webp" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Rustic</p>
+                <p class="t2">Seb Srorage
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$559</p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div>
+            <div class="t5">
+                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 6 in stock
+            </div>
+        </a>
+        <a href="../Src/detail/Seb-Table.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../Image/Detail_Img/ProductCustom/DiningRoom-1/Table/Seb_Extendable_Dining_Table/png.png" class="img-fluid default">
+            <img src="../Image/Detail_Img/ProductCustom/DiningRoom-1/Table/Seb_Extendable_Dining_Table/Seb-Extendable-Dining-Table-Set_1.webp" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Rustic</p>
+                <p class="t2">Seb Extendable
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$999</p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div> <!--cost-->
+            <div class="t5">
+                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 6 in stock
+            </div>
+        </a>
+        <!-- <a href="../Src/detail/Austen-Chair.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../Image/Detail_Img/ProductCustom/DiningRoom-2/Chair/Austen_Chair_White_Wash/png.png" class="img-fluid default">
+            <img src="../Image/Detail_Img/ProductCustom/DiningRoom-2/Chair/Austen_Chair_White_Wash/Austen-Chair-White-Wash-Set_5-1666342697.jpg" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Austen</p>
+                <p class="t2">Austen Chair
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$658</p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div>
+            <div class="t5">
+                Serve up mid-century modern charm alongside your daily meals with Austen, an elegant dining…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 5 in stock
+            </div>
+        </a> -->
+        <a href="../Src/detail/Casa-Bench.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../Image/Detail_Img/ProductCustom/DiningRoom-2/LoungeChair/casa_bench/none_Bg.png" class="img-fluid default">
+            <img src="../Image/Detail_Img/ProductCustom/DiningRoom-2/LoungeChair/casa_bench/Casa-Becnh-Square-Set_2-1692756113.jpg" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Casa</p>
+                <p class="t2">Casa Bench
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$469</p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div>
+            <div class="t5">
+                Designed with thoughtful proportions to elevate your space, Casa’s angled blade legs showcase...
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 5 in stock
+            </div>
+        </a>
+        <a href="../Src/detail/Casa-Sideboard.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../Image/Detail_Img/ProductCustom/DiningRoom-2/Storge/Casa_Sideboard/png.png" class="img-fluid default">
+            <img src="../Image/Detail_Img/ProductCustom/DiningRoom-2/Storge/Casa_Sideboard/casasideboard-room1.jpg" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Casa</p>
+                <p class="t2">Casa Sideboard
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$1,199</p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div>
+            <div class="t5">
+                With a rounded chamfer stop that adds subtle visual appeal, Casa delivers sophistiction and…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 2 in stock
+            </div>
+        </a>
+    </div>
+</div> 
+ 
+
+
+
+
+
+
+ 
+
+
+<!-- Code trong này nha -->
+    <!-- ================================== Footer ================================= -->
+    <div class="container-fluid" id="bg-footer">
+        <div class="row">
+            <div class="col-xl-4
+                        col-lg-5
+                        col-md-4
+                        col-sm-6
+                        col-6" id="footer-slogan">
+            </div><!-- SLOGAN -->
+            <!-- ================== Only XL =================== -->
+            <div class="footer-header col-xl-2 d-none d-xl-block"> 
+                <p>About Us</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/introduction.html">Introduction</a></li>
+                    <li><a href="../Src/our history.html">Our History</a></li>
+                    <li><a href="../Src/team.html">Join Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Inspire</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/PersonalShopping.html">Personal shopping</a></li>
+                    <li><a href="../Src/Brochure.html">Brochure</a></li>
+                    <li><a href="../Src/BuyingGuide.html">Buying Guides</a></li>
+                    <li><a href="../Src/giftcard.html">Gift cards</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Customer service</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/ContactUs.html">Contact Us</a></li>
+                    <li><a href="../Src/HelpAdvice.html">Help and advice</a></li>
+                    <li><a href="../Src/Delivery.html">Delivery</a></li>
+                    <li><a href="../Src/MadeToOrder.html">Made to order</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Professional</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/Contract.html">Contracts</a></li>
+                    <li><a href="../Src/Contactourbuyers.html">Contact our buyers</a></li>
+                </ul>
+            </div>
+            <!-- ================== Only XL =================== -->
+
+
+
+
+            <!-- ================== Only responsive =================== -->
+            <div class="footer-header 
+                        col-lg-4 offset-lg-0 
+                        col-md-3 offset-md-1
+                        d-none
+                        d-md-block
+                        d-xl-none"> 
+                <p>About Us</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/introduction.html">Introduction</a></li>
+                    <li><a href="../Src/our history.html">Our History</a></li>
+                    <li><a href="../Src/team.html">Join Our Team</a></li>
+                </ul>
+            </div><!--footer phien ban lg va md-->
+
+            <div class="footer-header 
+                        col-lg-3 
+                        col-md-3 
+                        d-none
+                        d-md-block
+                        d-xl-none">
+                <p>Inspire</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/PersonalShopping.html">Personal shopping</a></li>
+                    <li><a href="../Src/Brochure.html">Brochure</a></li>
+                    <li><a href="../Src/BuyingGuide.html">Buying Guides</a></li>
+                    <li><a href="../Src/giftcard.html">Gift cards</a></li>
+                </ul>
+            </div><!--footer phien ban lg va md-->
+
+            <div class="footer-header
+                        d-md-none
+                        col-sm-5 offset-sm-1
+                        col-5 offset-1">
+                <a href="../Src/about-all.html">About Us</a>
+                <a href="../Src/Inspire-all.html">Inspire</a>
+            </div><!--Phien ban sm va xs-->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12" id="bg-footer-content">
+
+                <div class="footer-social 
+                            col-xl-12 
+                            col-lg-5 
+                            col-md-4
+                            col-sm-6
+                            col-6">
+                    <p>Follow Us</p>
+                    <div>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div><!--Social media full phien ban-->
+
+                <div class="footer-header
+                            d-md-none
+                            col-sm-5 offset-sm-1
+                            col-5 offset-1">
+                    <a href="../Src/CustomService-All.html">Customer service</a>
+                    <a href="../Src/Professional-All.html">Professional</a>
+                </div><!--Phien ban sm va xs-->
+
+                <div class="footer-header 
+                            col-lg-4 offset-lg-0 
+                            col-md-3 offset-md-1 
+                            d-none d-md-block d-xl-none">
+                    <p>Customer service</p>
+                    <ul class="footer-list">
+                        <li><a href="../Src/ContactUs.html">Contact Us</a></li>
+                        <li><a href="../Src/HelpAdvice.html">Help and advice</a></li>
+                        <li><a href="../Src/Delivery.html">Delivery</a></li>
+                        <li><a href="../Src/MadeToOrder.html">Made to order</a></li>
+                    </ul>
+                </div><!--footer phien ban lg va md-->
+
+                <div class="footer-header 
+                            col-lg-3 
+                            col-md-4 
+                            d-none
+                            d-md-block 
+                            d-xl-none">
+                    <p>Professional</p>
+                    <ul class="footer-list">
+                        <li><a href="../Src/Contract.html">Contracts</a></li>
+                        <li><a href="../Src/Contactourbuyers.html">Contact our buyers</a></li>
+                    </ul>
+                </div><!--footer phien ban lg va md-->
+
+            </div><!-- footer-khi_xuong_dong -->
+            <!-- ================== Only responsive =================== -->
+        </div><!--content ben trong footer-->
+        <div id="footer-name">
+        </div><!--NAME HARMONY-->
+    </div><!--bg-footer-->
+    <!-- ============================== Footer ============================== -->
+</div><!--Hàm main code trong này-->
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Thư viện button: button-text; button-line(-radius); button-mau(-radius); -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../Css/bootstrap-4.4.1.css">
+    <link rel="stylesheet" href="../../Css/Icon/all.min.css">
+    <link rel="stylesheet" href="../../Css/thuvien.css">
+    <link rel="stylesheet" href="../../Css/codemau.css">
+    <link rel="stylesheet" href="../../Css/homepage.css">
+    <link rel="stylesheet" href="../../Css/payment/thank.css">
+    <link rel="icon" href="../../Element/Logo/IconForWeb.ico">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../Js/jquery-3.4.1.min.js"></script>
+    <script src="../../Js/popper.min.js"></script>
+    <script src="../../Js/bootstrap-4.4.1.js"></script>
+    <script src="../../Js/mau.js"></script>
+    <script src="../../Js/homepage.js"></script>
+    <script src="../../Js/payment.js"></script>
+        <title>HARMONY</title>
+</head>
+<body>
+    <button id="back-to-top" title="Go to top"><i class="fa-light fa-angle-up"></i></button>
+<!-- Sign -->
+<div class="blur-bg-overlay d-none d-lg-block"></div>
+<div class="form-popup d-none d-lg-block">
+    <div class="border">
+        <span class="close"><i class="fa-light fa-x" style="color: #162a2c;"></i></span>
+        <div class="form-details">
+            <h2>Welcome</h2>
+            <p> Log in or sign up for an account. Furniture shopping is about to get exciting, and we wouldn’t want you to miss out on anything.</p>
+        </div>
+        <div class="form-box login">
+            <div class="form-content">
+                <h6>Quick Login</h6>
+                <div class="quick-login">
+                    <button class="social-btn facebook-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/icons-brand-facebook-1.svg" alt="Facebook" />
+                        Sign in with Facebook
+                    </button>
+                    <button class="social-btn apple-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/8ed3d547-94ff-48e1-9f20-8c14a7030a02-2000x2000-1@2x.png" alt="Apple" />
+                        Sign in with Apple
+                    </button>
+                    <button class="social-btn google-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/1298745-google-brand-branding-logo-network-icon-1@2x.png" alt="Google" />
+                        Sign in with Google
+                    </button>
+                </div>
+            </div>
+            <div class="form-content">
+                <h6>Login with Email</h6>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass"> Forgot password ?</a>
+                    <button type="submit"> Log in</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account ?
+                    <a href="#" id="signup-link" id="open-login-popup">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-content">
+                <h6>Quick Login</h6>
+                <div class="quick-login">
+                    <button class="social-btn facebook-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/icons-brand-facebook-1.svg" alt="Facebook" />
+                        Sign in with Facebook
+                    </button>
+                    <button class="social-btn apple-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/8ed3d547-94ff-48e1-9f20-8c14a7030a02-2000x2000-1@2x.png" alt="Apple" />
+                        Sign in with Apple
+                    </button>
+                    <button class="social-btn google-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/1298745-google-brand-branding-logo-network-icon-1@2x.png" alt="Google" />
+                        Sign in with Google
+                    </button>
+                </div>
+            </div>
+            <div class="form-content">
+                <h6>Sign up with Email</h6>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Usename</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Confirm Password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#">Terms & Condition</a>
+                        </label>
+                    </div>
+                    <button type="submit"> Sign Up </button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account ?
+                    <a href="#" id="signin-link">Sign in</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box forgot-password">
+            <div class="form-content">
+                <h2> Reset Password </h2>
+                <p>Enter the email address associated with your account, and we’ll email you a link to reset your password.</p>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="policy-text">
+                    </div>
+                    <button type="submit"> Send Reset Link </button>
+                </form>
+                <div class="bottom-link">
+                    Back to 
+                    <a href="#" id="forgot-password-link">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!--sign-->
+
+
+
+
+    <!--Chat button-->
+<div class="chat-button" onclick="toggleMessages()">
+    <i class="fa-solid fa-comment"></i>
+    <span class="notification-badge">2</span>
+ </div>
+ <!-- Chat Box -->
+ <div class="messages-container" id="messagesContainer">
+     <div class="messages-header">
+         <p>Message</p>
+         <div class="close-button" onclick="closeMessages()">
+             <i class="fa-solid fa-xmark"></i>
+         </div>
+     </div>
+     <div class="message-height">
+         <div class="message">
+             <img src="../../Element/User-Image/User.jpg" alt="User Image">
+             <div class="message-content">
+                 <div class="message-title">Nice choice! If you have any questions</div>
+                 <div class="message-time">Harmony • 3d ago</div>
+             </div>
+         </div>
+         <div class="message">
+            <img src="../../Element/User-Image/User.jpg" alt="User Image">
+             <div class="message-content">
+                 <div class="message-title">Did you know? For orders over £2500 GBP</div>
+                 <div class="message-time">Sales Team • 1w ago</div>
+             </div>
+         </div>
+     </div>
+     <a href="">
+     <div class="send-message">Send us a message</div>
+     </a>
+ </div>
+
+
+
+
+ <!-- the-thong-navi -->
+<div id="the-tong-navi">
+    <!-- ============================== Navi Popup ============================== -->
+    <div class="d-lg-none" id="overlay"></div><!--Overplay-->
+    <div id="mySidenav" class="sidenavi d-lg-none">
+        <div class="navbars-top">
+            <div class="navbar">
+                <span class="nav-home">
+                    <a class="nav-logo" href="../../Src/HomePage.html"><img src="../../Element/Logo/logo_Icon_Dark.png" alt=""></a>
+                </span>
+                <span class="nav-action">
+                    <a href="../../Src/Cart.html">
+                        <i class="fa-light fa-cart-shopping"></i>
+                    </a>
+                </span>
+            </div>
+        </div><!--navbars-top-->
+        <div class="bg-navbar-btn">
+            <div class="navbar-btn">
+                <button onclick="navigateToPage1()" class="btn-nav">My Wishlist <i class="fa-regular fa-heart"></i> </button>
+                <button onclick="navigateToPage2()" class="btn-nav">My Account <i class="fa-light fa-user"></i> </button>
+            </div>
+        </div><!--navbars-button-->
+        <div class="navbar-pannel">
+            <div id="pannel-1">
+                <div class="bg-list-item1">
+                    <div class="list-item">
+                        <a href="../../Src/HomePage.html">Home</a>
+                        <div class="bg-icon-listitem">
+                            <i class="fa-light fa-house"></i>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/about-all.html">About us</a>
+                        <div class="bg-icon-listitem">
+                            <i class="fa-light fa-users"></i>
+                        </div>
+                    </div>
+                    <div id="btn-next-furnitures" class="list-item">
+                        <a href="../../Src/Product-All.html">Funitures</a>
+                        <div class="bg-icon-listitem">
+                            <i class="fa-light fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/StorageLocator.html">Stores</a>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Concepts.html">Concepts</a>
+                    </div>
+                </div><!-- bg-list-item -->
+            </div><!--pannel 1-->
+            <div id="pannel-2">
+                <div class="navbar-header">
+                    <button id="btn-back-furnitures">
+                        <a href=""><i class="fa-light fa-angle-left"></i></a>
+                        <a href="">Furnitures</a>
+                    </button>
+                </div><!-- btn-pannel-2 -->
+                <div class="bg-list-item2">
+                    <div class="list-item">
+                        <a href="../../Src/Product-Sofas.html">Sofas</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/Sofas.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Product-LoungeChairs">Lounge Chairs</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/LoungeChairs.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Product-Table.html">Tables</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/Table.svg" alt="">
+    
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Product-Lightning.html">Lighting</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/Lighting.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Product-Beds.html">Beds</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/beds.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Product-Chair.html">Chairs</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/Chairs.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Product-Storage-Shelving.html">Storages & Shelving</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/Storage&Shelving.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Product-Mirror.html">Mirrors</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/Mirror.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a class="title-nav" href="../../Src/Product-All.html">See All Furnitures</a>
+                    </div>
+                </div><!-- bg-list-item -->
+                <hr class="nav-line">
+                <div class="list-btn">
+                    <a class="title-nav" href="">Featured</a>
+                    <div id="btn-first" class="btn">
+                        <a href="../../Src/offers.html">
+                            <button class="button-line">Offers</button>
+                        </a>
+                        <a href="../../Src/In-Stock.html">
+                            <button class="button-line">In Stock</button>
+                        </a>
+                    </div>
+                    <div class="btn">
+                        <a id="btn-fix" href="../../Src/New-Arrivals.html">
+                            <button  class="button-line">New arrivals</button>
+                        </a>
+                    </div>
+                </div>
+                <hr class="nav-line">
+                <div class="list-btn">
+                    <a class="title-nav" href="">Explore</a>
+                    <div id="btn-first" class="btn">
+                        <a href="../../Src/Gift.html">
+                            <button class="button-line">Gifts</button>
+                        </a>
+                        <a href="../../Src/BuyingGuide.html">
+                            <button class="button-line">Buying Guides</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="fix-image-navi">
+                    <a style="text-decoration: none; color: var(--primary-color);" href="../../Src/Product-Newaddition-Sofas.html" class="nav-img">
+                        <img src="../../Element/Addition/sofaddition.webp" alt="">
+                        <p>Sofas : New additions</p>
+                    </a>
+                    <a style="text-decoration: none; color: var(--primary-color)" href="../../Src/Product-Newaddition-Mirror.html" class="nav-img">
+                        <img src="../../Element/Addition/mirroraddition.webp" alt="">
+                        <p>Mirrors : New additions</p>
+                    </a>
+                </div>
+            </div><!--pannel 2-->
+        </div>
+    </div>
+    <!-- ============================== Navi Popup ============================== -->
+    
+    
+       <!-- ============================== logo ============================== -->
+       <div class="d-lg-block d-none container">
+           <div class="row justify-content-center">
+               <a href="../../Src/HomePage.html">
+                   <div class="bg-logo">
+                   </div>
+               </a>
+           </div>
+       </div> <!--Logo-->
+       <!-- ============================== logo ============================== -->
+    
+    
+       <!-- ============================== Navi ============================== -->
+       <div class="d-lg-block d-none">
+           <div class=" container-fluid" id="bg-header">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-xl-8
+                                   col-lg-8" id="bg-navi">
+                           <ul>
+                               <li><a class="link-top" href="../../Src/HomePage.html">HOME</a></li>
+                               <li><a class="link-top" href="../../Src/about-all.html">ABOUT US</a>
+                                   <div class="drop-down">
+                                       <div class="container content">
+                                           <div class="col-xl-3 
+                                                       col-lg-3 dd-col">
+                                               <span class="dd-list-header has-child">Featured</span>
+                                               <a class="dd-list-link" href="../../Src/offers.html">Offers</a>
+                                               <a class="dd-list-link" href="../../Src/In-Stock.html">In stock</a>
+                                               <a class="dd-list-link" href="../../Src/New-Arrivals.html">New arrivals</a>
+                                               <span class="dd-list-header has-child">Explore</span>
+                                               <a class="dd-list-link" href="../../Src/Gift.html">Gift</a>
+                                               <a class="dd-list-link" href="../../Src/BuyingGuide.html">Buying Guide</a>
+                                               <a class="dd-footer-link has-child" href="../../Src/Wishlist.html">My Wishlist</a>
+                                               <a class="dd-footer-link has-child" href="../../Src/Account/account.html">My Account</a>
+                                           </div> <!--DD trái-->
+                                       <div class="col-xl-6
+                                                   col-lg-6 dd-col">
+                                           <span class="dd-list-header">About Us</span>
+                                           <div class="dd-subcol-all">
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../Src/introduction.html">Introduction</a>
+                                                   <a class="dd-list-link" href="../Src/our history.html">Our History</a>
+                                               </div>
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../Src/team.html">Join our team</a>
+                                               </div>
+                                           </div>
+                                       </div> <!--DD giữa-->
+                                           <div class="col-xl-3
+                                                       col-lg-3 dd-col">
+                                               <span class="dd-list-header">Explore</span>
+                                               <div class="dd-image">
+                                                   <a href="../../Src/Product-Newaddition-Sofas.html">
+                                                       <img src="../../Element/Addition/sofaddition.webp" alt="Ảnh">
+                                                   </a>
+                                                   <p class="dd-image-caption">Sofas : New additions</p>
+                                               </div>
+                                               <div class="dd-image">
+                                                   <a href="../../Src/Product-Newaddition-Mirrow.html">
+                                                       <img src="../../Element/Addition/mirroraddition.webp" alt="Ảnh">
+                                                   </a>
+                                                   <p class="dd-image-caption">Mirrors : New additions</p>
+                                               </div>
+                                           </div> <!--DD phải-->
+                                       </div><!--Bg Content dd-->
+                                   </div><!--Bg Drop Down Menu--></li>
+                               <li><a class="link-top" href="../../Src/Product-All.html">FURNITURE</a>
+                               <div class="drop-down">
+                                   <div class="container content">
+                                       <div class="col-xl-3 
+                                                   col-lg-3 dd-col">
+                                            <span class="dd-list-header has-child">Featured</span>
+                                            <a class="dd-list-link" href="../../Src/offers.html">Offers</a>
+                                            <a class="dd-list-link" href="../../Src/In-Stock.html">In stock</a>
+                                            <a class="dd-list-link" href="../../Src/New-Arrivals.html">New arrivals</a>
+                                            <span class="dd-list-header has-child">Explore</span>
+                                            <a class="dd-list-link" href="../../Src/Gift.html">Gift</a>
+                                            <a class="dd-list-link" href="../../Src/BuyingGuide.html">Buying Guide</a>
+                                            <a class="dd-footer-link has-child" href="../../Src/Wishlist.html">My Wishlist</a>
+                                            <a class="dd-footer-link has-child" href="../../Src/Account/account.html">My Account</a>
+                                       </div> <!--DD trái-->
+                                       <div class="col-xl-6
+                                                   col-lg-6 dd-col">
+                                           <span class="dd-list-header">Shop Furniture</span>
+                                           <div class="dd-subcol-all">
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../../Src/Product-Sofas.html"><img class="icon" src="../../Element/IconFunirure/Sofas.svg" alt="">Sofas</a>
+                                                   <a class="dd-list-link" href="../../Src/Product-LoungeChairs"><img class="icon" src="../../Element/IconFunirure/LoungeChairs.svg" alt="">Lounge Chairs</a>
+                                                   <a class="dd-list-link" href="../../Src/Product-Table.html"><img class="icon" src="../../Element/IconFunirure/Table.svg" alt="">Tables</a>
+                                                   <a class="dd-list-link" href="../../Src/Product-Lightning.html"><img class="icon" src="../../Element/IconFunirure/Lighting.svg" alt="">Lighting</a>
+                                               </div>
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../../Src/Product-Beds.html"><img class="icon" src="../../Element/IconFunirure/beds.svg" alt="">Beds</a>
+                                                   <a class="dd-list-link" href="../../Src/Product-Chair.html"><img class="icon" src="../../Element/IconFunirure/Chairs.svg" alt="">Chairs</a>
+                                                   <a class="dd-list-link" href="../../Src/Product-Storage-Shelving.html"><img class="icon" src="../../Element/IconFunirure/Storage&Shelving.svg" alt="">Storage & Shelving</a>
+                                                   <a class="dd-list-link" href="../../Src/Product-Mirror.html"><img class="icon" src="../../Element/IconFunirure/Mirror.svg" alt="">Mirrors</a>
+                                               </div>
+                                           </div> 
+                                           <a class="dd-list-link highlighted" href="../../Src/Product-All.html">See All Furniture</a>
+                                       </div> <!--DD giữa-->
+                                       <div class="col-xl-3
+                                                   col-lg-3 dd-col">
+                                           <span class="dd-list-header">Explore</span>
+                                           <div class="dd-image">
+                                               <a href="../../Src/Product-Newaddition-Sofas.html">
+                                                   <img src="../../Element/Addition/sofaddition.webp" alt="Ảnh">
+                                               </a>
+                                               <p class="dd-image-caption">Sofas : New additions</p>
+                                           </div>
+                                           <div class="dd-image">
+                                               <a href="../../Src/Product-Newaddition-Mirror.html">
+                                                   <img src="../../Element/Addition/mirroraddition.webp" alt="Ảnh">
+                                               </a>
+                                               <p class="dd-image-caption">Mirrors : New additions</p>
+                                           </div>
+                                       </div> <!--DD phải-->
+                                   </div><!--Bg Content dd-->
+                               </div><!--Bg Drop Down Menu-->
+                               </li>
+                               <li><a class="link-top" href="../../Src/StorageLocator.html">STORES</a></li>
+                               <li><a class="link-top" href="../../Src/Concepts.html">CONCEPTS</a></li>
+                           </ul>
+                       </div><!--Phần navi menu-->
+       
+                       <div class="col-xl-2 offset-xl-2
+                                   col-lg-3 offset-lg-1" id="bg-icon">
+                           <ul>
+                               <li><a href="../../Src/Cart.html"><i class="fa-light fa-cart-shopping"></i></a></li>
+                               <li><i id="popup-icon" class="fa-light fa-user"></i></li>
+                               <li><i id="triggle-search" class="fa-light fa-magnifying-glass"></i></li>
+                           </ul>
+                       </div><!--Bộ 3 icon-->
+                   </div>
+               </div>
+           </div>
+       </div><!--Ẩn navi ở phiên bản dưới lg-->
+       <!-- ============================== Navi ============================== -->
+</div><!-- the-tong-navi -->
+
+
+<div id="main">
+    <!-- ============================== Navi For Medium And Mobile ============================== -->
+    <div class="d-lg-none container"  >
+        <div id="bg-navi-ver-small">
+            <div class="col-md-3
+                        col-sm-3
+                        col-3 " id="icon-trai">
+                <i id="click-here-to-open" class="fa-light fa-bars"></i>
+            </div>
+            <div class="col-md-6
+                        col-sm-6 
+                        col-6" >
+                        <a href="../../Src/HomePage.html">
+                            <div id="bg-logo-ver-small">
+                            </div>
+                        </a>
+            </div>
+            <div class="col-md-3
+                        col-sm-3
+                        col-3" id="icon-phai">
+                <ul>
+                    <li><a href="../../Src/Cart.html"><i class="fa-light fa-cart-shopping"></i></a></li>
+                    <li><a href="../Account/signin.html"><i class="fa-light fa-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- Thanh navi -->
+    <div class="d-lg-none">
+        <form class="form-search container-fluid">
+            <label for="search">
+                <input required="" autocomplete="off" placeholder="Search..." id="search" type="text">
+                <div class="icon">
+                    <i class="fa-light fa-magnifying-glass"></i>
+                </div>
+                <button type="reset" class="close-btn">
+                    <svg viewBox="0 0 20 20" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </label>
+        </form>
+    </div><!-- Thanh Search -->
+    <!-- ============================== Navi For Medium And Mobile ============================== -->
+
+
+
+<!-- Search-Lon
+===================================================== -->
+<div class="form-search-lon">
+    <form class="d-none d-lg-block form-search-xllg container-fluid">
+        <label for="search">
+            <input required="" autocomplete="off" placeholder="Search..." id="search" type="text">
+            <div class="icon">
+                <i class="fa-light fa-magnifying-glass"></i>
+            </div>
+            <button type="reset" class="close-btn">
+                <i class="fa-light fa-x"></i>
+            </button>
+        </label>
+    </form>
+</div>
+<!-- Search-Lon
+===================================================== -->
+
+
+
+<!-- Code trong này nha -->
+
+<div class="container-fluid bg-payment" >
+    <div class="container">
+        <div class="row pay-text">
+            <div class="loader">
+                <div class="truckWrapper">
+                  <div class="truckBody">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 198 93"
+                      class="trucksvg"
+                    >
+                      <path
+                        stroke-width="3"
+                        stroke="#162A2C"
+                        fill="#5E6C5B"
+                        d="M135 22.5H177.264C178.295 22.5 179.22 23.133 179.594 24.0939L192.33 56.8443C192.442 57.1332 192.5 57.4404 192.5 57.7504V89C192.5 90.3807 191.381 91.5 190 91.5H135C133.619 91.5 132.5 90.3807 132.5 89V25C132.5 23.6193 133.619 22.5 135 22.5Z"
+                      ></path>
+                      <path
+                        stroke-width="3"
+                        stroke="#162A2C"
+                        fill="#FEFCF6"
+                        d="M146 33.5H181.741C182.779 33.5 183.709 34.1415 184.078 35.112L190.538 52.112C191.16 53.748 189.951 55.5 188.201 55.5H146C144.619 55.5 143.5 54.3807 143.5 53V36C143.5 34.6193 144.619 33.5 146 33.5Z"
+                      ></path>
+                      <path
+                        stroke-width="2"
+                        stroke="#162A2C"
+                        fill="#162A2C"
+                        d="M150 65C150 65.39 149.763 65.8656 149.127 66.2893C148.499 66.7083 147.573 67 146.5 67C145.427 67 144.501 66.7083 143.873 66.2893C143.237 65.8656 143 65.39 143 65C143 64.61 143.237 64.1344 143.873 63.7107C144.501 63.2917 145.427 63 146.5 63C147.573 63 148.499 63.2917 149.127 63.7107C149.763 64.1344 150 64.61 150 65Z"
+                      ></path>
+                      <rect
+                        stroke-width="2"
+                        stroke="#162A2C"
+                        fill="#5E6C5B"
+                        rx="1"
+                        height="7"
+                        width="5"
+                        y="63"
+                        x="187"
+                      ></rect>
+                      <rect
+                        stroke-width="2"
+                        stroke="#162A2C"
+                        fill="#162A2C"
+                        rx="1"
+                        height="11"
+                        width="4"
+                        y="81"
+                        x="193"
+                      ></rect>
+                      <rect
+                        stroke-width="3"
+                        stroke="#162A2C"
+                        fill="#DFDFDF"
+                        rx="2.5"
+                        height="90"
+                        width="121"
+                        y="1.5"
+                        x="6.5"
+                      ></rect>
+                      <rect
+                        stroke-width="2"
+                        stroke="#162A2C"
+                        fill="#DFDFDF"
+                        rx="2"
+                        height="4"
+                        width="6"
+                        y="84"
+                        x="1"
+                      ></rect>
+                    </svg>
+                  </div>
+                  <div class="truckTires">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 30 30"
+                      class="tiresvg"
+                    >
+                      <circle
+                        stroke-width="3"
+                        stroke="#282828"
+                        fill="#282828"
+                        r="13.5"
+                        cy="15"
+                        cx="15"
+                      ></circle>
+                      <circle fill="#DFDFDF" r="7" cy="15" cx="15"></circle>
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 30 30"
+                      class="tiresvg"
+                    >
+                      <circle
+                        stroke-width="3"
+                        stroke="#282828"
+                        fill="#282828"
+                        r="13.5"
+                        cy="15"
+                        cx="15"
+                      ></circle>
+                      <circle fill="#DFDFDF" r="7" cy="15" cx="15"></circle>
+                    </svg>
+                  </div>
+                  <div class="road"></div>
+              
+                  <svg
+                    xml:space="preserve"
+                    viewBox="0 0 453.459 453.459"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    id="Capa_1"
+                    version="1.1"
+                    fill="#000000"
+                    class="lampPost"
+                  >
+                    <path
+                      d="M252.882,0c-37.781,0-68.686,29.953-70.245,67.358h-6.917v8.954c-26.109,2.163-45.463,10.011-45.463,19.366h9.993
+              c-1.65,5.146-2.507,10.54-2.507,16.017c0,28.956,23.558,52.514,52.514,52.514c28.956,0,52.514-23.558,52.514-52.514
+              c0-5.478-0.856-10.872-2.506-16.017h9.992c0-9.354-19.352-17.204-45.463-19.366v-8.954h-6.149C200.189,38.779,223.924,16,252.882,16
+              c29.952,0,54.32,24.368,54.32,54.32c0,28.774-11.078,37.009-25.105,47.437c-17.444,12.968-37.216,27.667-37.216,78.884v113.914
+              h-0.797c-5.068,0-9.174,4.108-9.174,9.177c0,2.844,1.293,5.383,3.321,7.066c-3.432,27.933-26.851,95.744-8.226,115.459v11.202h45.75
+              v-11.202c18.625-19.715-4.794-87.527-8.227-115.459c2.029-1.683,3.322-4.223,3.322-7.066c0-5.068-4.107-9.177-9.176-9.177h-0.795
+              V196.641c0-43.174,14.942-54.283,30.762-66.043c14.793-10.997,31.559-23.461,31.559-60.277C323.202,31.545,291.656,0,252.882,0z
+              M232.77,111.694c0,23.442-19.071,42.514-42.514,42.514c-23.442,0-42.514-19.072-42.514-42.514c0-5.531,1.078-10.957,3.141-16.017
+              h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+        </div>
+        <div class=" pay-text">
+            <h3>THANK YOU FOR YOUR PRUCHASE. </h3>
+            <p>We are very happy that you trust and buy from us. 
+            <br>We will deliver your order as quickly as possible.
+            </p>
+            <a href="../homepage.html"><button class="continue-button">Continue for shopping</button></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- We are here to help -->
+<div class="container-fluid" id="bg-help">
+    <div class="help-header">
+        <img src="../../Element/Icon/NeedToHelp.svg" alt="">
+        <p>We're here to help</p>
+    </div>
+    <div class="help-content">
+        <p>Call us on +84 020202167</p>
+        <p>or email us <a href="">shopyourway@harmony.com</a></p>
+    </div>
+ </div>
+
+
+<!-- Sign up to receive 10% off -->
+<div class="container-fluid p-0" id="KM">
+    <div class="d-lg-none KM-img">
+        <img src="../../Image/KM.png" alt="">
+    </div>
+    <div class="container bg-kmall">
+        <div class="KM-info">
+            <div class="col-xl-6
+                        col-lg-6
+                        col-md-12
+                        col-sm-12
+                        col-12" >
+                <p class="KM-Title">Sign up to receive 10% off</p>
+                <p class="KM-Caption">Sign up for our emails and enjoy hearing about all things design, plus get 10% off your first order</p>
+                <div class="KM-Btn">
+                    <button class="button-mau-radius">Find out More<i class="fa-light fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-lg-block KM-img">
+            <img src="../../Image/KM.png" alt="">
+        </div>
+    </div>
+</div>
+<!-- =============================== Bán Footer =============================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Code trong này nha -->
+    <!-- ================================== Footer ================================= -->
+    <div class="container-fluid" id="bg-footer">
+        <div class="row">
+            <div class="col-xl-4
+                        col-lg-5
+                        col-md-4
+                        col-sm-6
+                        col-6" id="footer-slogan">
+            </div><!-- SLOGAN -->
+            <!-- ================== Only XL =================== -->
+            <div class="footer-header col-xl-2 d-none d-xl-block"> 
+                <p>About Us</p>
+                <ul class="footer-list">
+                    <li><a href="../../Src/introduction.html">Introduction</a></li>
+                    <li><a href="../../Src/our history.html">Our History</a></li>
+                    <li><a href="../../Src/team.html">Join Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Inspire</p>
+                <ul class="footer-list">
+                    <li><a href="../../Src/PersonalShopping.html">Personal shopping</a></li>
+                    <li><a href="../../Src/Brochure.html">Brochure</a></li>
+                    <li><a href="../../Src/BuyingGuide.html">Buying Guides</a></li>
+                    <li><a href="../../Src/giftcard.html">Gift cards</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Customer service</p>
+                <ul class="footer-list">
+                    <li><a href="../../Src/ContactUs.html">Contact Us</a></li>
+                    <li><a href="../../Src/HelpAdvice.html">Help and advice</a></li>
+                    <li><a href="../../Src/Delivery.html">Delivery</a></li>
+                    <li><a href="../../Src/MadeToOrder.html">Made to order</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Professional</p>
+                <ul class="footer-list">
+                    <li><a href="../../Src/Contract.html">Contracts</a></li>
+                    <li><a href="../../Src/Contactourbuyers.html">Contact our buyers</a></li>
+                </ul>
+            </div>
+            <!-- ================== Only XL =================== -->
+
+
+
+
+            <!-- ================== Only responsive =================== -->
+            <div class="footer-header 
+                        col-lg-4 offset-lg-0 
+                        col-md-3 offset-md-1
+                        d-none
+                        d-md-block
+                        d-xl-none"> 
+                <p>About Us</p>
+                <ul class="footer-list">
+                    <li><a href="../../Src/introduction.html">Introduction</a></li>
+                    <li><a href="../../Src/our history.html">Our History</a></li>
+                    <li><a href="../../Src/team.html">Join Our Team</a></li>
+                </ul>
+            </div><!--footer phien ban lg va md-->
+
+            <div class="footer-header 
+                        col-lg-3 
+                        col-md-3 
+                        d-none
+                        d-md-block
+                        d-xl-none">
+                <p>Inspire</p>
+                <ul class="footer-list">
+                    <li><a href="../../Src/PersonalShopping.html">Personal shopping</a></li>
+                    <li><a href="../../Src/Brochure.html">Brochure</a></li>
+                    <li><a href="../../Src/BuyingGuide.html">Buying Guides</a></li>
+                    <li><a href="../../Src/giftcard.html">Gift cards</a></li>
+                </ul>
+            </div><!--footer phien ban lg va md-->
+
+            <div class="footer-header
+                        d-md-none
+                        col-sm-5 offset-sm-1
+                        col-5 offset-1">
+                <a href="../../Src/about-all.html">About Us</a>
+                <a href="../../Src/Inspire-all.html">Inspire</a>
+            </div><!--Phien ban sm va xs-->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12" id="bg-footer-content">
+
+                <div class="footer-social 
+                            col-xl-12 
+                            col-lg-5 
+                            col-md-4
+                            col-sm-6
+                            col-6">
+                    <p>Follow Us</p>
+                    <div>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div><!--Social media full phien ban-->
+
+                <div class="footer-header
+                            d-md-none
+                            col-sm-5 offset-sm-1
+                            col-5 offset-1">
+                    <a href="../../Src/CustomService-All.html">Customer service</a>
+                    <a href="../../Src/Professional-All.html">Professional</a>
+                </div><!--Phien ban sm va xs-->
+
+                <div class="footer-header 
+                            col-lg-4 offset-lg-0 
+                            col-md-3 offset-md-1 
+                            d-none d-md-block d-xl-none">
+                    <p>Customer service</p>
+                    <ul class="footer-list">
+                        <li><a href="../../Src/ContactUs.html">Contact Us</a></li>
+                        <li><a href="../../Src/HelpAdvice.html">Help and advice</a></li>
+                        <li><a href="../../Src/Delivery.html">Delivery</a></li>
+                        <li><a href="../../Src/MadeToOrder.html">Made to order</a></li>
+                    </ul>
+                </div><!--footer phien ban lg va md-->
+
+                <div class="footer-header 
+                            col-lg-3 
+                            col-md-4 
+                            d-none
+                            d-md-block 
+                            d-xl-none">
+                    <p>Professional</p>
+                    <ul class="footer-list">
+                        <li><a href="../../Src/Contract.html">Contracts</a></li>
+                        <li><a href="../../Src/Contactourbuyers.html">Contact our buyers</a></li>
+                    </ul>
+                </div><!--footer phien ban lg va md-->
+
+            </div><!-- footer-khi_xuong_dong -->
+            <!-- ================== Only responsive =================== -->
+        </div><!--content ben trong footer-->
+        <div id="footer-name">
+        </div><!--NAME HARMONY-->
+    </div><!--bg-footer-->
+    <!-- ============================== Footer ============================== -->
+</div><!--Hàm main code trong này-->
+</body>
+</html>
+
+
+
+
+
+

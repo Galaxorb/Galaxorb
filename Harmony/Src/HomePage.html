@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Thư viện button: button-text; button-line(-radius); button-mau(-radius); -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../Css/bootstrap-4.4.1.css">
+    <link rel="stylesheet" href="../Css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../Css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../Css/Icon/all.min.css">
+    <link rel="stylesheet" href="../Css/thuvien.css">
+    <link rel="stylesheet" href="../Css/codemau.css">
+    <link rel="stylesheet" href="../Css/CustomPage.css">
+    <link rel="stylesheet" href="../Css/homepage.css">
+    <link rel="icon" href="../Element/Logo/IconForWeb.ico">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../Js/jquery-3.4.1.min.js"></script>
+    <script src="../Js/popper.min.js"></script>
+    <script src="../Js/bootstrap-4.4.1.js"></script>
+    <script src="../Js/owl.carousel.min.js"></script>
+    <script src="../Js/mau.js"></script>
+    <script src="../Js/CustomPage.js"></script>
+    <script src="../Js/homepage.js"></script>
+    <title>HARMONY</title>
+</head>
+<body>
+<!-- Backtotop -->
+<button id="back-to-top" title="Go to top"><i class="fa-light fa-angle-up"></i></button>
+<!-- Sign -->
+<div class="blur-bg-overlay d-none d-lg-block"></div>
+<div class="form-popup d-none d-lg-block">
+    <div class="border">
+        <span class="close"><i class="fa-light fa-x" style="color: #162a2c;"></i></span>
+        <div class="form-details">
+            <h2>Welcome</h2>
+            <p> Log in or sign up for an account. Furniture shopping is about to get exciting, and we wouldn’t want you to miss out on anything.</p>
+        </div>
+        <div class="form-box login">
+            <div class="form-content">
+                <h6>Quick Login</h6>
+                <div class="quick-login">
+                    <button class="social-btn facebook-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/icons-brand-facebook-1.svg" alt="Facebook" />
+                        Sign in with Facebook
+                    </button>
+                    <button class="social-btn apple-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/8ed3d547-94ff-48e1-9f20-8c14a7030a02-2000x2000-1@2x.png" alt="Apple" />
+                        Sign in with Apple
+                    </button>
+                    <button class="social-btn google-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/1298745-google-brand-branding-logo-network-icon-1@2x.png" alt="Google" />
+                        Sign in with Google
+                    </button>
+                </div>
+            </div>
+            <div class="form-content">
+                <h6>Login with Email</h6>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass"> Forgot password ?</a>
+                    <button type="submit"> Log in</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account ?
+                    <a href="#" id="signup-link" id="open-login-popup">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-content">
+                <h6>Quick Login</h6>
+                <div class="quick-login">
+                    <button class="social-btn facebook-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/icons-brand-facebook-1.svg" alt="Facebook" />
+                        Sign in with Facebook
+                    </button>
+                    <button class="social-btn apple-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/8ed3d547-94ff-48e1-9f20-8c14a7030a02-2000x2000-1@2x.png" alt="Apple" />
+                        Sign in with Apple
+                    </button>
+                    <button class="social-btn google-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/1298745-google-brand-branding-logo-network-icon-1@2x.png" alt="Google" />
+                        Sign in with Google
+                    </button>
+                </div>
+            </div>
+            <div class="form-content">
+                <h6>Sign up with Email</h6>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Usename</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Confirm Password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#">Terms & Condition</a>
+                        </label>
+                    </div>
+                    <button type="submit"> Sign Up </button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account ?
+                    <a href="#" id="signin-link">Sign in</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box forgot-password">
+            <div class="form-content">
+                <h2> Reset Password </h2>
+                <p>Enter the email address associated with your account, and we’ll email you a link to reset your password.</p>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="policy-text">
+                    </div>
+                    <button type="submit"> Send Reset Link </button>
+                </form>
+                <div class="bottom-link">
+                    Back to 
+                    <a href="#" id="forgot-password-link">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!--sign-->
+
+
+<!--Chat button-->
+<div class="chat-button" onclick="toggleMessages()">
+<i class="fa-solid fa-comment"></i>
+<span class="notification-badge">2</span>
+</div>
+<!-- Chat Box -->
+<div class="messages-container" id="messagesContainer">
+    <div class="messages-header">
+        <p>Message</p>
+        <div class="close-button" onclick="closeMessages()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <div class="message-height">
+        <div class="message">
+            <img src="../Element/User-Image/User.jpg" alt="User Image">
+            <div class="message-content">
+                <div class="message-title">Nice choice! If you have any questions</div>
+                <div class="message-time">Harmony • 3d ago</div>
+            </div>
+        </div>
+        <div class="message">
+        <img src="../Element/User-Image/User.jpg" alt="User Image">
+            <div class="message-content">
+                <div class="message-title">Did you know? For orders over £2500 GBP</div>
+                <div class="message-time">Sales Team • 1w ago</div>
+            </div>
+        </div>
+    </div>
+    <a href="https://www.facebook.com/trangiabao29">
+    <div class="send-message">Send us a message</div>
+    </a>
+</div>
+
+<!-- Phần tử loading -->
+<div id="loading">
+    <div class="letter">H</div>
+    <div class="letter">A</div>
+    <div class="letter">R</div>
+    <div class="letter">M</div>
+    <div class="letter">O</div>
+    <div class="letter">N</div>
+    <div class="letter">Y</div>
+</div>
+<!-- Phần tử loading -->
+
+
+
+<!-- the-thong-navi -->
+<div id="the-tong-navi">
+<!-- ============================== Navi Popup ============================== -->
+<div class="d-lg-none" id="overlay"></div><!--Overplay-->
+<div id="mySidenav" class="sidenavi d-lg-none">
+    <div class="navbars-top">
+        <div class="navbar">
+            <span class="nav-home">
+                <a class="nav-logo" href="../Src/HomePage.html"><img src="../Element/Logo/logo_Icon_Dark.png" alt=""></a>
+            </span>
+            <span class="nav-action">
+                <a href="../Src/Cart.html">
+                    <i class="fa-light fa-cart-shopping"></i>
+                </a>
+            </span>
+        </div>
+    </div><!--navbars-top-->
+    <div class="bg-navbar-btn">
+        <div class="navbar-btn">
+            <button onclick="navigateToPage1()" class="btn-nav">My Wishlist <i class="fa-regular fa-heart"></i> </button>
+            <button onclick="navigateToPage2()" class="btn-nav">My Account <i class="fa-light fa-user"></i> </button>
+        </div>
+    </div><!--navbars-button-->
+    <div class="navbar-pannel">
+        <div id="pannel-1">
+            <div class="bg-list-item1">
+                <div class="list-item">
+                    <a href="../Src/HomePage.html">Home</a>
+                    <div class="bg-icon-listitem">
+                        <i class="fa-light fa-house"></i>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/about-all.html">About us</a>
+                    <div class="bg-icon-listitem">
+                        <i class="fa-light fa-users"></i>
+                    </div>
+                </div>
+                <div id="btn-next-furnitures" class="list-item">
+                    <a href="../Src/Product-All.html">Funitures</a>
+                    <div class="bg-icon-listitem">
+                        <i class="fa-light fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/StorageLocator.html">Stores</a>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Concepts.html">Concepts</a>
+                </div>
+            </div><!-- bg-list-item -->
+        </div><!--pannel 1-->
+        <div id="pannel-2">
+            <div class="navbar-header">
+                <button id="btn-back-furnitures">
+                    <a href=""><i class="fa-light fa-angle-left"></i></a>
+                    <a href="">Furnitures</a>
+                </button>
+            </div><!-- btn-pannel-2 -->
+            <div class="bg-list-item2">
+                <div class="list-item">
+                    <a href="../Src/Product-Sofas.html">Sofas</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/Sofas.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Product-LoungeChairs.html">Lounge Chairs</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/LoungeChairs.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Product-Table.html">Tables</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/Table.svg" alt="">
+
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Product-Lightning.html">Lighting</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/Lighting.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Product-Beds.html">Beds</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/beds.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Product-Chair.html">Chairs</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/Chairs.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Product-Storage-Shelving.html">Storages & Shelving</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/Storage&Shelving.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="../Src/Product-Mirror.html">Mirrors</a>
+                    <div class="bg-icon-listitem">
+                        <img src="../Element/IconFunirure/Mirror.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a class="title-nav" href="../Src/Product-All.html">See All Furnitures</a>
+                </div>
+            </div><!-- bg-list-item -->
+            <hr class="nav-line">
+            <div class="list-btn">
+                <a class="title-nav" href="">Featured</a>
+                <div id="btn-first" class="btn">
+                    <a href="../Src/offers.html">
+                        <button class="button-line">Offers</button>
+                    </a>
+                    <a href="../Src/In-Stock.html">
+                        <button class="button-line">In Stock</button>
+                    </a>
+                </div>
+                <div class="btn">
+                    <a id="btn-fix" href="../Src/New-Arrivals.html">
+                        <button  class="button-line">New arrivals</button>
+                    </a>
+                </div>
+            </div>
+            <hr class="nav-line">
+            <div class="list-btn">
+                <a class="title-nav" href="">Explore</a>
+                <div id="btn-first" class="btn">
+                    <a href="../Src/Gift.html">
+                        <button class="button-line">Gifts</button>
+                    </a>
+                    <a href="../Src/BuyingGuide.html">
+                        <button class="button-line">Buying Guides</button>
+                    </a>
+                </div>
+            </div>
+            <div class="fix-image-navi">
+                <a style="text-decoration: none; color: var(--primary-color);" href="../Src/Product-Newaddition-Sofas.html" class="nav-img">
+                    <img src="../Element/Addition/sofaddition.webp" alt="">
+                    <p>Sofas : New additions</p>
+                </a>
+                <a style="text-decoration: none; color: var(--primary-color)" href="../Src/Product-Newaddition-Mirror.html" class="nav-img">
+                    <img src="../Element/Addition/mirroraddition.webp" alt="">
+                    <p>Mirrors : New additions</p>
+                </a>
+            </div>
+        </div><!--pannel 2-->
+    </div>
+</div>
+<!-- ============================== Navi Popup ============================== -->
+
+
+   <!-- ============================== logo ============================== -->
+   <div class="d-lg-block d-none container">
+       <div class="row justify-content-center">
+           <a href="../Src/HomePage.html">
+               <div class="bg-logo">
+               </div>
+           </a>
+       </div>
+   </div> <!--Logo-->
+   <!-- ============================== logo ============================== -->
+
+
+   <!-- ============================== Navi ============================== -->
+   <div class="d-lg-block d-none">
+       <div class=" container-fluid" id="bg-header">
+           <div class="container">
+               <div class="row">
+                   <div class="col-xl-8
+                               col-lg-8" id="bg-navi">
+                       <ul>
+                           <li><a class="link-top" href="../Src/HomePage.html">HOME</a></li>
+                           <li><a class="link-top" href="../Src/about-all.html">ABOUT US</a>
+                               <div class="drop-down">
+                                   <div class="container content">
+                                       <div class="col-xl-3 
+                                                   col-lg-3 dd-col">
+                                           <span class="dd-list-header has-child">Featured</span>
+                                           <a class="dd-list-link" href="../Src/offers.html">Offers</a>
+                                           <a class="dd-list-link" href="../Src/In-Stock.html">In stock</a>
+                                           <a class="dd-list-link" href="../Src/New-Arrivals.html">New arrivals</a>
+                                           <span class="dd-list-header has-child">Explore</span>
+                                           <a class="dd-list-link" href="../Src/Gift.html">Gift</a>
+                                           <a class="dd-list-link" href="../Src/BuyingGuide.html">Buying Guide</a>
+                                           <a class="dd-footer-link has-child" href="../Src/Wishlist.html">My Wishlist</a>
+                                           <a class="dd-footer-link has-child" href="../Src/Account/account.html">My Account</a>
+                                       </div> <!--DD trái-->
+                                       <div class="col-xl-6
+                                                   col-lg-6 dd-col">
+                                           <span class="dd-list-header">About Us</span>
+                                           <div class="dd-subcol-all">
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../Src/introduction.html">Introduction</a>
+                                                   <a class="dd-list-link" href="../Src/our history.html">Our History</a>
+                                               </div>
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../Src/team.html">Join our team</a>
+                                               </div>
+                                           </div>
+                                       </div> <!--DD giữa-->
+                                       <div class="col-xl-3
+                                                   col-lg-3 dd-col">
+                                           <span class="dd-list-header">Explore</span>
+                                           <div class="dd-image">
+                                               <a href="../Src/Product-Newaddition-Sofas.html">
+                                                   <img src="../Element/Addition/sofaddition.webp" alt="Ảnh">
+                                               </a>
+                                               <p class="dd-image-caption">Sofas : New additions</p>
+                                           </div>
+                                           <div class="dd-image">
+                                               <a href="../Src/Product-Newaddition-Mirrow.html">
+                                                   <img src="../Element/Addition/mirroraddition.webp" alt="Ảnh">
+                                               </a>
+                                               <p class="dd-image-caption">Mirrors : New additions</p>
+                                           </div>
+                                       </div> <!--DD phải-->
+                                   </div><!--Bg Content dd-->
+                               </div><!--Bg Drop Down Menu--></li>
+                           <li><a class="link-top" href="../Src/Product-All.html">FURNITURE</a>
+                           <div class="drop-down">
+                               <div class="container content">
+                                   <div class="col-xl-3 
+                                               col-lg-3 dd-col">
+                                        <span class="dd-list-header has-child">Featured</span>
+                                        <a class="dd-list-link" href="../Src/offers.html">Offers</a>
+                                        <a class="dd-list-link" href="../Src/In-Stock.html">In stock</a>
+                                        <a class="dd-list-link" href="../Src/New-Arrivals.html">New arrivals</a>
+                                        <span class="dd-list-header has-child">Explore</span>
+                                        <a class="dd-list-link" href="../Src/Gift.html">Gift</a>
+                                        <a class="dd-list-link" href="../Src/BuyingGuide.html">Buying Guide</a>
+                                        <a class="dd-footer-link has-child" href="../Src/Wishlist.html">My Wishlist</a>
+                                        <a class="dd-footer-link has-child" href="../Src/Account/account.html">My Account</a>
+                                   </div> <!--DD trái-->
+                                   <div class="col-xl-6
+                                               col-lg-6 dd-col">
+                                       <span class="dd-list-header">Shop Furniture</span>
+                                       <div class="dd-subcol-all">
+                                           <div class="dd-subcol">
+                                               <a class="dd-list-link" href="../Src/Product-Sofas.html"><img class="icon" src="../Element/IconFunirure/Sofas.svg" alt="">Sofas</a>
+                                               <a class="dd-list-link" href="../Src/Product-LoungeChairs.html"><img class="icon" src="../Element/IconFunirure/LoungeChairs.svg" alt="">Lounge Chairs</a>
+                                               <a class="dd-list-link" href="../Src/Product-Table.html"><img class="icon" src="../Element/IconFunirure/Table.svg" alt="">Tables</a>
+                                               <a class="dd-list-link" href="../Src/Product-Lightning.html"><img class="icon" src="../Element/IconFunirure/Lighting.svg" alt="">Lighting</a>
+                                           </div>
+                                           <div class="dd-subcol">
+                                               <a class="dd-list-link" href="../Src/Product-Beds.html"><img class="icon" src="../Element/IconFunirure/beds.svg" alt="">Beds</a>
+                                               <a class="dd-list-link" href="../Src/Product-Chair.html"><img class="icon" src="../Element/IconFunirure/Chairs.svg" alt="">Chairs</a>
+                                               <a class="dd-list-link" href="../Src/Product-Storage-Shelving.html"><img class="icon" src="../Element/IconFunirure/Storage&Shelving.svg" alt="">Storage & Shelving</a>
+                                               <a class="dd-list-link" href="../Src/Product-Mirror.html"><img class="icon" src="../Element/IconFunirure/Mirror.svg" alt="">Mirrors</a>
+                                           </div>
+                                       </div> 
+                                       <a class="dd-list-link highlighted" href="../Src/Product-All.html">See All Furniture</a>
+                                   </div> <!--DD giữa-->
+                                   <div class="col-xl-3
+                                               col-lg-3 dd-col">
+                                       <span class="dd-list-header">Explore</span>
+                                       <div class="dd-image">
+                                           <a href="../Src/Product-Newaddition-Sofas.html">
+                                               <img src="../Element/Addition/sofaddition.webp" alt="Ảnh">
+                                           </a>
+                                           <p class="dd-image-caption">Sofas : New additions</p>
+                                       </div>
+                                       <div class="dd-image">
+                                           <a href="../Src/Product-Newaddition-Mirror.html">
+                                               <img src="../Element/Addition/mirroraddition.webp" alt="Ảnh">
+                                           </a>
+                                           <p class="dd-image-caption">Mirrors : New additions</p>
+                                       </div>
+                                   </div> <!--DD phải-->
+                               </div><!--Bg Content dd-->
+                           </div><!--Bg Drop Down Menu-->
+                           </li>
+                           <li><a class="link-top" href="../Src/StorageLocator.html">STORES</a></li>
+                           <li><a class="link-top" href="../Src/Concepts.html">CONCEPTS</a></li>
+                       </ul>
+                   </div><!--Phần navi menu-->
+   
+                   <div class="col-xl-2 offset-xl-2
+                               col-lg-3 offset-lg-1" id="bg-icon">
+                       <ul>
+                           <li><a href="../Src/Cart.html"><i class="fa-light fa-cart-shopping"></i></a></li>
+                           <li><i id="popup-icon" class="fa-light fa-user"></i></li>
+                           <li><i id="triggle-search" class="fa-light fa-magnifying-glass"></i></li>
+                       </ul>
+                   </div><!--Bộ 3 icon-->
+               </div>
+           </div>
+       </div>
+   </div><!--Ẩn navi ở phiên bản dưới lg-->
+   <!-- ============================== Navi ============================== -->
+</div><!-- the-tong-navi -->
+
+
+
+<div id="main">
+    <!-- ============================== Navi For Medium And Mobile ============================== -->
+    <div class="d-lg-none container"  >
+        <div id="bg-navi-ver-small">
+            <div class="col-md-3
+                        col-sm-3
+                        col-3 " id="icon-trai">
+                <i id="click-here-to-open" class="fa-light fa-bars"></i>
+            </div>
+            <div class="col-md-6
+                        col-sm-6 
+                        col-6" >
+                        <a href="../Src/HomePage.html">
+                            <div id="bg-logo-ver-small">
+                            </div>
+                        </a>
+            </div>
+            <div class="col-md-3
+                        col-sm-3
+                        col-3" id="icon-phai">
+                <ul>
+                    <li><a href="../Src/Cart.html"><i class="fa-light fa-cart-shopping"></i></a></li>
+                    <li><a href="../Src/Account/signin.html"><i class="fa-light fa-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- Thanh navi -->
+    <div class="d-lg-none">
+        <form class="form-search container-fluid">
+            <label for="search">
+                <input required="" autocomplete="off" placeholder="Search..." id="search" type="text">
+                <div class="icon">
+                    <i class="fa-light fa-magnifying-glass"></i>
+                </div>
+                <button type="reset" class="close-btn">
+                    <svg viewBox="0 0 20 20" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </label>
+        </form>
+    </div><!-- Thanh Search -->
+    <!-- ============================== Navi For Medium And Mobile ============================== -->
+
+
+
+    <!-- Search-Lon
+    ===================================================== -->
+    <div class="form-search-lon">
+        <form class="d-none d-lg-block form-search-xllg container-fluid">
+            <label for="search">
+                <input required="" autocomplete="off" placeholder="Search..." id="search" type="text">
+                <div class="icon">
+                    <i class="fa-light fa-magnifying-glass"></i>
+                </div>
+                <button type="reset" class="close-btn">
+                    <i class="fa-light fa-x"></i>
+                </button>
+            </label>
+        </form>
+    </div>
+    <!-- Search-Lon
+    ===================================================== -->
+
+
+
+    <!-- Code trong này nha -->
+    <!-- ======================= Banner1 ======================= -->
+    <div class="container-fluid p-0">
+        <div class="banner1">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="../Image/Banner1_2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../Image/Banner1_1.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- ======================= Banner1 ======================= -->
+
+
+
+    <!-- ======================= Info + Slogan ======================= -->
+    <!-- Slogan md trở len -->
+    <div class="d-none d-md-block container">
+        <div class="row" id="bg-sg">
+            <div class="Title_Slogan 
+                        col-xl-3
+                        col-lg-12
+                        col-md-12">
+                <p><span>What</span> do we <br> Provide to you?</p>
+            </div>
+            <div class="Slogan 
+                        col-xl-3
+                        col-lg-4
+                        col-md-4">
+                <p class="Header-Sg">Knowledge</p>
+                <p class="Content-Sg">Expert knowledge leads to innovative designs in modern furniture creation.</p>
+                <button class="button-text">More Info <i class="fa-light fa-angle-right"></i></button>
+            </div>
+            <div class="Slogan 
+                        col-xl-3
+                        col-lg-4
+                        col-md-4">
+                <p class="Header-Sg">Experience</p>
+                <p class="Content-Sg">Experience shapes exceptional furniture that blends style, comfort.</p>
+                <button class="button-text">More Info <i class="fa-light fa-angle-right"></i></button>
+            </div>
+            <div class="Slogan 
+                        col-xl-3
+                        col-lg-4
+                        col-md-4">
+                <p class="Header-Sg">Creativity</p>
+                <p class="Content-Sg">Endless creativity in design brings unique charm to every furniture piece.</p>
+                <button class="button-text">More Info <i class="fa-light fa-angle-right"></i></button>
+            </div>
+        </div>
+    </div> 
+    <!-- Slogan mobile -->
+    <div class="d-md-none" id="sg-mobile">
+        <div class="Title_Slogan">
+                <p><span>What</span> do we <br> Provide to you?</p>
+        </div>
+        <div class="container-fluid bg-slogan-mobile">
+            <div class="Info-sg-mobile">
+                <p class="Header-Sg-Mobile">Knowledge</p>
+                <p class="Content-Sg-Mobile">Expert knowledge leads to innovative designs in modern furniture creation.</p>
+                <a class="slogan-link">More Info<i class="fa-light fa-angle-right"></i></a>
+            </div>          
+            <div class="Img-sg-mobile" id="img1">
+            </div>      
+        </div>
+        <div class="container-fluid bg-slogan-mobile">
+            <div class="Img-sg-mobile" id="img2">
+            </div> 
+            <div class="Info-sg-mobile">
+                <p class="Header-Sg-Mobile">Experience</p>
+                <p class="Content-Sg-Mobile">Experience shapes exceptional furniture that blends style, comfort.</p>
+                <a class="slogan-link">More Info<i class="fa-light fa-angle-right"></i></a>
+            </div>          
+        </div>
+        <div class="container-fluid bg-slogan-mobile">
+            <div class="Info-sg-mobile">
+                <p class="Header-Sg-Mobile">Creativity</p>
+                <p class="Content-Sg-Mobile">Endless creativity in design brings unique charm to every furniture piece.</p>
+                <a class="slogan-link">More Info<i class="fa-light fa-angle-right"></i></a>
+            </div>          
+            <div class="Img-sg-mobile" id="img3">
+            </div>      
+        </div>
+    </div>
+    
+    <!-- Card 1 -->
+    <div class="d-none d-lg-block fix-margin">
+        <section class="container-fluid p-0
+                    col-xl-9
+                    col-lg-12" id="tranding-cart1">
+            <div class="swiper tranding-slider1">
+                <div class="header">
+                    <p class="title">New Product</p>
+                    <p class="caption">New products launched at Harmony</p>
+                </div>
+            <div class="swiper-wrapper">
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide1">
+                    <div class="card1-logo">
+                        <img src="../Element/Logo/Logo_Text_Dark.png" alt="">
+                    </div>
+                    <div  class="card1-img" id="card1-img1">
+                        <img src="../Image/ProductSlider/Product-1/product1.png" alt="">
+                    </div>
+                    <div class="card1-info">
+                        <div>
+                            <p class="card1-price">$559
+                            </p>
+                            <p class="card1-name">Seb Storage</p>
+                        </div>
+                        <div class="card1-line">
+                            <hr>
+                        </div>
+                        <div class="card1-bottominfo">
+                            <div class="card1-caption">
+                                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+                            </div>
+                            <div class="card1-btn">
+                                <a href="../Src/detail/Seb-Storage.html">
+                                    <button class="button-mau-radius">Buy Now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide1">
+                    <div class="card1-logo">
+                        <img src="../Element/Logo/Logo_Text_Dark.png" alt="">
+                    </div>
+                    <div  class="card1-img" id="card1-img2">
+                        <img src="../Image/ProductSlider/Product-2/1.png" alt="">
+                    </div>
+                    <div class="card1-info">
+                        <div>
+                            <p class="card1-price">$999 
+                            </p>
+                            <p class="card1-name">Seb Bed 
+                            </p>
+                        </div>
+                        <div class="card1-line">
+                            <hr>
+                        </div>
+                        <div class="card1-bottominfo">
+                            <div class="card1-caption">
+                                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+                            </div>
+                            <div class="card1-btn">
+                                <a href="../Src/detail/Sed-bed.html">
+                                    <button class="button-mau-radius">Buy Now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide1">
+                    <div class="card1-logo">
+                        <img src="../Element/Logo/Logo_Text_Dark.png" alt="">
+                    </div>
+                    <div  class="card1-img" id="card1-img3">
+                        <img src="../Image/ProductSlider/Product-3/2.png" alt="">
+                    </div>
+                    <div class="card1-info">
+                        <div>
+                            <p class="card1-price">$538
+                            </p>
+                            <p class="card1-name">Seb Chair
+                            </p>
+                        </div>
+                        <div class="card1-line">
+                            <hr>
+                        </div>
+                        <div class="card1-bottominfo">
+                            <div class="card1-caption">
+                                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+                            </div>
+                            <div class="card1-btn">
+                                <a href="../Src/detail/Seb-chair.html">
+                                    <button class="button-mau-radius">Buy Now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide1">
+                    <div class="card1-logo">
+                        <img src="../Element/Logo/Logo_Text_Dark.png" alt="">
+                    </div>
+                    <div  class="card1-img" id="card1-img4">
+                        <img src="../Image/ProductSlider/Product-4/1.png" alt="">
+                    </div>
+                    <div class="card1-info">
+                        <div>
+                            <p class="card1-price">$559
+                            </p>
+                            <p class="card1-name">Seb Nightstand
+                            </p>
+                        </div>
+                        <div class="card1-line">
+                            <hr>
+                        </div>
+                        <div class="card1-bottominfo">
+                            <div class="card1-caption">
+                                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+                            </div>
+                            <div class="card1-btn">
+                                <a href="../Src/detail/Seb-Storage.html">
+                                    <button class="button-mau-radius">Buy Now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide1">
+                    <div class="card1-logo">
+                        <img src="../Element/Logo/Logo_Text_Dark.png" alt="">
+                    </div>
+                    <div  class="card1-img" id="card1-img5">
+                        <img src="../Image/ProductSlider/Product-5/1.png" alt="">
+                    </div>
+                    <div class="card1-info">
+                        <div>
+                            <p class="card1-price">$999
+                            </p>
+                            <p class="card1-name">Seb Extendable
+                            </p>
+                        </div>
+                        <div class="card1-line">
+                            <hr>
+                        </div>
+                        <div class="card1-bottominfo">
+                            <div class="card1-caption">
+                                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+                            </div>
+                            <div class="card1-btn">
+                                <a href="../Src/detail/Seb-Table.html">
+                                    <button class="button-mau-radius">Buy Now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide1">
+                    <div class="card1-logo">
+                        <img src="../Element/Logo/Logo_Text_Dark.png" alt="">
+                    </div>
+                    <div  class="card1-img" id="card1-img6">
+                        <img src="../Image/ProductSlider/Product-6/1.png" alt="">
+                    </div>
+                    <div class="card1-info">
+                        <div>
+                            <p class="card1-price">$1,199
+                            </p>
+                            <p class="card1-name">Casa Sideboard
+                            </p>
+                        </div>
+                        <div class="card1-line">
+                            <hr>
+                        </div>
+                        <div class="card1-bottominfo">
+                            <div class="card1-caption">
+                                With a rounded chamfer stop that adds subtle visual appeal, Casa delivers sophistiction
+                            </div>
+                            <div class="card1-btn">
+                                <a href="../Src/detail/Casa-Sideboard.html">
+                                    <button class="button-mau-radius">Buy Now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide1">
+                    <div class="card1-logo">
+                        <img src="../Element/Logo/Logo_Text_Dark.png" alt="">
+                    </div>
+                    <div  class="card1-img" id="card1-img7">
+                        <img src="../Image/ProductSlider/Product-7/1.png" alt="">
+                    </div>
+                    <div class="card1-info">
+                        <div>
+                            <p class="card1-price">$249
+                            </p>
+                            <p class="card1-name">Mori C Side Table
+                            </p>
+                        </div>
+                        <div class="card1-line">
+                            <hr>
+                        </div>
+                        <div class="card1-bottominfo">
+                            <div class="card1-caption">
+                                With a refined silhouette that sits low to the ground, Mori delivers a luxurious lounging
+                            </div>
+                            <div class="card1-btn">
+                                <a href="../Src/detail/Mori-C-Side.html">
+                                    <button class="button-mau-radius">Buy Now</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide-end -->
+            </div>
+            </div>
+        </section>
+        <div class="container tranding-slider1-control">
+            <div class=" swiper-button-prev1 slider-arrow1">
+                <i class="fa-light fa-angle-left"></i>
+            </div>
+
+        <div class="container swiper-pagination1"></div>
+
+        <div class="swiper-button-next1 slider-arrow1">
+            <i class="fa-light fa-angle-right"></i>
+        </div>
+        </div>
+    </div><!-- Card 1 -->
+    <!-- ======================= Info + Slogan ======================= -->
+    
+
+    <!-- ProductCard1-mb -->
+    <div class="d-lg-none container" id="ProductCard1-mb">
+        <div class="slider-wrapper">
+            <div class="header">
+                <p class="title">New Product</p>
+                <p class="caption">New products launched at Harmony</p>
+            </div>
+            <button id="prev-slide" class="slide-button material-symbols-rounded">
+                <i class="fa-light fa-angle-left"></i>
+            </button>
+            <ul class="image-list">
+                <li class="image-item">
+                    <img src="../Image/ProductSliderMB/1.webp" alt="img-1" />
+                    <a href="../Src/detail/Seb-Storage.html" class="product-info">
+                        <p class="product-name">Seb Storage</p>
+                        <p class="product-price">$559</p>
+                    </a>
+                </li>
+                <li class="image-item">
+                    <img src="../Image/ProductSliderMB/2.jpg" alt="img-2" />
+                    <a href="../Src/detail/Sed-bed.html" class="product-info">
+                        <p class="product-name">Seb Bed</p>
+                        <p class="product-price">$999 </p>
+                    </a>
+                </li>
+                <li class="image-item">
+                    <img src="../Image/ProductSliderMB/3.webp" alt="img-2" />
+                    <a href="../Src/detail/Seb-chair.html" class="product-info">
+                        <p class="product-name">Seb Chair</p>
+                        <p class="product-price">$538</p>
+                    </a>
+                </li>
+                <li class="image-item">
+                    <img src="../Image/ProductSliderMB/4.jpg" alt="img-2" />
+                    <a href="../Src/detail/Set-Nightstand.html" class="product-info">
+                        <p class="product-name">Seb Nightstand</p>
+                        <p class="product-price">$559</p>
+                    </a>
+                </li>
+                <li class="image-item">
+                    <img src="../Image/ProductSliderMB/5.png" alt="img-2" />
+                    <a href="../Src/detail/Seb-Table.html" class="product-info">
+                        <p class="product-name">Seb Extendable</p>
+                        <p class="product-price">$999</p>
+                    </a>
+                </li>
+                <li class="image-item">
+                    <img src="../Image/ProductSliderMB/6.png" alt="img-2" />
+                    <a href="../Src/detail/Casa-Sideboard.html" class="product-info">
+                        <p class="product-name">Casa Sideboard</p>
+                        <p class="product-price">$1,199</p>
+                    </a>
+                </li>
+                <li class="image-item">
+                    <img src="../Image/ProductSliderMB/7.jpg" alt="img-2" />
+                    <a href="../Src/detail/Mori-C-Side.html" class="product-info">
+                        <p class="product-name">Mori C Side Table</p>
+                        <p class="product-price">$249</p>
+                    </a>
+                </li>
+                <!-- Thêm nhiều mục tương tự -->
+            </ul>
+            <button id="next-slide" class="slide-button material-symbols-rounded">
+                <i class="fa-light fa-angle-right"></i>
+            </button>
+        </div>
+        <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+            </div>
+        </div>
+    </div><!-- ProductCard1-mb -->
+    
+
+    <!-- Card 2 -->
+    <div class="d-none d-lg-block fix-margin">
+        <section class="container-fluid p-0
+                    col-xl-9
+                    col-lg-12" id="tranding">
+            <div class="swiper tranding-slider">
+                <div class="header">
+                    <p class="title">Choose to your taste</p>
+                    <p class="caption">We like to think we style our furniture well</p>
+                </div>
+            <div class="swiper-wrapper">
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <img src="../Image/ImageSlider/ImageSlider1.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                    <p>Mid-Century Modern</p>
+                </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <img src="../Image/ImageSlider/ImageSlider2.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                    <p>Scandinavian</p>
+                </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <img src="../Image/ImageSlider/ImageSlider3.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                    <p>Industrial</p>
+                </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <img src="../Image/ImageSlider/ImageSlider4.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                    <p>Bohemian</p>
+                </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <img src="../Image/ImageSlider/ImageSlider5.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                    <p>Minimalist</p>
+                </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <img src="../Image/ImageSlider/ImageSlider6.jpg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                    <p>Traditional</p>
+                </div>
+                </div>
+                <!-- Slide-end -->
+                <!-- Slide-start -->
+                <div class="swiper-slide tranding-slide">
+                <div class="tranding-slide-img">
+                    <img src="../Image/ImageSlider/ImageSlider7.jpeg" alt="Tranding">
+                </div>
+                <div class="tranding-slide-content">
+                    <p>Eclectic</p>
+                </div>
+                </div>
+                <!-- Slide-end -->
+            </div>
+            </div>
+        </section>
+        <div class="container tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+                <i class="fa-light fa-angle-left"></i>
+            </div>
+        <div class="container swiper-pagination"></div>
+        <div class="swiper-button-next slider-arrow">
+            <i class="fa-light fa-angle-right"></i>
+        </div>
+        </div>
+    </div><!-- Card 2 -->
+
+    <!-- Image Prallax -->
+    <div class="d-lg-none img-prallax">
+        <div class="header">
+            <p class="title">Choose to your taste</p>
+            <p class="caption">We like to think we style our furniture well</p>
+        </div>
+        <div class="container">
+            <img class="imgzoom" src="../Image/ImageSlider/ImageSlider1.jpg" alt="">
+            <img class="imgzoom" src="../Image/ImageSlider/ImageSlider2.jpg" alt="">
+            <img class="imgzoom" src="../Image/ImageSlider/ImageSlider6.jpg" alt="">
+            <img class="imgzoom" src="../Image/ImageSlider/ImageSlider7.jpeg"alt="">
+            <img class="d-sm-none d-md-block imgzoom" src="../Image/ImageSlider/ImageSlider3.jpg" alt="">
+            <img class="d-none d-sm-block imgzoom" src="../Image/ImageSlider/ImageSlider4.jpg" alt="">
+            <img class="d-none d-sm-block imgzoom" src="../Image/ImageSlider/ImageSlider5.jpg" alt="">
+        </div>
+    </div><!-- Image Prallax -->
+    
+
+    <!-- <div class="d-lg-none container-fluid bg-imggrid">
+        <div class="header">
+            <p class="title">Harmony Gallery</p>
+            <p class="caption">We like to think we style our furniture well</p>
+        </div>
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1">
+                <img src="../Image/Grid/Grid1.jpg" alt="Gallery image 1" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+                <img src="../Image/Grid/Grid2.jpg" alt="Gallery image 2" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+                <img src="../Image/Grid/Grid3.jpg" alt="Gallery image 3" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+                <img src="../Image/Grid/Grid4.jpg" alt="Gallery image 4" class="gallery__img">
+            </figure>
+        </div>
+    </div> -->
+
+    <!-- Banner2 -->
+    <div class="container-fluid p-0" id="bg-banner2">
+        <div class="content-image">
+            <p>Discounts change every three weeks</p>
+            <button class="btn-banner2 button-mau-radius">View More</button>
+        </div>
+        <img src="../Image/Banner2.png" alt="">
+    </div><!-- Banner2 -->
+    
+
+    <!-- Slogan Động -->
+    <div class="container-fluid p-0">
+        <div class="text-wrapper">
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+            <h1 class="text-animation">Knowledge - Experience - Creativity</h1>
+        </div>
+    </div><!-- Slogan Động -->
+
+
+    <!-- LivingRoom-2 -->
+    <div id="Overlay-MenuProduct"></div>
+    <div class="container-fluid bg-custom-product">
+        <div class="Header-Cus">
+            <p class="title">Store concepts</p>
+            <di class="caption">You can view more options in picture</di>
+        </div>
+        <div class="Bg-Cus" id="LivingRoom-2">
+            <div class="Cus_GirdContainer">
+                <div class="Anh-Bg">
+                    <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/bg.webp" alt="">
+                </div><!-- Ảnh BackGround -->
+    <!-- ------------------------------------------------------------------------------- -->
+                <!-- Dot-All-Start -->
+                <div id="Dot-Table1-Living-2"  class="open-product-list" data-target="Menu-LivingRoom-2">
+                    <div class="ripple-container">
+                        <!-- Popup-Main -->
+                        <div class="popup-main">
+                            <a id="Popup-Living-2-Table1" href="../Src/detail/Mori-C-Side.html" class="Popup-Product">
+                                <div class="popup-img_info">
+                                    <div class="Popup-Img">
+                                        <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Table/Mori_C_Side_Table/png.png" alt="">
+                                    </div>
+                                    <div class="Popup-Info">
+                                        <p>Mori C Side Table</p>
+                                        <span>$778</span>
+                                    </div>
+                                </div>
+                                <div class="Popup-Aggle">
+                                    <i class="fa-light fa-chevron-right"></i>
+                                </div>
+                            </a>
+                        </div><!-- Popup-Main -->
+                        <div class="ripple"></div>
+                        <div class="center-dot"></div>
+                    </div>
+                </div><!-- Dot-All-End -->
+    <!-- ------------------------------------------------------------------------------- -->
+                <!-- Dot-All-Start -->
+                <div id="Dot-Table2-Living-2"  class="open-product-list" data-target="Menu-LivingRoom-2">
+                    <div class="ripple-container">
+                        <!-- Popup-Main -->
+                        <div class="popup-main">
+                            <a id="Popup-Living-2-Table2" href="../Src/detail/Mori_Coffee_Table.html" class="Popup-Product">
+                                <div class="popup-img_info">
+                                    <div class="Popup-Img">
+                                        <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Table/Mori_Coffee_Table/png.png" alt="">
+                                    </div>
+                                    <div class="Popup-Info">
+                                        <p>Mori Coffee Table</p>
+                                        <span>$943</span>
+                                    </div>
+                                </div>
+                                <div class="Popup-Aggle">
+                                    <i class="fa-light fa-chevron-right"></i>
+                                </div>
+                            </a>
+                        </div><!-- Popup-Main -->
+                        <div class="ripple"></div>
+                        <div class="center-dot"></div>
+                    </div>
+                </div><!-- Dot-All-End -->
+    <!-- ------------------------------------------------------------------------------- -->
+                <!-- Dot-All-Start -->
+                <div id="Dot-Table3-Living-2"  class="open-product-list" data-target="Menu-LivingRoom-2">
+                    <div class="ripple-container">
+                        <!-- Popup-Main -->
+                        <div class="popup-main">
+                            <a id="Popup-Living-2-Table3" href="../Src/detail/Mori_Side_Table.html" class="Popup-Product">
+                                <div class="popup-img_info">
+                                    <div class="Popup-Img">
+                                        <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Table/Mori_Side_Table/png.png" alt="">
+                                    </div>
+                                    <div class="Popup-Info">
+                                        <p>Mori Side Table</p>
+                                        <span>$643</span>
+                                    </div>
+                                </div>
+                                <div class="Popup-Aggle">
+                                    <i class="fa-light fa-chevron-right"></i>
+                                </div>
+                            </a>
+                        </div><!-- Popup-Main -->
+                        <div class="ripple"></div>
+                        <div class="center-dot"></div>
+                    </div>
+                </div><!-- Dot-All-End -->
+    <!-- ------------------------------------------------------------------------------- -->
+                <!-- Dot-All-Start -->
+                <div id="Dot-Sofa1-Living-2"  class="open-product-list" data-target="Menu-LivingRoom-2">
+                    <div class="ripple-container">
+                        <!-- Popup-Main -->
+                        <div class="popup-main">
+                            <a id="Popup-Living-2-Sofa1" href="../Src/detail/Mori-Armless.html" class="Popup-Product">
+                                <div class="popup-img_info">
+                                    <div class="Popup-Img">
+                                        <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Sofa/Mori_Performance_Fabric/171889771433417286.png" alt="">
+                                    </div>
+                                    <div class="Popup-Info">
+                                        <p>Mori Armless</p>
+                                        <span>$2,153</span>
+                                    </div>
+                                </div>
+                                <div class="Popup-Aggle">
+                                    <i class="fa-light fa-chevron-right"></i>
+                                </div>
+                            </a>
+                        </div><!-- Popup-Main -->
+                        <div class="ripple"></div>
+                        <div class="center-dot"></div>
+                    </div>
+                </div><!-- Dot-All-End -->
+    <!-- ------------------------------------------------------------------------------- -->
+                <!-- Dot-All-Start -->
+                <div id="Dot-Sofa2-Living-2" class="open-product-list" data-target="Menu-LivingRoom-2">
+                    <div class="ripple-container">
+                        <!-- Popup-Main -->
+                        <div class="popup-main">
+                            <a id="Popup-Living-2-Sofa2" href="../Src/detail/Mori-Armchair.html" class="Popup-Product">
+                                <div class="popup-img_info">
+                                    <div class="Popup-Img">
+                                        <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Sofa/Mori_Performance_Fabric_Armchair/png.png" alt="">
+                                    </div>
+                                    <div class="Popup-Info">
+                                        <p>Mori Armchair</p>
+                                        <span>$1,093</span>
+                                    </div>
+                                </div>
+                                <div class="Popup-Aggle">
+                                    <i class="fa-light fa-chevron-right"></i>
+                                </div>
+                            </a>
+                        </div><!-- Popup-Main -->
+                        <div class="ripple"></div>
+                        <div class="center-dot"></div>
+                    </div>
+                </div><!-- Dot-All-End -->
+    <!-- ------------------------------------------------------------------------------- -->
+            </div><!-- GridContainer -->
+            <div class="Cus-Footer">
+                <div class="fix-rot">
+                    <div class="Click_See_All">
+                        <p>View all product</p>
+                        <!-- Open-Product-List -->
+                        <i class="d-lg-none fa-light fa-rectangle-barcode open-product-list" data-target="Menu-LivingRoom-2"></i>
+                        <!-- Switch -->
+                        <label class="d-none d-lg-block switch">
+                            <input type="checkbox" id="viewAllToggleLiving2" onclick="togglePopups('LivingRoom-2', 'viewAllToggleLiving2')">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="View-all-concept">
+                        <a href="../Src/Concepts.html">
+                            <button class="button-text">View All Concepts</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="CLick-To-Love">
+                    <p>Add to Wishlist</p>
+                    <div class="heart">
+                        <i class="fa-light fa-heart icon1"></i>
+                        <i class="fa-solid fa-heart icon2"></i>
+                    </div>
+                </div>
+            </div><!-- Cus-Footer -->
+            <!-- Menu-ListItem-LivingRoom-2 -->
+            <div class="Menu-Product" id="Menu-LivingRoom-2">
+                <div class="Menu-Header">
+                    <p>In This Look</p>
+                    <i class="fa-light fa-xmark close-product-list"></i>
+                </div>
+                <div class="List-ProductinMenu">
+                    <div class="Menu-Content">
+                        <!-- Start -->
+                        <a href="../Src/detail/Mori-Armchair.html">
+                            <div class="popup-img_info">
+                                <div class="Popup-Img">
+                                    <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Sofa/Mori_Performance_Fabric_Armchair/png.png" alt="">
+                                </div>
+                                <div class="Popup-Info">
+                                    <p>Mori Armchair</p>
+                                    <span>$1,093</span>
+                                </div>
+                            </div>
+                            <div class="Popup-Aggle">
+                                <i class="fa-light fa-chevron-right"></i>
+                            </div>
+                        </a>
+                        <!-- End -->
+                        <!-- Start -->
+                        <a href="../Src/detail/Mori-Armless.html">
+                            <div class="popup-img_info">
+                                <div class="Popup-Img">
+                                    <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Sofa/Mori_Performance_Fabric/171889771433417286.png" alt="">
+                                </div>
+                                <div class="Popup-Info">
+                                    <p>Mori Armless</p>
+                                    <span>$2,153</span>
+                                </div>
+                            </div>
+                            <div class="Popup-Aggle">
+                                <i class="fa-light fa-chevron-right"></i>
+                            </div>
+                        </a>
+                        <!-- End -->
+                        <!-- Start -->
+                        <a href="../Src/detail/Mori_Side_Table.html">
+                            <div class="popup-img_info">
+                                <div class="Popup-Img">
+                                    <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Table/Mori_Side_Table/png.png" alt="">
+                                </div>
+                                <div class="Popup-Info">
+                                    <p>Mori Side Table</p>
+                                    <span>$643</span>
+                                </div>
+                            </div>
+                            <div class="Popup-Aggle">
+                                <i class="fa-light fa-chevron-right"></i>
+                            </div>
+                        </a>
+                        <!-- End -->
+                        <!-- Start -->
+                        <a href="../Src/detail/Mori_Coffee_Table.html">
+                            <div class="popup-img_info">
+                                <div class="Popup-Img">
+                                    <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Table/Mori_Coffee_Table/png.png" alt="">
+                                </div>
+                                <div class="Popup-Info">
+                                    <p>Mori Coffee Table</p>
+                                    <span>$943</span>
+                                </div>
+                            </div>
+                            <div class="Popup-Aggle">
+                                <i class="fa-light fa-chevron-right"></i>
+                            </div>
+                        </a>
+                        <!-- End -->
+                        <!-- Start -->
+                        <a href="../Src/detail/Mori-C-Side.html">
+                            <div class="popup-img_info">
+                                <div class="Popup-Img">
+                                    <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Table/Mori_C_Side_Table/png.png" alt="">
+                                </div>
+                                <div class="Popup-Info">
+                                    <p>Mori C Side Table</p>
+                                    <span>$778</span>
+                                </div>
+                            </div>
+                            <div class="Popup-Aggle">
+                                <i class="fa-light fa-chevron-right"></i>
+                            </div>
+                        </a>
+                        <!-- End -->
+                    </div>
+                </div>
+            </div><!-- Menu-ListItem-LivingRoom-2 -->
+        </div>
+    </div><!-- LivingRoom-2 -->
+
+
+    
+    <!-- Our Insights & Articles -->
+    <div class="d-none d-md-block container" id="bg-art">
+        <div class="art-title">
+            <p>Our Insights & Articles</p>
+        </div>
+        <div class="art-content">
+            <div class="row">
+                <!-- art-start -->
+                <div class="col-xl-4
+                            col-lg-4
+                            col-md-4 art-card">
+                    <div class="art-img">
+                        <img src="../Image/Art/1.png" alt="art-image">
+                    </div>
+                    <div class="art-btn">
+                        <button class="button-mau-radius">View More</button>
+                    </div>
+                    <div class="art-info">
+                        <p>Knowledge, Experience, Creativity, as we strive to set new standards in the furniture industry. From timeless classics to modern masterpieces.</p>
+                        <div class="date-add">
+                            <div class="date">
+                                <i class="fa-light fa-calendar-days"></i>
+                                <span>30, August, 2023</span>
+                            </div>
+                            <div class="add">
+                                <i class="fa-sharp fa-light fa-location-dot"></i>
+                                <span>HoChiMinh City</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- art-end -->
+                <!-- art-start -->
+                <div class="col-xl-4
+                            col-lg-4
+                            col-md-4 art-card">
+                    <div class="art-img">
+                        <img src="../Image/Art/2.png" alt="art-image">
+                    </div>
+                    <div class="art-btn">
+                        <button class="button-mau-radius">View More</button>
+                    </div>
+                    <div class="art-info">
+                        <p>At Harmony, our dedication to exceptional furniture design stems from a deep understanding of our customers' needs and a commitment to superior craftsmanship. </p>
+                        <div class="date-add">
+                            <div class="date">
+                                <i class="fa-light fa-calendar-days"></i>
+                                <span>30, August, 2023</span>
+                            </div>
+                            <div class="add">
+                                <i class="fa-sharp fa-light fa-location-dot"></i>
+                                <span>HoChiMinh City</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- art-end -->
+                <!-- art-start -->
+                <div class="col-xl-4
+                            col-lg-4
+                            col-md-4 art-card">
+                    <div class="art-img">
+                        <img src="../Image/Art/3.png" alt="art-image">
+                    </div>
+                    <div class="art-btn">
+                        <button class="button-mau-radius">View More</button>
+                    </div>
+                    <div class="art-info">
+                        <p>Our team embodies our slogan, Knowledge, Experience, Creativity, in every aspect of our business. From sourcing the finest materials to designing cutting-edge products.</p>
+                        <div class="date-add">
+                            <div class="date">
+                                <i class="fa-light fa-calendar-days"></i>
+                                <span>30, August, 2023</span>
+                            </div>
+                            <div class="add">
+                                <i class="fa-sharp fa-light fa-location-dot"></i>
+                                <span>HoChiMinh City</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- art-end -->
+            </div>
+        </div>
+    </div><!-- Our Insights & Articles -->
+    <div class="d-md-none container-fluid p-0" id="bg-art-mb">
+        <div class="art-title-mb">
+            <p>Our Insights & Articles</p>
+        </div>
+        <!-- art-start -->
+        <div class="col-sm-12
+                    col-12 art-card-mb">
+            <div class="art-img-mb">
+                <img src="../Image/Art/1.png" alt="">
+            </div>
+            <div class="art-btn-mb">
+                <button class="button-mau-radius">View More</button>
+            </div>
+            <div class="art-info-mb">
+                <p>Knowledge, Experience, Creativity, as we strive to set new standards in the furniture industry. From timeless classics to modern masterpieces.</p>
+                <div class="date-add-mb">
+                    <div class="date-mb">
+                        <i class="fa-light fa-calendar-days"></i>
+                        <span>02, september, 2024</span>
+                    </div>
+                    <div class="add-mb">
+                        <i class="fa-sharp fa-light fa-location-dot"></i>
+                        <span>HoChiMinh City</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- art-end -->
+        <!-- art-start -->
+        <div class="col-sm-12
+                    col-12 art-card-mb">
+            <div class="art-img-mb">
+                <img src="../Image/Art/2.png" alt="">
+            </div>
+            <div class="art-btn-mb">
+                <button class="button-mau-radius">View More</button>
+            </div>
+            <div class="art-info-mb">
+                <p>At Harmony, our dedication to exceptional furniture design stems from a deep understanding of our customers' needs and a commitment to superior craftsmanship.</p>
+                <div class="date-add-mb">
+                    <div class="date-mb">
+                        <i class="fa-light fa-calendar-days"></i>
+                        <span>02, september, 2024</span>
+                    </div>
+                    <div class="add-mb">
+                        <i class="fa-sharp fa-light fa-location-dot"></i>
+                        <span>HoChiMinh City</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- art-end -->
+        <!-- art-start -->
+        <div class="col-sm-12
+                    col-12 art-card-mb">
+            <div class="art-img-mb">
+                <img src="../Image/Art/3.png" alt="">
+            </div>
+            <div class="art-btn-mb">
+                <button class="button-mau-radius">View More</button>
+            </div>
+            <div class="art-info-mb">
+                <p>Our team embodies our slogan, Knowledge, Experience, Creativity, in every aspect of our business. From sourcing the finest materials to designing cutting-edge products.</p>
+                <div class="date-add-mb">
+                    <div class="date-mb">
+                        <i class="fa-light fa-calendar-days"></i>
+                        <span>02, september, 2024</span>
+                    </div>
+                    <div class="add-mb">
+                        <i class="fa-sharp fa-light fa-location-dot"></i>
+                        <span>HoChiMinh City</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- art-end -->
+    </div>
+
+
+
+
+    <!-- Shop By Brand -->
+    <div class="container-fluid p-o" id="bg-sbb">
+        <div class="container sbb-title">
+            <div class="sbb-header">
+                <p class="title-text">Shop By Brand</p>
+                <div class="mui-ten">
+                    <div class="arrow left-arrow" id="prevBtn">
+                        <i class="fa-light fa-angle-left" style="color: #162a2c;"></i>
+                    </div>
+                    <div class="arrow right-arrow" id="nextBtn">
+                        <i class="fa-light fa-angle-right" style="color: #162a2c;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row owl-carousel">
+            <a href="" class="sbb-img">
+                <img src="../Image/Brand/Brand1.png" alt="">
+            </a>
+            <a href="" class=" sbb-img">
+                <img src="../Image/Brand/Brand3.png" alt="">
+            </a>
+            <a href="" class=" sbb-img">
+                <img src="../Image/Brand/Brand4.png" alt="">
+            </a>
+            <a href="" class=" sbb-img">
+                <img src="../Image/Brand/Brand5.png" alt="">
+            </a>
+            <a href="" class="sbb-img">
+                <img src="../Image/Brand/Brand6.png" alt="">
+            </a>
+        </div>
+    </div><!-- Shop By Brand -->
+
+    <!-- =============================== Bán Footer =============================== -->
+    <!-- We are here to help -->
+    <div class="container-fluid" id="bg-help">
+        <div class="help-header">
+            <img src="../Element/Icon/NeedToHelp.svg" alt="">
+            <p>We're here to help</p>
+        </div>
+        <div class="help-content">
+            <p>Call us on +84 020202167</p>
+            <p>or email us <a href="">shopyourway@harmony.com</a></p>
+        </div>
+    </div>
+
+
+    <!-- Sign up to receive 10% off -->
+    <div class="container-fluid p-0" id="KM">
+        <div class="d-lg-none KM-img">
+            <img src="../Image/KM.png" alt="">
+        </div>
+        <div class="container bg-kmall">
+            <div class="KM-info">
+                <div class="col-xl-6
+                            col-lg-6
+                            col-md-12
+                            col-sm-12
+                            col-12" >
+                    <p class="KM-Title">Sign up to receive 10% off</p>
+                    <p class="KM-Caption">Sign up for our emails and enjoy hearing about all things design, plus get 10% off your first order</p>
+                    <div class="KM-Btn">
+                        <button class="button-mau-radius">Find out More<i class="fa-light fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-none d-lg-block KM-img">
+                <img src="../Image/KM.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- =============================== Bán Footer =============================== -->
+
+
+    <!-- Code trong này nha -->
+    <!-- ================================== Footer ================================= -->
+    <div class="container-fluid" id="bg-footer">
+        <div class="row">
+            <div class="col-xl-4
+                        col-lg-5
+                        col-md-4
+                        col-sm-6
+                        col-6" id="footer-slogan">
+            </div><!-- SLOGAN -->
+            <!-- ================== Only XL =================== -->
+            <div class="footer-header col-xl-2 d-none d-xl-block"> 
+                <p>About Us</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/introduction.html">Introduction</a></li>
+                    <li><a href="../Src/our history.html">Our History</a></li>
+                    <li><a href="../Src/team.html">Join Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Inspire</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/PersonalShopping.html">Personal shopping</a></li>
+                    <li><a href="../Src/Brochure.html">Brochure</a></li>
+                    <li><a href="../Src/BuyingGuide.html">Buying Guides</a></li>
+                    <li><a href="../Src/giftcard.html">Gift cards</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Customer service</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/ContactUs.html">Contact Us</a></li>
+                    <li><a href="../Src/HelpAdvice.html">Help and advice</a></li>
+                    <li><a href="../Src/Delivery.html">Delivery</a></li>
+                    <li><a href="../Src/MadeToOrder.html">Made to order</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Professional</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/Contract.html">Contracts</a></li>
+                    <li><a href="../Src/Contactourbuyers.html">Contact our buyers</a></li>
+                </ul>
+            </div>
+            <!-- ================== Only XL =================== -->
+
+
+
+
+            <!-- ================== Only responsive =================== -->
+            <div class="footer-header 
+                        col-lg-4 offset-lg-0 
+                        col-md-3 offset-md-1
+                        d-none
+                        d-md-block
+                        d-xl-none"> 
+                <p>About Us</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/introduction.html">Introduction</a></li>
+                    <li><a href="../Src/our history.html">Our History</a></li>
+                    <li><a href="../Src/team.html">Join Our Team</a></li>
+                </ul>
+            </div><!--footer phien ban lg va md-->
+
+            <div class="footer-header 
+                        col-lg-3 
+                        col-md-3 
+                        d-none
+                        d-md-block
+                        d-xl-none">
+                <p>Inspire</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/PersonalShopping.html">Personal shopping</a></li>
+                    <li><a href="../Src/Brochure.html">Brochure</a></li>
+                    <li><a href="../Src/BuyingGuide.html">Buying Guides</a></li>
+                    <li><a href="../Src/giftcard.html">Gift cards</a></li>
+                </ul>
+            </div><!--footer phien ban lg va md-->
+
+            <div class="footer-header
+                        d-md-none
+                        col-sm-5 offset-sm-1
+                        col-5 offset-1">
+                <a href="../Src/about-all.html">About Us</a>
+                <a href="../Src/Inspire-all.html">Inspire</a>
+            </div><!--Phien ban sm va xs-->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12" id="bg-footer-content">
+
+                <div class="footer-social 
+                            col-xl-12 
+                            col-lg-5 
+                            col-md-4
+                            col-sm-6
+                            col-6">
+                    <p>Follow Us</p>
+                    <div>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div><!--Social media full phien ban-->
+
+                <div class="footer-header
+                            d-md-none
+                            col-sm-5 offset-sm-1
+                            col-5 offset-1">
+                    <a href="../Src/CustomService-All.html">Customer service</a>
+                    <a href="../Src/Professional-All.html">Professional</a>
+                </div><!--Phien ban sm va xs-->
+
+                <div class="footer-header 
+                            col-lg-4 offset-lg-0 
+                            col-md-3 offset-md-1 
+                            d-none d-md-block d-xl-none">
+                    <p>Customer service</p>
+                    <ul class="footer-list">
+                        <li><a href="../Src/ContactUs.html">Contact Us</a></li>
+                        <li><a href="../Src/HelpAdvice.html">Help and advice</a></li>
+                        <li><a href="../Src/Delivery.html">Delivery</a></li>
+                        <li><a href="../Src/MadeToOrder.html">Made to order</a></li>
+                    </ul>
+                </div><!--footer phien ban lg va md-->
+
+                <div class="footer-header 
+                            col-lg-3 
+                            col-md-4 
+                            d-none
+                            d-md-block 
+                            d-xl-none">
+                    <p>Professional</p>
+                    <ul class="footer-list">
+                        <li><a href="../Src/Contract.html">Contracts</a></li>
+                        <li><a href="../Src/Contactourbuyers.html">Contact our buyers</a></li>
+                    </ul>
+                </div><!--footer phien ban lg va md-->
+
+            </div><!-- footer-khi_xuong_dong -->
+            <!-- ================== Only responsive =================== -->
+        </div><!--content ben trong footer-->
+        <div id="footer-name">
+        </div><!--NAME HARMONY-->
+    </div><!--bg-footer-->
+    <!-- ============================== Footer ============================== -->
+</div><!--Hàm main code trong này-->
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Thư viện button: button-text; button-line(-radius); button-mau(-radius); -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Css/bootstrap-4.4.1.css">
+    <link rel="stylesheet" href="../../Css/Icon/all.min.css">
+    <link rel="stylesheet" href="../../Css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../Css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../Css/thuvien.css">
+    <link rel="stylesheet" href="../../Css/codemau.css">
+    <link rel="stylesheet" href="../../Css/detail.css">
+    <link rel="icon" href="../../Element/Logo/IconForWeb.ico">
+    <script src="../../Js/jquery-3.4.1.min.js"></script>
+    <script src="../../Js/popper.min.js"></script>
+    <script src="../../Js/owl.carousel.min.js"></script>
+    <script src="../../Js/change_img.js"></script>
+    <script src="../../Js/bootstrap-4.4.1.js"></script>
+    <script src="../../Js/mau.js"></script>
+    <script src="../../Js/Detail-product/Ingrid-Chair.js"></script>
+    <title>HARMONY</title>
+</head>
+<body> 
+<!-- Back-to-Top -->
+<button id="back-to-top" title="Go to top"><i class="fa-light fa-angle-up"></i></button>
+<!-- Sign -->
+<div class="blur-bg-overlay d-none d-lg-block"></div>
+<div class="form-popup d-none d-lg-block">
+    <div class="border">
+        <span class="close"><i class="fa-light fa-x" style="color: #162a2c;"></i></span>
+        <div class="form-details">
+            <h2>Welcome</h2>
+            <p> Log in or sign up for an account. Furniture shopping is about to get exciting, and we wouldn’t want you to miss out on anything.</p>
+        </div>
+        <div class="form-box login">
+            <div class="form-content">
+                <h6>Quick Login</h6>
+                <div class="quick-login">
+                    <button class="social-btn facebook-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/icons-brand-facebook-1.svg" alt="Facebook" />
+                        Sign in with Facebook
+                    </button>
+                    <button class="social-btn apple-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/8ed3d547-94ff-48e1-9f20-8c14a7030a02-2000x2000-1@2x.png" alt="Apple" />
+                        Sign in with Apple
+                    </button>
+                    <button class="social-btn google-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/1298745-google-brand-branding-logo-network-icon-1@2x.png" alt="Google" />
+                        Sign in with Google
+                    </button>
+                </div>
+            </div>
+            <div class="form-content">
+                <h6>Login with Email</h6>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass"> Forgot password ?</a>
+                    <button type="submit"> Log in</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account ?
+                    <a href="#" id="signup-link" id="open-login-popup">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-content">
+                <h6>Quick Login</h6>
+                <div class="quick-login">
+                    <button class="social-btn facebook-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/icons-brand-facebook-1.svg" alt="Facebook" />
+                        Sign in with Facebook
+                    </button>
+                    <button class="social-btn apple-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/8ed3d547-94ff-48e1-9f20-8c14a7030a02-2000x2000-1@2x.png" alt="Apple" />
+                        Sign in with Apple
+                    </button>
+                    <button class="social-btn google-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/1298745-google-brand-branding-logo-network-icon-1@2x.png" alt="Google" />
+                        Sign in with Google
+                    </button>
+                </div>
+            </div>
+            <div class="form-content">
+                <h6>Sign up with Email</h6>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Usename</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Confirm Password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#">Terms & Condition</a>
+                        </label>
+                    </div>
+                    <button type="submit"> Sign Up </button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account ?
+                    <a href="#" id="signin-link">Sign in</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box forgot-password">
+            <div class="form-content">
+                <h2> Reset Password </h2>
+                <p>Enter the email address associated with your account, and we’ll email you a link to reset your password.</p>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="policy-text">
+                    </div>
+                    <button type="submit"> Send Reset Link </button>
+                </form>
+                <div class="bottom-link">
+                    Back to 
+                    <a href="#" id="forgot-password-link">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!--sign-->
+
+<!-- PopupCart______________________________ -->
+<div id="Overlay-PopupCart"></div>
+<div class="popup-cart">
+    <div class="popup-header">
+        <p>1 Item Added to Basket</p>
+        <div class="close-popupcart">
+            <i class="fa-regular fa-xmark"></i>
+        </div>
+    </div>
+    <div class="popup-content">
+        <div class="popup-img">
+            <a href="Link-Here">
+                <img src="../../Image/Detail_Img/Ingrid Chair/Ingrid-Sherpa-Armchair-Teddy-White-Font-1676545103.png" alt="Ảnh SP">
+            </a>
+        </div>
+        <div class="popup-details">
+            <div class="popup-brand">
+                <p>Product Brand</p>
+            </div>
+            <div class="popup-title_price">
+                <a href="Link-Here" class="popup-title">Ingrid Chair</a>
+                <p class="popup-price">$699</p>
+            </div>
+            <div class="popup-note">
+                <div class="popup-date">
+                    <div class="icon-note">
+                        <i class="fa-light fa-calendar-plus"></i>
+                    </div>
+                    <span>Delivery Estimated Within Aug 2 - Aug 9</span>
+                </div>
+                <div class="popup-ship">
+                    <div class="icon-note">
+                        <i class="fa-light fa-house"></i>
+                    </div>
+                    <span>Shipping to Australia from $69</span>
+                </div>
+            </div>
+            <div class="quantity-container">
+                <div class="quantity-selector">
+                    <button id="decrease-popup" onclick="decreaseQuantity('quantity-popup')">-</button>
+                    <input id="quantity-popup" name="quantity" value="1" min="1">
+                    <button id="increase-popup" onclick="increaseQuantity('quantity-popup')">+</button>
+                </div>
+                <div class="remove-item">
+                    <a href=""><i class="fa-light fa-trash-can"></i></a>
+                    <a href="Link-Here">Remove</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup-footer">
+        <div class="total">
+            <p class="total-select">Selection Total</p>
+            <p class="total-price">$768</p>
+        </div>
+        <div class="total-btn">
+            <button class="button-mau-radius">Checkout</button>
+            <button class="button-line-radius">View Cart </button>
+        </div>
+    </div>
+</div>
+<!-- PopupCart______________________________ -->
+
+    <!-- Phần tử loading -->
+    <div id="loading">
+        <div class="letter">H</div>
+        <div class="letter">A</div>
+        <div class="letter">R</div>
+        <div class="letter">M</div>
+        <div class="letter">O</div>
+        <div class="letter">N</div>
+        <div class="letter">Y</div>
+    </div>
+    <!-- Phần tử loading -->
+
+
+    <!--Chat button-->
+<div class="chat-button" onclick="toggleMessages()">
+    <i class="fa-solid fa-comment"></i>
+    <span class="notification-badge">2</span>
+ </div>
+ <!-- Chat Box -->
+ <div class="messages-container" id="messagesContainer">
+     <div class="messages-header">
+         <p>Message</p>
+         <div class="close-button" onclick="closeMessages()">
+             <i class="fa-solid fa-xmark"></i>
+         </div>
+     </div>
+     <div class="message-height">
+         <div class="message">
+             <img src="../../Element/User-Image/User.jpg" alt="User Image">
+             <div class="message-content">
+                 <div class="message-title">Nice choice! If you have any questions</div>
+                 <div class="message-time">Harmony • 3d ago</div>
+             </div>
+         </div>
+         <div class="message">
+            <img src="../../Element/User-Image/User.jpg" alt="User Image">
+             <div class="message-content">
+                 <div class="message-title">Did you know? For orders over £2500 GBP</div>
+                 <div class="message-time">Sales Team • 1w ago</div>
+             </div>
+         </div>
+     </div>
+     <a href="">
+     <div class="send-message">Send us a message</div>
+     </a>
+ </div>
+
+
+
+
+<!-- the-thong-navi -->
+<div id="the-tong-navi">
+    <!-- ============================== Navi Popup ============================== -->
+    <div class="d-lg-none" id="overlay"></div><!--Overplay-->
+    <div id="mySidenav" class="sidenavi d-lg-none">
+        <div class="navbars-top">
+            <div class="navbar">
+                <span class="nav-home">
+                    <a class="nav-logo" href="../../Src/HomePage.html"><img src="../../Element/Logo/logo_Icon_Dark.png" alt=""></a>
+                </span>
+                <span class="nav-action">
+                    <a href="../../Src/Cart.html">
+                        <i class="fa-light fa-cart-shopping"></i>
+                    </a>
+                </span>
+            </div>
+        </div><!--navbars-top-->
+        <div class="bg-navbar-btn">
+            <div class="navbar-btn">
+                <button onclick="navigateToPage1()" class="btn-nav">My Wishlist <i class="fa-regular fa-heart"></i> </button>
+                <button onclick="navigateToPage2()" class="btn-nav">My Account <i class="fa-light fa-user"></i> </button>
+            </div>
+        </div><!--navbars-button-->
+        <div class="navbar-pannel">
+            <div id="pannel-1">
+                <div class="bg-list-item1">
+                    <div class="list-item">
+                        <a href="../../Src/HomePage.html">Home</a>
+                        <div class="bg-icon-listitem">
+                            <i class="fa-light fa-house"></i>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/about-all.html">About us</a>
+                        <div class="bg-icon-listitem">
+                            <i class="fa-light fa-users"></i>
+                        </div>
+                    </div>
+                    <div id="btn-next-furnitures" class="list-item">
+                        <a href="../../Src/Product-All.html">Funitures</a>
+                        <div class="bg-icon-listitem">
+                            <i class="fa-light fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/StorageLocator.html">Stores</a>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Concepts.html">Concepts</a>
+                    </div>
+                </div><!-- bg-list-item -->
+            </div><!--pannel 1-->
+            <div id="pannel-2">
+                <div class="navbar-header">
+                    <button id="btn-back-furnitures">
+                        <a href=""><i class="fa-light fa-angle-left"></i></a>
+                        <a href="">Furnitures</a>
+                    </button>
+                </div><!-- btn-pannel-2 -->
+                <div class="bg-list-item2">
+                    <div class="list-item">
+                        <a href="../../Src/Product-Sofas.html">Sofas</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/Sofas.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Product-LoungeChairs.html">Lounge Chairs</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/LoungeChairs.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Product-Table.html">Tables</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/Table.svg" alt="">
+    
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Product-Lightning.html">Lighting</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/Lighting.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Product-Beds.html">Beds</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/beds.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Product-Chair.html">Chairs</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/Chairs.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Product-Storage-Shelving.html">Storages & Shelving</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/Storage&Shelving.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../../Src/Product-Mirror.html">Mirrors</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../../Element/IconFunirure/Mirror.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a class="title-nav" href="../../Src/Product-All.html">See All Furnitures</a>
+                    </div>
+                </div><!-- bg-list-item -->
+                <hr class="nav-line">
+                <div class="list-btn">
+                    <a class="title-nav" href="">Featured</a>
+                    <div id="btn-first" class="btn">
+                        <a href="../../Src/offers.html">
+                            <button class="button-line">Offers</button>
+                        </a>
+                        <a href="../../Src/In-Stock.html">
+                            <button class="button-line">In Stock</button>
+                        </a>
+                    </div>
+                    <div class="btn">
+                        <a id="btn-fix" href="../../Src/New-Arrivals.html">
+                            <button  class="button-line">New arrivals</button>
+                        </a>
+                    </div>
+                </div>
+                <hr class="nav-line">
+                <div class="list-btn">
+                    <a class="title-nav" href="">Explore</a>
+                    <div id="btn-first" class="btn">
+                        <a href="../../Src/Gift.html">
+                            <button class="button-line">Gifts</button>
+                        </a>
+                        <a href="../../Src/BuyingGuide.html">
+                            <button class="button-line">Buying Guides</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="fix-image-navi">
+                    <a style="text-decoration: none; color: var(--primary-color);" href="../../Src/Product-Newaddition-Sofas.html" class="nav-img">
+                        <img src="../../Element/Addition/sofaddition.webp" alt="">
+                        <p>Sofas : New additions</p>
+                    </a>
+                    <a style="text-decoration: none; color: var(--primary-color)" href="../../Src/Product-Newaddition-Mirror.html" class="nav-img">
+                        <img src="../../Element/Addition/mirroraddition.webp" alt="">
+                        <p>Mirrors : New additions</p>
+                    </a>
+                </div>
+            </div><!--pannel 2-->
+        </div>
+    </div>
+    <!-- ============================== Navi Popup ============================== -->
+    
+    
+       <!-- ============================== logo ============================== -->
+       <div class="d-lg-block d-none container">
+           <div class="row justify-content-center">
+               <a href="../../Src/HomePage.html">
+                   <div class="bg-logo">
+                   </div>
+               </a>
+           </div>
+       </div> <!--Logo-->
+       <!-- ============================== logo ============================== -->
+    
+    
+       <!-- ============================== Navi ============================== -->
+       <div class="d-lg-block d-none">
+           <div class=" container-fluid" id="bg-header">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-xl-8
+                                   col-lg-8" id="bg-navi">
+                           <ul>
+                               <li><a class="link-top" href="../../Src/HomePage.html">HOME</a></li>
+                               <li><a class="link-top" href="../../Src/about-all.html">ABOUT US</a>
+                                   <div class="drop-down">
+                                       <div class="container content">
+                                           <div class="col-xl-3 
+                                                       col-lg-3 dd-col">
+                                               <span class="dd-list-header has-child">Featured</span>
+                                               <a class="dd-list-link" href="../../Src/offers.html">Offers</a>
+                                               <a class="dd-list-link" href="../../Src/In-Stock.html">In stock</a>
+                                               <a class="dd-list-link" href="../../Src/New-Arrivals.html">New arrivals</a>
+                                               <span class="dd-list-header has-child">Explore</span>
+                                               <a class="dd-list-link" href="../../Src/Gift.html">Gift</a>
+                                               <a class="dd-list-link" href="../../Src/BuyingGuide.html">Buying Guide</a>
+                                               <a class="dd-footer-link has-child" href="../../Src/Wishlist.html">My Wishlist</a>
+                                               <a class="dd-footer-link has-child" href="../../Src/Account/account.html">My Account</a>
+                                           </div> <!--DD trái-->
+                                       <div class="col-xl-6
+                                                   col-lg-6 dd-col">
+                                           <span class="dd-list-header">About Us</span>
+                                           <div class="dd-subcol-all">
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../Src/introduction.html">Introduction</a>
+                                                   <a class="dd-list-link" href="../Src/our history.html">Our History</a>
+                                               </div>
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../Src/team.html">Join our team</a>
+                                               </div>
+                                           </div>
+                                       </div> <!--DD giữa-->
+                                           <div class="col-xl-3
+                                                       col-lg-3 dd-col">
+                                               <span class="dd-list-header">Explore</span>
+                                               <div class="dd-image">
+                                                   <a href="../../Src/Product-Newaddition-Sofas.html">
+                                                       <img src="../../Element/Addition/sofaddition.webp" alt="Ảnh">
+                                                   </a>
+                                                   <p class="dd-image-caption">Sofas : New additions</p>
+                                               </div>
+                                               <div class="dd-image">
+                                                   <a href="../../Src/Product-Newaddition-Mirrow.html">
+                                                       <img src="../../Element/Addition/mirroraddition.webp" alt="Ảnh">
+                                                   </a>
+                                                   <p class="dd-image-caption">Mirrors : New additions</p>
+                                               </div>
+                                           </div> <!--DD phải-->
+                                       </div><!--Bg Content dd-->
+                                   </div><!--Bg Drop Down Menu--></li>
+                               <li><a class="link-top" href="../../Src/Product-All.html">FURNITURE</a>
+                               <div class="drop-down">
+                                   <div class="container content">
+                                       <div class="col-xl-3 
+                                                   col-lg-3 dd-col">
+                                            <span class="dd-list-header has-child">Featured</span>
+                                            <a class="dd-list-link" href="../../Src/offers.html">Offers</a>
+                                            <a class="dd-list-link" href="../../Src/In-Stock.html">In stock</a>
+                                            <a class="dd-list-link" href="../../Src/New-Arrivals.html">New arrivals</a>
+                                            <span class="dd-list-header has-child">Explore</span>
+                                            <a class="dd-list-link" href="../../Src/Gift.html">Gift</a>
+                                            <a class="dd-list-link" href="../../Src/BuyingGuide.html">Buying Guide</a>
+                                            <a class="dd-footer-link has-child" href="../../Src/Wishlist.html">My Wishlist</a>
+                                            <a class="dd-footer-link has-child" href="../../Src/Account/account.html">My Account</a>
+                                       </div> <!--DD trái-->
+                                       <div class="col-xl-6
+                                                   col-lg-6 dd-col">
+                                           <span class="dd-list-header">Shop Furniture</span>
+                                           <div class="dd-subcol-all">
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../../Src/Product-Sofas.html"><img class="icon" src="../../Element/IconFunirure/Sofas.svg" alt="">Sofas</a>
+                                                   <a class="dd-list-link" href="../../Src/Product-LoungeChairs.html"><img class="icon" src="../../Element/IconFunirure/LoungeChairs.svg" alt="">Lounge Chairs</a>
+                                                   <a class="dd-list-link" href="../../Src/Product-Table.html"><img class="icon" src="../../Element/IconFunirure/Table.svg" alt="">Tables</a>
+                                                   <a class="dd-list-link" href="../../Src/Product-Lightning.html"><img class="icon" src="../../Element/IconFunirure/Lighting.svg" alt="">Lighting</a>
+                                               </div>
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../../Src/Product-Beds.html"><img class="icon" src="../../Element/IconFunirure/beds.svg" alt="">Beds</a>
+                                                   <a class="dd-list-link" href="../../Src/Product-Chair.html"><img class="icon" src="../../Element/IconFunirure/Chairs.svg" alt="">Chairs</a>
+                                                   <a class="dd-list-link" href="../../Src/Product-Storage-Shelving.html"><img class="icon" src="../../Element/IconFunirure/Storage&Shelving.svg" alt="">Storage & Shelving</a>
+                                                   <a class="dd-list-link" href="../../Src/Product-Mirror.html"><img class="icon" src="../../Element/IconFunirure/Mirror.svg" alt="">Mirrors</a>
+                                               </div>
+                                           </div> 
+                                           <a class="dd-list-link highlighted" href="../../Src/Product-All.html">See All Furniture</a>
+                                       </div> <!--DD giữa-->
+                                       <div class="col-xl-3
+                                                   col-lg-3 dd-col">
+                                           <span class="dd-list-header">Explore</span>
+                                           <div class="dd-image">
+                                               <a href="../../Src/Product-Newaddition-Sofas.html">
+                                                   <img src="../../Element/Addition/sofaddition.webp" alt="Ảnh">
+                                               </a>
+                                               <p class="dd-image-caption">Sofas : New additions</p>
+                                           </div>
+                                           <div class="dd-image">
+                                               <a href="../../Src/Product-Newaddition-Mirror.html">
+                                                   <img src="../../Element/Addition/mirroraddition.webp" alt="Ảnh">
+                                               </a>
+                                               <p class="dd-image-caption">Mirrors : New additions</p>
+                                           </div>
+                                       </div> <!--DD phải-->
+                                   </div><!--Bg Content dd-->
+                               </div><!--Bg Drop Down Menu-->
+                               </li>
+                               <li><a class="link-top" href="../../Src/StorageLocator.html">STORES</a></li>
+                               <li><a class="link-top" href="../../Src/Concepts.html">CONCEPTS</a></li>
+                           </ul>
+                       </div><!--Phần navi menu-->
+       
+                       <div class="col-xl-2 offset-xl-2
+                                   col-lg-3 offset-lg-1" id="bg-icon">
+                           <ul>
+                               <li><a href="../../Src/Cart.html"><i class="fa-light fa-cart-shopping"></i></a></li>
+                               <li><i id="popup-icon" class="fa-light fa-user"></i></li>
+                               <li><i id="triggle-search" class="fa-light fa-magnifying-glass"></i></li>
+                           </ul>
+                       </div><!--Bộ 3 icon-->
+                   </div>
+               </div>
+           </div>
+       </div><!--Ẩn navi ở phiên bản dưới lg-->
+       <!-- ============================== Navi ============================== -->
+</div><!-- the-tong-navi -->
+
+
+<div id="main">
+    <!-- ============================== Navi For Medium And Mobile ============================== -->
+    <div class="d-lg-none container"  >
+        <div id="bg-navi-ver-small">
+            <div class="col-md-3
+                        col-sm-3
+                        col-3 " id="icon-trai">
+                <i id="click-here-to-open" class="fa-light fa-bars"></i>
+            </div>
+            <div class="col-md-6
+                        col-sm-6 
+                        col-6">
+                    <a href="../../Src/HomePage.html">
+                        <div id="bg-logo-ver-small">
+                        </div>
+                    </a>
+            </div>
+            <div class="col-md-3
+                        col-sm-3
+                        col-3" id="icon-phai">
+                <ul>
+                    <li><a href="../../Src/Cart.html"><i class="fa-light fa-cart-shopping"></i></a></li>
+                    <li><a href="../Account/signin.html"><i class="fa-light fa-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- Thanh navi -->
+    <div class="d-lg-none">
+        <form class="form-search container-fluid">
+            <label for="search">
+                <input required="" autocomplete="off" placeholder="Search..." id="search" type="text">
+                <div class="icon">
+                    <i class="fa-light fa-magnifying-glass"></i>
+                </div>
+                <button type="reset" class="close-btn">
+                    <svg viewBox="0 0 20 20" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </label>
+        </form>
+    </div><!-- Thanh Search -->
+    <!-- ============================== Navi For Medium And Mobile ============================== -->
+
+
+
+<!-- Search-Lon
+===================================================== -->
+<div class="form-search-lon">
+    <form class="d-none d-lg-block form-search-xllg container-fluid">
+        <label for="search">
+            <input required="" autocomplete="off" placeholder="Search..." id="search" type="text">
+            <div class="icon">
+                <i class="fa-light fa-magnifying-glass"></i>
+            </div>
+            <button type="reset" class="close-btn">
+                <i class="fa-light fa-x"></i>
+            </button>
+        </label>
+    </form>
+</div>
+<!-- Search-Lon
+===================================================== -->
+
+
+
+<!-- Code trong này nha -->
+
+ <!-- breadcrum -->
+ <div class="container">
+    <div class="row">
+        <ul class="breadcrumb">
+            <li><a href="../../Src/HomePage.html">Home</a></li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Chairs</a></li>
+            <li>Ingrid Chair</li> 
+        </ul>
+    </div>
+</div> <!--breadcrum-->
+<!-- detail -->
+<div class="container">
+    <div class="row ">
+        <div class="col-xl-7
+                    col-lg-7
+                    col-md-12
+                    col-sm-12
+                    col-12" id="imgbox">
+            <div class="row">
+                <div class="col-xl-12
+                            col-lg-12 
+                            col-md-12 
+                            col-sm-12 
+                            col-12" id="bigimg">
+                    <div class="col-xl-12
+                                col-lg-12 
+                                col-md-12 
+                                col-sm-12 
+                                col-12 reproducts  ">
+                        <img src="../../Image/Detail_Img/Ingrid Chair/Ingrid-Sherpa-Armchair-Teddy-White-Font-1676545103.png" class="img-fluid" id="mainImage" alt="">
+                        <div class="arrow left-arrow" id="prevBtn"><i class="fa-light fa-angle-left" style="color: #162a2c;"></i></div>
+                        <div class="arrow right-arrow" id="nextBtn"><i class="fa-light fa-angle-right" style="color: #162a2c;"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-12 
+                    col-lg-12 
+                    col-md-12 
+                    col-sm-12 
+                    col-12" id="smallimg">
+                <div class="row owl-carousel">
+                    <div class="item"><img src="../../Image/Detail_Img/Ingrid Chair/Ingrid-Sherpa-Armchair-Teddy-White-Font-1676545103.png" class="img-fluid"></div>
+                    <div class="item"><img src="../../Image/Detail_Img/Ingrid Chair/Ingrid-Sherpa-Armchair-Teddy-White-Angle-1676545103.png" class="img-fluid"></div>
+                    <div class="item"><img src="../../Image/Detail_Img/Ingrid Chair/Ingrid-Sherpa-Armchair-Teddy-White-Side-1676545103.png" class="img-fluid"></div>
+                    <div class="item"><img src="../../Image/Detail_Img/Ingrid Chair/Ingrid-Sherpa-Armchair-Teddy-White-Back-1676545103.png" class="img-fluid"></div>
+                    <div class="item"><img src="../../Image/Detail_Img/Ingrid Chair/Ingrid-Sherpa-Armchair-Teddy-White-Copy-1679370732.png" class="img-fluid"></div>
+                    <div class="item"><img src="../../Image/Detail_Img/Ingrid Chair/Colette-Swivel-Armchair-Teddy-White-Det_5-1676545153.png" class="img-fluid"></div>
+                    <div class="item"><img src="../../Image/Detail_Img/Ingrid Chair/Ingrid-Sherpa-Armchair-Teddy-White-Square-Det_1-1676545121.png" class="img-fluid"></div>
+                    <div class="item"><img src="../../Image/Detail_Img/Ingrid Chair/Ingrid-Sherpa-Armchair-Teddy-White-Square-Set_2-1678349041_2.png" class="img-fluid"></div>
+                    <div class="item"><img src="../../Image/Detail_Img/Ingrid Chair/Ingrid-Sherpa-Armchair-Teddy-White-Square-Set_3-1678349004.png" class="img-fluid"></div>
+                    <div class="item"><img src="../../Image/Detail_Img/Ingrid Chair/Ingrid-Sherpa-Armchair-Teddy-White-Square-Set_4-1678349993.png" class="img-fluid"></div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+    
+
+        <div class="col-xl-4 offset-xl-1
+                col-lg-4 offset-lg-1
+                col-md-12
+                col-sm-12
+                col-12" id="detailbox">
+            <div class="row">
+                <div class="col-xl-12 
+                            col-lg-12
+                            col-md-12
+                            col-sm-12
+                            col-12 detail">
+                    <h5>Ingrid</h5>
+                    <h2>Ingrid Chair</h2>
+                    <p class="price"><span class="discounted-price">$699</span> <span class="original-price"></span></p>
+                    <h6 class="order">Order now</h6>
+                    <p>Ingrid is a distinctive piece with a tilted backrest and wooden sled legs. Sit back and unwind on upholstered, cozy sherpa fabric.​​</p>
+                    <p class="material"><span class="setting">Material:</span> <span class="original">Teddy White</span></p>
+                    <p class="material"><span class="setting">Color :</span> <span class="original-img">
+                        <br><a href="../Detail-product/Ingrid-Chair.html"><img src="../../Image/Detail_Img/Ingrid Chair/Colette-Swivel-Armchair-Teddy-White-Det_5-1677121462.webp" class="img-fluid first-img" alt=""></a> &nbsp; 
+                        <a href="../Detail-product/Ingrid-Chair-brown.html"><img src="../../Image/Detail_Img/Ingrid Chair/Ingrid-Sherpa-Armchair-Teddy-Brown-Square-Det_4-1675766877.webp" class="img-fluid" alt=""></a> </span></p>
+                    <h6 class="reasons"><span class="buy"> Reasons to buy:</span></h6>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check" style="color: #5e6c5b;padding-left: 1px;"></i> 7 in stock</li>
+                        <li><i class="fa-light fa-truck-fast" style="color: #5e6c5b;"></i> Shipping to Australia from $69</li>
+                        <li><i class="fa-light fa-calendar-plus" style="color: #5e6c5b; padding-left: 2px;"></i> Delivery Estimated Within Aug 2 - Aug 9</li>
+                        <li><img src="../../Image/Detail_Img/element/7952200_return_box_shipping_distribution_order_icon.png" class="img-fluid" style="padding-left: 1px;" alt=""> 14-Day Returns</li>
+                        <li><img src="../../Image/Detail_Img/element/24.png" class="img-fluid" alt=""> Typically dispatched within 24 hours</li>
+                        
+                    </ul>
+                    
+                    
+                    <div class="quantity-container">
+                        <label for="quantity">Quantity</label>
+                        <div class="quantity-selector">
+                            <button id="decrease-detail" onclick="decreaseQuantity('quantity-detail')">-</button>
+                            <input id="quantity-detail" name="quantity" value="1" min="1">
+                            <button id="increase-detail" onclick="increaseQuantity('quantity-detail')">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row pay" >
+                <div class="col-xl-9  
+                            col-lg-9
+                            col-md-9
+                            col-sm-9
+                            col-9 button">
+                    <button class="add-to-basket open-cart-popup">Add to cart - $699</button>
+                </div>
+                <div class="col-xl-2 offset-xl-1
+                            col-lg-2 offset-lg-1
+                            col-md-3
+                            col-sm-3
+                            col-3  button">
+                    <button onclick="navigateToPage()" class="add-to-heart"><i class="fa-light fa-heart"></i></button>
+                </div>
+                <div class="col-xl-12
+                            col-lg-12
+                            col-md-12
+                            col-sm-12
+                            col-12 payment-methods">
+                    <p><i class="fa-light fa-shield-check" style="color: #162a2c;"></i>Purchase with Confidence</p>
+                    <img src="../../Image/Detail_Img/element/visa.png" alt="Visa">
+                    <img src="../../Image/Detail_Img/element/mastercard.png" alt="Mastercard">
+                    <img src="../../Image/Detail_Img/element/paypal.png" alt="PayPal">
+                    <img src="../../Image/Detail_Img/element/applepay.png" alt="Apple Pay">
+                </div>
+            <!-- <div class="col-xl-12
+                        col-lg-12
+                        col-md-12
+                        col-sm-12
+                        col-12 payment-methods">
+                <p><i class="fa-light fa-shield-check" style="color: #162a2c;"></i>Purchase with Confidence</p>
+                <img src="../../Image/Detail_Img/element/visa.png" alt="Visa">
+                <img src="../../Image/Detail_Img/element/mastercard.png" alt="Mastercard">
+                <img src="../../Image/Detail_Img/element/paypal.png" alt="PayPal">
+                <img src="../../Image/Detail_Img/element/applepay.png" alt="Apple Pay">
+            </div>
+            <div class="col-xl-12
+                        col-lg-12
+                        col-md-12
+                        col-sm-12
+                        col-12 detail-text">
+                <div class="accordion">
+                    <div class="accordion-item active">
+                        <div class="accordion-header">
+                            <h5>Detail</h5>
+                            <i class="arrow fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <h6>Dimensions:</h6>
+                            <p>W65.7" x D90.6" x H48"</p>
+                            <br>
+                            <h6>Mattress Space Dimension:</h6>
+                            <p>60.6" x 81.1" with 3.5" Mattress Inset</p>
+                            <br>
+                            <h6>Product Weight:</h6>
+                            <p>124.1 lbs</p>
+                            <br>
+                            <h6>Slat Height:</h6>
+                            <p>11.4"</p>
+                            <br>
+                            <h6>Leg Height:</h6>
+                            <p>793.7 lbs</p>
+                            <br>
+                            <h6>Max Bearing Support:</h6>
+                            <p>6.9"</p>
+                            <br>
+                            <img src="../../Image/Detail_Img/Madison Bed/Madison-Queen-Bed-Bisque-Dim-US-1655217299.jpg" class="img-fluid" alt="Bed Dimensions">
+                            <br>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                            <h5>Delivery & Warranty:</h5>
+                            <i class="arrow fas fa-chevron-down"></i>
+                        </div>
+                        <div class="accordion-body">
+                            <h6>Cancellation:</h6>
+                            <p>Free Before Dispatch.</p>
+                            <br>
+                            <h6>Warranty:</h6>
+                            <p>Frame 3 Years, Foam & Fabric 1 Year. Mulberry Extended Warranty.</p>
+                            <br>
+                            <h6>Return Policy:</h6>
+                            <p>14-Day Return.</p>
+                            <br>
+                            <h6>Assembly:</h6>
+                            <p>Bedframe needs assembly.</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container bg-content">
+    <div class="tab">
+        <button class="tablinks active" onclick="openCity(event, 'London')">Product Marterial & Care</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Product Dimension</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Delivery & Warranty</button>
+    </div>
+    
+    <div id="London" class="tabcontent">
+       
+        <div class="tab-text">
+            <p class="material-text"><span class="setting">Material:</span> <span class="original">Frame: Plywood and Laminated veneer lumber; Leg: Solid Rubber Wood with Oak Veneer</span></p>
+            <p class="material-text"><span class="setting">Fabric Composition:</span> <span class="original">100% Polyester</span></p>
+            <p class="material-text"><span class="setting">Finish:</span> <span class="original">White Wash Finish on Wood</span></p>
+            <p class="material-text"><span class="setting">Filling:</span> <span class="original">Foam, Fiber and Pocket Spring Filled Seat; Foam and Fiber Filled Back</span></p>
+            <p class="material-text"><span class="setting">Suspension:</span> <span class="original">Sinuous Spring</span></p>
+            <p class="material-text"><span class="setting">Cover Type:</span> <span class="original">Fixed</span></p>
+            <p class="material-text"><span class="setting">Care:</span> <span class="original">Fabric Chair, Wooden Legs</span></p>
+            <p class="material-text"><span class="setting">Prop65 Warning:</span> <span class="original">Formaldehyde</span></p>
+            <p class="material-text"><span class="setting">Color Variance:</span> <span class="original">Disclaimer</span></p>
+        </div>
+        
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <div class="tab-img">
+            <img src="../../Image/Detail_Img/Ingrid Chair/Ingrid-Sherpa-Armchair-Teddy-White-Dim-US-1679281625.png" class="img-fluid" alt="">
+        </div>
+        <div class="tab-text">
+            <p class="material-text"><span class="setting">Dimension:</span> <span class="original">W31.1" x D37" x H29.3"</span></p>
+            <p class="material-text"><span class="setting">Seatable Width:</span> <span class="original">29.5"</span></p>
+            <p class="material-text"><span class="setting">Seating Depth:</span> <span class="original">23.6"</span></p>
+            <p class="material-text"><span class="setting">Seating Height:</span> <span class="original">16.7"</span></p>
+            <p class="material-text"><span class="setting">Product Weight:</span> <span class="original">49.6 lbs</span></p>
+            <p class="material-text"><span class="setting">Packaging Dimension:</span> <span class="original">1 Boxes</span></p>
+            <p class="material-text"><span class="setting">Leg Height:</span> <span class="original">Front Leg: 6.3"; Rear Leg: 5.5"</span></p>
+            <p class="material-text"><span class="setting">Backrest Height:</span> <span class="original">14.2"</span></p>
+            <p class="material-text"><span class="setting">Max Bearing Support:</span> <span class="original">330.1 lbs</span></p>
+        </div>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <div class="tab-text">
+            <p class="material-text"><span class="setting">Cancellation:</span> <span class="original">Free Before Dispatch</span></p>
+            <p class="material-text"><span class="setting">Warranty:</span> <span class="original">Frame 3 Years, Foam & Fabric 1 Year, Mulberry Extended Warranty (Add-On)</span></p>
+            <p class="material-text"><span class="setting">Return Policy:</span> <span class="original">14-Day Return</span></p>
+            <p class="material-text"><span class="setting">Assembly:</span> <span class="original"> Legs to be Fitted</span></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container ">
+    <div class="row bg-viewmore">
+        <div class="col-xl-12
+                    col-lg-12
+                    col-md-12
+                    col-sm-12
+                    col-12 viewmore">
+            <h3>Discover more</h3>
+            <br>
+            <img src="../../Image/Detail_Img/Ingrid Chair/Ingrid-Sherpa-Armchair-Teddy-White-Square-Set_2-1678349041_2.jpg" class="img-fluid" alt="">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-6
+                    col-lg-6
+                    col-md-12
+                    col-sm-12
+                    col-12" id="box">
+            <div class="row">
+                <div class="col-xl-12
+                            col-lg-12
+                            col-md-12
+                            col-sm-12
+                            col-12 story">
+                    <br>
+                    <h3>Story</h3>
+                    <br>
+                    <p> The Chairs sweeping backrest and curved seat provides the perfect place to relax and unwind. <br><br>
+
+                        Designer Stine Aas has carefully considered every element of the sofa, combining organic shapes to create furniture that mirrors the shape of the human body. The curved shape and backrest combine to create a gentle and cosy space. The powder-coated steel legs are unobtrusive.
+                    
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-5 offset-xl-1
+                    col-lg-5 offset-lg-1
+                    col-md-12
+                    col-sm-12
+                    col-12" id="box">
+            <div class="row" >
+                <div class="col-xl-12
+                            col-lg-12
+                            col-md-12
+                            col-sm-12
+                            col-12 designer">
+                    <br>
+                    <h3>Designed by</h3>
+                    
+                    <img src="../../Image/Detail_Img/design/stine-aas.jpg" class="img-fluid" alt="">
+                    <br>
+                    <h6>Stine Aas</h6>
+                    <p>With an MA in spatial and furniture design from Bergen Academy of Art and Design, Stine Aas creates products and furniture that combine character and simplicity. <br><br>
+                     Her work is inspired by the everyday interactions between people and the objects around them, and she typically combines the visual, the tactile and the functional in her design. 
+                     Working from Bergen, Aas has exhibited internationally in Stockholm, Helsinki, London, Milan, New York.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-12 recomment">
+            <h3>You may also like</h3>
+            <div class="mui-ten">
+                <div class="arrow left-arrow" id="prevBtn"><i class="fa-light fa-angle-left" style="color: #162a2c;"></i></div>
+                <div class="arrow right-arrow" id="nextBtn"><i class="fa-light fa-angle-right" style="color: #162a2c;"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row pro owl-carousel" >
+        <a href="../detail/Madison.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../../Image/Detail_Img/ProductCustom/BedRoom-2/Bed/Madison-Bed-Bisque-Det/png.png" class="img-fluid default">
+            <img src="../../Image/Detail_Img/ProductCustom/BedRoom-2/Bed/Madison-Bed-Bisque-Det/Madison-Bed-Bisque-Set_1-1655973031.jpg" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Madison</p>
+                <p class="t2">Madison Bed
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$899 </p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div> <!--cost-->
+            <div class="t5">
+                Characterized by its biscuit tufted headboard, the Madison Bed brings comfort and…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 5 in stock
+            </div>
+        </a>
+        <a href="../detail/Sed-bed.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../../Image/Detail_Img/ProductCustom/BedRoom-1/Bed/Seb_Bed/png.png" class="img-fluid default">
+            <img src="../../Image/Detail_Img/ProductCustom/BedRoom-1/Bed/Seb_Bed/Seb-King-Size-Bed-Lifestyle-Crop.webp" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Rustic</p>
+                <p class="t2">Seb Bed
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$999  </p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div> <!--cost-->
+            <div class="t5">
+                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 2 in stock
+            </div>
+        </a>
+        <a href="../detail/Set-Nightstand.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../../Image/Detail_Img/ProductCustom/BedRoom-1/Storage/Seb_Nightstand/png.png" class="img-fluid default">
+            <img src="../../Image/Detail_Img/ProductCustom/BedRoom-1/Storage/Seb_Nightstand/bedsidetable-room2.png" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Rustic </p>
+                <p class="t2">Seb Nightstand 
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$359 </p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div> <!--cost-->
+            <div class="t5">
+                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 5 in stock
+            </div>
+        </a>
+        <a href="../detail/Madison-Ottoman.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../../Image/Detail_Img/ProductCustom/BedRoom-2/Sofa/Madison_Ottoman/171889771433417286.png" class="img-fluid default">
+            <img src="../../Image/Detail_Img/ProductCustom/BedRoom-2/Sofa/Madison_Ottoman/Madison-Ottoman-Bisque-Set_1.jpg" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Madison</p>
+                <p class="t2">Madison Ottoman
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$349</p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div> <!--cost-->
+            <div class="t5">
+                Madison is a quintessential mid-century modern sofa with classic biscuit tufting, round​…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 9 in stock
+            </div>
+        </a>
+        <a href="../detail/Seb-chair.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../../Image/Detail_Img/ProductCustom/DiningRoom-1/Chair/Seb_Chair_Dark_Graphite/Chair.png" class="img-fluid default">
+            <img src="../../Image/Detail_Img/ProductCustom/DiningRoom-1/Chair/Seb_Chair_Dark_Graphite/Seb-Chair-Dark-Graphite-Square-Set_2-1663208786.webp" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Rustic</p>
+                <p class="t2">Seb Chair
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$538</p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div>
+            <div class="t5">
+                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 6 in stock
+            </div>
+        </a>
+        <a href="../detail/Seb-Storage.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../../Image/Detail_Img/ProductCustom/DiningRoom-1/Storage/Seb_Nightstand_Storage/png.png" class="img-fluid default">
+            <img src="../../Image/Detail_Img/ProductCustom/DiningRoom-1/Storage/Seb_Nightstand_Storage/Seb-Sideboard-160cm-Lifestyle-Crop.webp" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Rustic</p>
+                <p class="t2">Seb Srorage
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$559</p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div>
+            <div class="t5">
+                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 6 in stock
+            </div>
+        </a>
+        <a href="../detail/Seb-Table.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../../Image/Detail_Img/ProductCustom/DiningRoom-1/Table/Seb_Extendable_Dining_Table/png.png" class="img-fluid default">
+            <img src="../../Image/Detail_Img/ProductCustom/DiningRoom-1/Table/Seb_Extendable_Dining_Table/Seb-Extendable-Dining-Table-Set_1.webp" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Rustic</p>
+                <p class="t2">Seb Extendable
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$999</p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div> <!--cost-->
+            <div class="t5">
+                Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 6 in stock
+            </div>
+        </a>
+        <a href="../detail/Austen-Chair.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../../Image/Detail_Img/ProductCustom/DiningRoom-2/Chair/Austen_Chair_White_Wash/png.png" class="img-fluid default">
+            <img src="../../Image/Detail_Img/ProductCustom/DiningRoom-2/Chair/Austen_Chair_White_Wash/Austen-Chair-White-Wash-Set_5-1666342697.jpg" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Austen</p>
+                <p class="t2">Austen Chair
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$658</p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div>
+            <div class="t5">
+                Serve up mid-century modern charm alongside your daily meals with Austen, an elegant dining…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 5 in stock
+            </div>
+        </a>
+        <a href="../detail/Casa-Bench.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../../Image/Detail_Img/ProductCustom/DiningRoom-2/LoungeChair/casa_bench/none_Bg.png" class="img-fluid default">
+            <img src="../../Image/Detail_Img/ProductCustom/DiningRoom-2/LoungeChair/casa_bench/Casa-Becnh-Square-Set_2-1692756113.jpg" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Casa</p>
+                <p class="t2">Casa Bench
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$469</p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div>
+            <div class="t5">
+                Designed with thoughtful proportions to elevate your space, Casa’s angled blade legs showcase...
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 5 in stock
+            </div>
+        </a>
+        <a href="../detail/Casa-Sideboard.html" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 reproducts productcard">
+            <img src="../../Image/Detail_Img/ProductCustom/DiningRoom-2/Storge/Casa_Sideboard/png.png" class="img-fluid default">
+            <img src="../../Image/Detail_Img/ProductCustom/DiningRoom-2/Storge/Casa_Sideboard/casasideboard-room1.jpg" class="img-fluid hover d-none d-lg-block">
+            <div>
+                <p class="t1">Casa</p>
+                <p class="t2">Casa Sideboard
+                </p>
+            </div>
+            <div class="cost">
+                <div class="row" id="row">
+                    <p class="t3">$1,199</p>
+                    <p class="t4"><del></del></p>
+                    
+                </div>
+            </div>
+            <div class="t5">
+                With a rounded chamfer stop that adds subtle visual appeal, Casa delivers sophistiction and…
+            </div>
+            <div class="t6">
+                <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 2 in stock
+            </div>
+        </a>
+    </div>
+</div> 
+    
+        
+
+
+<!-- Code trong này nha -->
+    <!-- ================================== Footer ================================= -->
+    <div class="container-fluid" id="bg-footer">
+        <div class="row">
+            <div class="col-xl-4
+                        col-lg-5
+                        col-md-4
+                        col-sm-6
+                        col-6" id="footer-slogan">
+            </div><!-- SLOGAN -->
+            <!-- ================== Only XL =================== -->
+            <div class="footer-header col-xl-2 d-none d-xl-block"> 
+                <p>About Us</p>
+                <ul class="footer-list">
+                    <li><a href="../../Src/introduction.html">Introduction</a></li>
+                    <li><a href="../../Src/our history.html">Our History</a></li>
+                    <li><a href="../../Src/team.html">Join Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Inspire</p>
+                <ul class="footer-list">
+                    <li><a href="../../Src/PersonalShopping.html">Personal shopping</a></li>
+                    <li><a href="../../Src/Brochure.html">Brochure</a></li>
+                    <li><a href="../../Src/BuyingGuide.html">Buying Guides</a></li>
+                    <li><a href="../../Src/giftcard.html">Gift cards</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Customer service</p>
+                <ul class="footer-list">
+                    <li><a href="../../Src/ContactUs.html">Contact Us</a></li>
+                    <li><a href="../../Src/HelpAdvice.html">Help and advice</a></li>
+                    <li><a href="../../Src/Delivery.html">Delivery</a></li>
+                    <li><a href="../../Src/MadeToOrder.html">Made to order</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Professional</p>
+                <ul class="footer-list">
+                    <li><a href="../../Src/Contract.html">Contracts</a></li>
+                    <li><a href="../../Src/Contactourbuyers.html">Contact our buyers</a></li>
+                </ul>
+            </div>
+            <!-- ================== Only XL =================== -->
+
+
+
+
+            <!-- ================== Only responsive =================== -->
+            <div class="footer-header 
+                        col-lg-4 offset-lg-0 
+                        col-md-3 offset-md-1
+                        d-none
+                        d-md-block
+                        d-xl-none"> 
+                <p>About Us</p>
+                <ul class="footer-list">
+                    <li><a href="../../Src/introduction.html">Introduction</a></li>
+                    <li><a href="../../Src/our history.html">Our History</a></li>
+                    <li><a href="../../Src/team.html">Join Our Team</a></li>
+                </ul>
+            </div><!--footer phien ban lg va md-->
+
+            <div class="footer-header 
+                        col-lg-3 
+                        col-md-3 
+                        d-none
+                        d-md-block
+                        d-xl-none">
+                <p>Inspire</p>
+                <ul class="footer-list">
+                    <li><a href="../../Src/PersonalShopping.html">Personal shopping</a></li>
+                    <li><a href="../../Src/Brochure.html">Brochure</a></li>
+                    <li><a href="../../Src/BuyingGuide.html">Buying Guides</a></li>
+                    <li><a href="../../Src/giftcard.html">Gift cards</a></li>
+                </ul>
+            </div><!--footer phien ban lg va md-->
+
+            <div class="footer-header
+                        d-md-none
+                        col-sm-5 offset-sm-1
+                        col-5 offset-1">
+                <a href="../../Src/about-all.html">About Us</a>
+                <a href="../../Src/Inspire-all.html">Inspire</a>
+            </div><!--Phien ban sm va xs-->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12" id="bg-footer-content">
+
+                <div class="footer-social 
+                            col-xl-12 
+                            col-lg-5 
+                            col-md-4
+                            col-sm-6
+                            col-6">
+                    <p>Follow Us</p>
+                    <div>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div><!--Social media full phien ban-->
+
+                <div class="footer-header
+                            d-md-none
+                            col-sm-5 offset-sm-1
+                            col-5 offset-1">
+                    <a href="../../Src/CustomService-All.html">Customer service</a>
+                    <a href="../../Src/Professional-All.html">Professional</a>
+                </div><!--Phien ban sm va xs-->
+
+                <div class="footer-header 
+                            col-lg-4 offset-lg-0 
+                            col-md-3 offset-md-1 
+                            d-none d-md-block d-xl-none">
+                    <p>Customer service</p>
+                    <ul class="footer-list">
+                        <li><a href="../../Src/ContactUs.html">Contact Us</a></li>
+                        <li><a href="../../Src/HelpAdvice.html">Help and advice</a></li>
+                        <li><a href="../../Src/Delivery.html">Delivery</a></li>
+                        <li><a href="../../Src/MadeToOrder.html">Made to order</a></li>
+                    </ul>
+                </div><!--footer phien ban lg va md-->
+
+                <div class="footer-header 
+                            col-lg-3 
+                            col-md-4 
+                            d-none
+                            d-md-block 
+                            d-xl-none">
+                    <p>Professional</p>
+                    <ul class="footer-list">
+                        <li><a href="../../Src/Contract.html">Contracts</a></li>
+                        <li><a href="../../Src/Contactourbuyers.html">Contact our buyers</a></li>
+                    </ul>
+                </div><!--footer phien ban lg va md-->
+
+            </div><!-- footer-khi_xuong_dong -->
+            <!-- ================== Only responsive =================== -->
+        </div><!--content ben trong footer-->
+        <div id="footer-name">
+        </div><!--NAME HARMONY-->
+    </div><!--bg-footer-->
+    <!-- ============================== Footer ============================== -->
+</div><!--Hàm main code trong này-->
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,2276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Thư viện button: button-text; button-line(-radius); button-mau(-radius); -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../Css/bootstrap-4.4.1.css">
+    <link rel="stylesheet" href="../Css/Icon/all.min.css">
+    <link rel="stylesheet" href="../Css/thuvien.css">
+    <link rel="stylesheet" href="../Css/codemau.css">
+    <link rel="stylesheet" href="../Css/product.css">
+    <link rel="icon" href="../Element/Logo/IconForWeb.ico">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../Js/jquery-3.4.1.min.js"></script>
+    <script src="../Js/popper.min.js"></script>
+    <script src="../Js/bootstrap-4.4.1.js"></script>
+    <script src="../Js/product-topupfliter.js"></script>
+    <script src="../Js/products.js"></script>
+    <script src="../Js/mau.js"></script>
+    
+        <title>HARMONY</title>
+</head>
+<body>
+
+<!-- Back-to-Top -->
+<button id="back-to-top" title="Go to top"><i class="fa-light fa-angle-up"></i></button>
+<!-- Sign -->
+<div class="blur-bg-overlay d-none d-lg-block"></div>
+<div class="form-popup d-none d-lg-block">
+    <div class="border">
+        <span class="close"><i class="fa-light fa-x" style="color: #162a2c;"></i></span>
+        <div class="form-details">
+            <h2>Welcome</h2>
+            <p> Log in or sign up for an account. Furniture shopping is about to get exciting, and we wouldn’t want you to miss out on anything.</p>
+        </div>
+        <div class="form-box login">
+            <div class="form-content">
+                <h6>Quick Login</h6>
+                <div class="quick-login">
+                    <button class="social-btn facebook-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/icons-brand-facebook-1.svg" alt="Facebook" />
+                        Sign in with Facebook
+                    </button>
+                    <button class="social-btn apple-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/8ed3d547-94ff-48e1-9f20-8c14a7030a02-2000x2000-1@2x.png" alt="Apple" />
+                        Sign in with Apple
+                    </button>
+                    <button class="social-btn google-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/1298745-google-brand-branding-logo-network-icon-1@2x.png" alt="Google" />
+                        Sign in with Google
+                    </button>
+                </div>
+            </div>
+            <div class="form-content">
+                <h6>Login with Email</h6>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass"> Forgot password ?</a>
+                    <button type="submit"> Log in</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account ?
+                    <a href="#" id="signup-link" id="open-login-popup">Sign up</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-content">
+                <h6>Quick Login</h6>
+                <div class="quick-login">
+                    <button class="social-btn facebook-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/icons-brand-facebook-1.svg" alt="Facebook" />
+                        Sign in with Facebook
+                    </button>
+                    <button class="social-btn apple-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/8ed3d547-94ff-48e1-9f20-8c14a7030a02-2000x2000-1@2x.png" alt="Apple" />
+                        Sign in with Apple
+                    </button>
+                    <button class="social-btn google-btn">
+                        <img src="https://c.animaapp.com/HdIJNRNt/img/1298745-google-brand-branding-logo-network-icon-1@2x.png" alt="Google" />
+                        Sign in with Google
+                    </button>
+                </div>
+            </div>
+            <div class="form-content">
+                <h6>Sign up with Email</h6>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Usename</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Confirm Password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#">Terms & Condition</a>
+                        </label>
+                    </div>
+                    <button type="submit"> Sign Up </button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account ?
+                    <a href="#" id="signin-link">Sign in</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box forgot-password">
+            <div class="form-content">
+                <h2> Reset Password </h2>
+                <p>Enter the email address associated with your account, and we’ll email you a link to reset your password.</p>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="policy-text">
+                    </div>
+                    <button type="submit"> Send Reset Link </button>
+                </form>
+                <div class="bottom-link">
+                    Back to 
+                    <a href="#" id="forgot-password-link">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!--sign-->
+
+    <!-- Phần tử loading -->
+    <div id="loading">
+        <div class="letter">H</div>
+        <div class="letter">A</div>
+        <div class="letter">R</div>
+        <div class="letter">M</div>
+        <div class="letter">O</div>
+        <div class="letter">N</div>
+        <div class="letter">Y</div>
+    </div>
+    <!-- Phần tử loading -->
+
+    <!--Chat button-->
+<div class="chat-button" onclick="toggleMessages()">
+    <i class="fa-solid fa-comment"></i>
+    <span class="notification-badge">2</span>
+ </div>
+ <!-- Chat Box -->
+ <div class="messages-container" id="messagesContainer">
+     <div class="messages-header">
+         <p>Message</p>
+         <div class="close-button" onclick="closeMessages()">
+             <i class="fa-solid fa-xmark"></i>
+         </div>
+     </div>
+     <div class="message-height">
+         <div class="message">
+             <img src="../Element/User-Image/User.jpg" alt="User Image">
+             <div class="message-content">
+                 <div class="message-title">Nice choice! If you have any questions</div>
+                 <div class="message-time">Harmony • 3d ago</div>
+             </div>
+         </div>
+         <div class="message">
+            <img src="../Element/User-Image/User.jpg" alt="User Image">
+             <div class="message-content">
+                 <div class="message-title">Did you know? For orders over £2500 GBP</div>
+                 <div class="message-time">Sales Team • 1w ago</div>
+             </div>
+         </div>
+     </div>
+     <a href="">
+     <div class="send-message">Send us a message</div>
+     </a>
+ </div>
+
+
+<!-- the-thong-navi -->
+<div id="the-tong-navi">
+    <!-- ============================== Navi Popup ============================== -->
+    <div class="d-lg-none" id="overlay"></div><!--Overplay-->
+    <div id="mySidenav" class="sidenavi d-lg-none">
+        <div class="navbars-top">
+            <div class="navbar">
+                <span class="nav-home">
+                    <a class="nav-logo" href="../Src/HomePage.html"><img src="../Element/Logo/logo_Icon_Dark.png" alt=""></a>
+                </span>
+                <span class="nav-action">
+                    <a href="../Src/Cart.html">
+                        <i class="fa-light fa-cart-shopping"></i>
+                    </a>
+                </span>
+            </div>
+        </div><!--navbars-top-->
+        <div class="bg-navbar-btn">
+            <div class="navbar-btn">
+                <button onclick="navigateToPage1()" class="btn-nav">My Wishlist <i class="fa-regular fa-heart"></i> </button>
+                <button onclick="navigateToPage2()" class="btn-nav">My Account <i class="fa-light fa-user"></i> </button>
+            </div>
+        </div><!--navbars-button-->
+        <div class="navbar-pannel">
+            <div id="pannel-1">
+                <div class="bg-list-item1">
+                    <div class="list-item">
+                        <a href="../Src/HomePage.html">Home</a>
+                        <div class="bg-icon-listitem">
+                            <i class="fa-light fa-house"></i>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../Src/about-all.html">About us</a>
+                        <div class="bg-icon-listitem">
+                            <i class="fa-light fa-users"></i>
+                        </div>
+                    </div>
+                    <div id="btn-next-furnitures" class="list-item">
+                        <a href="../Src/Product-All.html">Funitures</a>
+                        <div class="bg-icon-listitem">
+                            <i class="fa-light fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../Src/StorageLocator.html">Stores</a>
+                    </div>
+                    <div class="list-item">
+                        <a href="../Src/Concepts.html">Concepts</a>
+                    </div>
+                </div><!-- bg-list-item -->
+            </div><!--pannel 1-->
+            <div id="pannel-2">
+                <div class="navbar-header">
+                    <button id="btn-back-furnitures">
+                        <a href=""><i class="fa-light fa-angle-left"></i></a>
+                        <a href="">Furnitures</a>
+                    </button>
+                </div><!-- btn-pannel-2 -->
+                <div class="bg-list-item2">
+                    <div class="list-item">
+                        <a href="../Src/Product-Sofas.html">Sofas</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../Element/IconFunirure/Sofas.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../Src/Product-LoungeChairs.html">Lounge Chairs</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../Element/IconFunirure/LoungeChairs.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../Src/Product-Table.html">Tables</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../Element/IconFunirure/Table.svg" alt="">
+    
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../Src/Product-Lightning.html">Lighting</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../Element/IconFunirure/Lighting.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../Src/Product-Beds.html">Beds</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../Element/IconFunirure/beds.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../Src/Product-Chair.html">Chairs</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../Element/IconFunirure/Chairs.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../Src/Product-Storage-Shelving.html">Storages & Shelving</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../Element/IconFunirure/Storage&Shelving.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="../Src/Product-Mirror.html">Mirrors</a>
+                        <div class="bg-icon-listitem">
+                            <img src="../Element/IconFunirure/Mirror.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a class="title-nav" href="../Src/Product-All.html">See All Furnitures</a>
+                    </div>
+                </div><!-- bg-list-item -->
+                <hr class="nav-line">
+                <div class="list-btn">
+                    <a class="title-nav" href="">Featured</a>
+                    <div id="btn-first" class="btn">
+                        <a href="../Src/offers.html">
+                            <button class="button-line">Offers</button>
+                        </a>
+                        <a href="../Src/In-Stock.html">
+                            <button class="button-line">In Stock</button>
+                        </a>
+                    </div>
+                    <div class="btn">
+                        <a id="btn-fix" href="../Src/New-Arrivals.html">
+                            <button  class="button-line">New arrivals</button>
+                        </a>
+                    </div>
+                </div>
+                <hr class="nav-line">
+                <div class="list-btn">
+                    <a class="title-nav" href="">Explore</a>
+                    <div id="btn-first" class="btn">
+                        <a href="../Src/Gift.html">
+                            <button class="button-line">Gifts</button>
+                        </a>
+                        <a href="../Src/BuyingGuide.html">
+                            <button class="button-line">Buying Guides</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="fix-image-navi">
+                    <a style="text-decoration: none; color: var(--primary-color);" href="../Src/Product-Newaddition-Sofas.html" class="nav-img">
+                        <img src="../Element/Addition/sofaddition.webp" alt="">
+                        <p>Sofas : New additions</p>
+                    </a>
+                    <a style="text-decoration: none; color: var(--primary-color)" href="../Src/Product-Newaddition-Mirror.html" class="nav-img">
+                        <img src="../Element/Addition/mirroraddition.webp" alt="">
+                        <p>Mirrors : New additions</p>
+                    </a>
+                </div>
+            </div><!--pannel 2-->
+        </div>
+    </div>
+    <!-- ============================== Navi Popup ============================== -->
+    
+    
+       <!-- ============================== logo ============================== -->
+       <div class="d-lg-block d-none container">
+           <div class="row justify-content-center">
+               <a href="../Src/HomePage.html">
+                   <div class="bg-logo">
+                   </div>
+               </a>
+           </div>
+       </div> <!--Logo-->
+       <!-- ============================== logo ============================== -->
+    
+    
+       <!-- ============================== Navi ============================== -->
+       <div class="d-lg-block d-none">
+           <div class=" container-fluid" id="bg-header">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-xl-8
+                                   col-lg-8" id="bg-navi">
+                           <ul>
+                               <li><a class="link-top" href="../Src/HomePage.html">HOME</a></li>
+                               <li><a class="link-top" href="../Src/about-all.html">ABOUT US</a>
+                                   <div class="drop-down">
+                                       <div class="container content">
+                                           <div class="col-xl-3 
+                                                       col-lg-3 dd-col">
+                                               <span class="dd-list-header has-child">Featured</span>
+                                               <a class="dd-list-link" href="../Src/offers.html">Offers</a>
+                                               <a class="dd-list-link" href="../Src/In-Stock.html">In stock</a>
+                                               <a class="dd-list-link" href="../Src/New-Arrivals.html">New arrivals</a>
+                                               <span class="dd-list-header has-child">Explore</span>
+                                               <a class="dd-list-link" href="../Src/Gift.html">Gift</a>
+                                               <a class="dd-list-link" href="../Src/BuyingGuide.html">Buying Guide</a>
+                                               <a class="dd-footer-link has-child" href="../Src/Wishlist.html">My Wishlist</a>
+                                               <a class="dd-footer-link has-child" href="../Src/Account/account.html">My Account</a>
+                                           </div> <!--DD trái-->
+                                       <div class="col-xl-6
+                                                   col-lg-6 dd-col">
+                                           <span class="dd-list-header">About Us</span>
+                                           <div class="dd-subcol-all">
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../Src/introduction.html">Introduction</a>
+                                                   <a class="dd-list-link" href="../Src/our history.html">Our History</a>
+                                               </div>
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../Src/team.html">Join our team</a>
+                                               </div>
+                                           </div>
+                                       </div> <!--DD giữa-->
+                                           <div class="col-xl-3
+                                                       col-lg-3 dd-col">
+                                               <span class="dd-list-header">Explore</span>
+                                               <div class="dd-image">
+                                                   <a href="../Src/Product-Newaddition-Sofas.html">
+                                                       <img src="../Element/Addition/sofaddition.webp" alt="Ảnh">
+                                                   </a>
+                                                   <p class="dd-image-caption">Sofas : New additions</p>
+                                               </div>
+                                               <div class="dd-image">
+                                                   <a href="../Src/Product-Newaddition-Mirrow.html">
+                                                       <img src="../Element/Addition/mirroraddition.webp" alt="Ảnh">
+                                                   </a>
+                                                   <p class="dd-image-caption">Mirrors : New additions</p>
+                                               </div>
+                                           </div> <!--DD phải-->
+                                       </div><!--Bg Content dd-->
+                                   </div><!--Bg Drop Down Menu--></li>
+                               <li><a class="link-top" href="../Src/Product-All.html">FURNITURE</a>
+                               <div class="drop-down">
+                                   <div class="container content">
+                                       <div class="col-xl-3 
+                                                   col-lg-3 dd-col">
+                                            <span class="dd-list-header has-child">Featured</span>
+                                            <a class="dd-list-link" href="../Src/offers.html">Offers</a>
+                                            <a class="dd-list-link" href="../Src/In-Stock.html">In stock</a>
+                                            <a class="dd-list-link" href="../Src/New-Arrivals.html">New arrivals</a>
+                                            <span class="dd-list-header has-child">Explore</span>
+                                            <a class="dd-list-link" href="../Src/Gift.html">Gift</a>
+                                            <a class="dd-list-link" href="../Src/BuyingGuide.html">Buying Guide</a>
+                                            <a class="dd-footer-link has-child" href="../Src/Wishlist.html">My Wishlist</a>
+                                            <a class="dd-footer-link has-child" href="../Src/Account/account.html">My Account</a>
+                                       </div> <!--DD trái-->
+                                       <div class="col-xl-6
+                                                   col-lg-6 dd-col">
+                                           <span class="dd-list-header">Shop Furniture</span>
+                                           <div class="dd-subcol-all">
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../Src/Product-Sofas.html"><img class="icon" src="../Element/IconFunirure/Sofas.svg" alt="">Sofas</a>
+                                                   <a class="dd-list-link" href="../Src/Product-LoungeChairs.html"><img class="icon" src="../Element/IconFunirure/LoungeChairs.svg" alt="">Lounge Chairs</a>
+                                                   <a class="dd-list-link" href="../Src/Product-Table.html"><img class="icon" src="../Element/IconFunirure/Table.svg" alt="">Tables</a>
+                                                   <a class="dd-list-link" href="../Src/Product-Lightning.html"><img class="icon" src="../Element/IconFunirure/Lighting.svg" alt="">Lighting</a>
+                                               </div>
+                                               <div class="dd-subcol">
+                                                   <a class="dd-list-link" href="../Src/Product-Beds.html"><img class="icon" src="../Element/IconFunirure/beds.svg" alt="">Beds</a>
+                                                   <a class="dd-list-link" href="../Src/Product-Chair.html"><img class="icon" src="../Element/IconFunirure/Chairs.svg" alt="">Chairs</a>
+                                                   <a class="dd-list-link" href="../Src/Product-Storage-Shelving.html"><img class="icon" src="../Element/IconFunirure/Storage&Shelving.svg" alt="">Storage & Shelving</a>
+                                                   <a class="dd-list-link" href="../Src/Product-Mirror.html"><img class="icon" src="../Element/IconFunirure/Mirror.svg" alt="">Mirrors</a>
+                                               </div>
+                                           </div> 
+                                           <a class="dd-list-link highlighted" href="../Src/Product-All.html">See All Furniture</a>
+                                       </div> <!--DD giữa-->
+                                       <div class="col-xl-3
+                                                   col-lg-3 dd-col">
+                                           <span class="dd-list-header">Explore</span>
+                                           <div class="dd-image">
+                                               <a href="../Src/Product-Newaddition-Sofas.html">
+                                                   <img src="../Element/Addition/sofaddition.webp" alt="Ảnh">
+                                               </a>
+                                               <p class="dd-image-caption">Sofas : New additions</p>
+                                           </div>
+                                           <div class="dd-image">
+                                               <a href="../Src/Product-Newaddition-Mirror.html">
+                                                   <img src="../Element/Addition/mirroraddition.webp" alt="Ảnh">
+                                               </a>
+                                               <p class="dd-image-caption">Mirrors : New additions</p>
+                                           </div>
+                                       </div> <!--DD phải-->
+                                   </div><!--Bg Content dd-->
+                               </div><!--Bg Drop Down Menu-->
+                               </li>
+                               <li><a class="link-top" href="../Src/StorageLocator.html">STORES</a></li>
+                               <li><a class="link-top" href="../Src/Concepts.html">CONCEPTS</a></li>
+                           </ul>
+                       </div><!--Phần navi menu-->
+       
+                       <div class="col-xl-2 offset-xl-2
+                                   col-lg-3 offset-lg-1" id="bg-icon">
+                           <ul>
+                               <li><a href="../Src/Cart.html"><i class="fa-light fa-cart-shopping"></i></a></li>
+                               <li><i id="popup-icon" class="fa-light fa-user"></i></li>
+                               <li><i id="triggle-search" class="fa-light fa-magnifying-glass"></i></li>
+                           </ul>
+                       </div><!--Bộ 3 icon-->
+                   </div>
+               </div>
+           </div>
+       </div><!--Ẩn navi ở phiên bản dưới lg-->
+       <!-- ============================== Navi ============================== -->
+    </div><!-- the-tong-navi -->
+
+
+<!-- ==============================  Toppup filter=========================== -->
+<div class="d-lg-none">
+    <div id="nav" class="sidenav">
+        <div class=" filterall" id="filterMD">
+
+            <!-- So Thong Tin
+            ============================= -->
+            <div class="container p-0">
+                <div class="detail-text">
+                    <div class="accordion">
+                        <!-- Start -->
+                        <div class="accordion-item active">
+                            <div class="accordion-header">
+                                <div class="tittle">
+                                    <div class="row" id="row1MD">
+                                        <p class="t7">Classify</p>
+                                        <div class="heart1">
+                                            <i class="arrow fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content1">
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Newest</p>
+                                    </div>
+                            
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Low - high</p>
+                                    </div>
+                            
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">High - low</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End -->
+                    </div>
+                </div>
+            </div>
+            <!-- So Thong Tin
+            ============================= -->
+
+                        
+            <!-- So Thong Tin
+            ============================= -->
+            <div class="container p-0">
+                <div class="detail-text">
+                    <div class="accordion">
+                        <!-- Start -->
+                        <div class="accordion-item active">
+                            <div class="accordion-header">
+                                <!--color-->
+                                <div class="tittle">
+                                    <div class="row" id="row1MD">
+                                        <p class="t7">Color</p>
+                                        <div class="heart1">
+                                            <i class="arrow fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="color" id="content7">
+                                    <div class="row" id="row1" >
+                                        <div class="heart3">
+                                            <img class="icon1" id="color3" src="../Image/SourceImageProduct/Other/color/1-d.png" alt="Icon 1">
+                                            <img class="icon2" id="color4" src="../Image/SourceImageProduct/Other/color/1-f.png" alt="Icon 2">
+                                        </div>
+                            
+                                        <div class="heart3">
+                                            <img class="icon1" id="color3" src="../Image/SourceImageProduct/Other/color/2-d.png" alt="Icon 1">
+                                            <img class="icon2" id="color4" src="../Image/SourceImageProduct/Other/color/2-f.png" alt="Icon 2">
+                                        </div>
+                            
+                                        <div class="heart3">
+                                            <img class="icon1" id="color3" src="../Image/SourceImageProduct/Other/color/3-d.png" alt="Icon 1">
+                                            <img class="icon2" id="color4" src="../Image/SourceImageProduct/Other/color/3-f.png" alt="Icon 2">
+                                        </div>
+                            
+                                        <div class="heart3">
+                                            <img class="icon1" id="color3" src="../Image/SourceImageProduct/Other/color/4-d.png" alt="Icon 1">
+                                            <img class="icon2" id="color4" src="../Image/SourceImageProduct/Other/color/4-f.png" alt="Icon 2">
+                                        </div>
+                                        <div class="heart3">
+                                            <img class="icon1" id="color3" src="../Image/SourceImageProduct/Other/color/13-d.png" alt="Icon 1">
+                                            <img class="icon2" id="color4" src="../Image/SourceImageProduct/Other/color/13-f.png" alt="Icon 2">
+                                        </div>
+                    
+                                    </div>
+                                </div>
+                                <div class="color" id="content5">
+                                    <div class="row" id="row1">
+                                        <div class="heart3">
+                                            <img class="icon1" id="color3" src="../Image/SourceImageProduct/Other/color/5-d.png" alt="Icon 1">
+                                            <img class="icon2" id="color4" src="../Image/SourceImageProduct/Other/color/5-d.png" alt="Icon 2">
+                                        </div>
+                            
+                                        <div class="heart3">
+                                            <img class="icon1" id="color3" src="../Image/SourceImageProduct/Other/color/6-d.png" alt="Icon 1">
+                                            <img class="icon2" id="color4" src="../Image/SourceImageProduct/Other/color/6-f.png" alt="Icon 2">
+                                        </div>
+                            
+                                        <div class="heart3">
+                                            <img class="icon1" id="color3" src="../Image/SourceImageProduct/Other/color/7-d.png" alt="Icon 1">
+                                            <img class="icon2" id="color4" src="../Image/SourceImageProduct/Other/color/7-f.png" alt="Icon 2">
+                                        </div>
+                            
+                                        <div class="heart3">
+                                            <img class="icon1" id="color3" src="../Image/SourceImageProduct/Other/color/8-d.png" alt="Icon 1">
+                                            <img class="icon2" id="color4" src="../Image/SourceImageProduct/Other/color/8-f.png" alt="Icon 2">
+                                        </div>
+                                        <div class="heart3">
+                                            <img class="icon1" id="color3" src="../Image/SourceImageProduct/Other/color/14-d.png" alt="Icon 1">
+                                            <img class="icon2" id="color4" src="../Image/SourceImageProduct/Other/color/14-f.png" alt="Icon 2">
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="color" id="content6">
+                                    <div class="row" id="row1">
+                                        <div class="heart3">
+                                            <img class="icon1" id="color3" src="../Image/SourceImageProduct/Other/color/9-d.png" alt="Icon 1">
+                                            <img class="icon2" id="color4" src="../Image/SourceImageProduct/Other/color/9-f.png" alt="Icon 2">
+                                        </div>
+                            
+                                        <div class="heart3">
+                                            <img class="icon1" id="color3" src="../Image/SourceImageProduct/Other/color/10-d.png" alt="Icon 1">
+                                            <img class="icon2" id="color4" src="../Image/SourceImageProduct/Other/color/10-f.png" alt="Icon 2">
+                                        </div>
+                            
+                                        <div class="heart3">
+                                            <img class="icon1" id="color3" src="../Image/SourceImageProduct/Other/color/11-d.png" alt="Icon 1">
+                                            <img class="icon2" id="color4" src="../Image/SourceImageProduct/Other/color/11-f.png" alt="Icon 2">
+                                        </div>
+                            
+                                        <div class="heart3">
+                                            <img class="icon1" id="color3" src="../Image/SourceImageProduct/Other/color/12-d.png" alt="Icon 1">
+                                            <img class="icon2" id="color4" src="../Image/SourceImageProduct/Other/color/12-f.png" alt="Icon 2">
+                                        </div>
+                                        <div class="heart3">
+                                    
+                                        </div>
+                                    </div>
+                                </div><!-- color -->
+                            </div>
+                        </div>
+                        <!-- End -->
+                    </div>
+                </div>
+            </div>
+            <!-- So Thong Tin
+            ============================= -->
+
+            
+
+            <!-- So Thong Tin
+            ============================= -->
+            <div class="container p-0">
+                <div class="detail-text">
+                    <div class="accordion">
+                        <!-- Start -->
+                        <div class="accordion-item active">
+                            <div class="accordion-header">
+                                <!--category-->
+                                <div class="tittle">
+                                    <div class="row" id="row1MD">
+                                        <p class="t7">Category</p>
+                                        <div class="heart1">
+                                            <i class="arrow fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content1">
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Sofa</p>
+                                    </div>
+                            
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Lounge  Chairs</p>
+                                    </div>
+                            
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Tables</p>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Lighting</p>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Beds</p>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Chairs</p>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8" id="fixfilter">Storage & Shelving</p>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Mirror</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End -->
+                    </div>
+                </div>
+            </div>
+            <!-- So Thong Tin
+            ============================= -->           
+            
+            
+            <!-- So Thong Tin
+            ============================= -->
+            <div class="container p-0">
+                <div class="detail-text">
+                    <div class="accordion">
+                        <!-- Start -->
+                        <div class="accordion-item active">
+                            <div class="accordion-header">
+                                <!--category-->
+                                <div class="tittle">
+                                    <div class="row" id="row1">
+                                        <p class="t7">Material</p>
+                                        <div class="heart1">
+                                            <i class="arrow fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content1">
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Wood</p>
+                                    </div>
+                
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Fabric</p>
+                                    </div>
+                
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Sherpa</p>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Bouclé</p>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Metal</p>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Plastic</p>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8" id="fixfilter">Feather</p>
+                                    </div>
+                                    <div class="row" id="row2">
+                                        <div class="heart">
+                                            <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                            <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                        </div>
+                                        <p class="t8">Leather</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End -->
+                    </div>
+                </div>
+            </div>
+            <!-- So Thong Tin
+            ============================= -->
+
+
+            <!-- So Thong Tin
+            ============================= -->
+            <div class="container p-0">
+                <div class="detail-text">
+                    <div class="accordion">
+                        <!-- Start -->
+                        <div class="accordion-item active">
+                            <div class="accordion-header">
+                                <!--price-->
+                                <div class="tittle">
+                                    <div class="row" id="row1MD">
+                                        <p class="t7">Price</p>
+                                        <div class="heart1">
+                                            <i class="arrow fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="price-bar">
+                                    <div class="slider">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="range-input">
+                                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                    </div>
+                                    <div class="price-input">
+                                        <div class="field">
+                                            <span class="currency">$</span>
+                                            <input type="number" class="input-min" value="2500">
+                                        </div>
+                                        <div class="separator">To</div>
+                                        <div class="field">
+                                            <span class="currency">$</span>
+                                            <input type="number" class="input-max" value="7500">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Thêm nhiều phần tử .price-bar nếu cần -->
+                            </div>
+                        </div>
+                        <!-- End -->
+                    </div>
+                </div>
+            </div>
+            <!-- So Thong Tin
+            ============================= -->
+                <div class="apply">
+                    <div class="apply1" id="apply1">APPLY FILTER</div>
+                    <div class="apply2" id="apply2">APPLY FILTER</div>
+                </div>
+        </div>
+    </div>
+    <div id="overlay" class="overlay" onclick="closeNav()"></div>
+</div>
+
+<div id="main">
+    <!-- ============================== Navi For Medium And Mobile ============================== -->
+    <div class="d-lg-none container"  >
+        <div id="bg-navi-ver-small">
+            <div class="col-md-3
+                        col-sm-3
+                        col-3 " id="icon-trai">
+                <i id="click-here-to-open" class="fa-light fa-bars"></i>
+            </div>
+            <div class="col-md-6
+                        col-sm-6 
+                        col-6" >
+                        <a href="../Src/HomePage.html">
+                            <div id="bg-logo-ver-small">
+                            </div>
+                        </a>
+            </div>
+            <div class="col-md-3
+                        col-sm-3
+                        col-3" id="icon-phai">
+                <ul>
+                    <li><a href="../Src/Cart.html"><i class="fa-light fa-cart-shopping"></i></a></li>
+                    <li><a href="../Src/Account/signin.html"><i class="fa-light fa-user"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- Thanh navi -->
+    <div class="d-lg-none">
+        <form class="form-search container-fluid">
+            <label for="search">
+                <input required="" autocomplete="off" placeholder="Search..." id="search" type="text">
+                <div class="icon">
+                    <i class="fa-light fa-magnifying-glass"></i>
+                </div>
+                <button type="reset" class="close-btn">
+                    <svg viewBox="0 0 20 20" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </label>
+        </form>
+    </div><!-- Thanh Search -->
+    <!-- ============================== Navi For Medium And Mobile ============================== -->
+
+
+
+<!-- Search-Lon
+===================================================== -->
+<div class="form-search-lon">
+    <form class="d-none d-lg-block form-search-xllg container-fluid">
+        <label for="search">
+            <input required="" autocomplete="off" placeholder="Search..." id="search" type="text">
+            <div class="icon">
+                <i class="fa-light fa-magnifying-glass"></i>
+            </div>
+            <button type="reset" class="close-btn">
+                <i class="fa-light fa-x"></i>
+            </button>
+        </label>
+    </form>
+</div>
+<!-- Search-Lon
+===================================================== -->
+<!-- Code trong này nha -->
+    <!--Banner-->
+    <div class="container-fuid d-none d-lg-block bannerXL">
+        <div class="banner-container">
+            <img src="../Image/BannerProductAll.webp" class="banner">
+            <div class="banner-text">
+                <h2>FUNITURE</h2>
+                <p>From classic Vitra dining chairs to the iconic shapes,we sell a wide range of modern and contemporary furniture.
+                Browse our full collection to find the furniture that will help you curate your perfect, forever home.
+                <br>2689 Products</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fuid d-lg-none d-none d-sm-block">
+        <div class="banner-container">
+            <div class="banner-textM">
+                <h2>FUNITURE</h2>
+                <p>From classic Vitra dining chairs to the iconic shapes,we sell a wide range of modern and contemporary furniture.
+                Browse our full collection to find the furniture that will help you curate your perfect, forever home.
+                <br>2689 Products</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner động bản nhỏ -->
+    <div class="banner-ver-XS d-sm-none">
+        <div class="overlay-banner-xs"></div>
+        <img src="../Image/ProductImage/AnhSpLe/BannerProductAll.jpg" alt="Background Image">
+    </div>
+    <div class="text-ver-XS d-sm-none">
+        <h1>FURNITURES</h1>
+        <h3>View more</h3>
+        <div class="button fade-in">
+            <i class="fa-light fa-angle-down"></i>
+        </div>
+    </div><!-- Banner động bản nhỏ -->
+
+    
+    <div class="container d-none d-lg-block">
+        <div class="L">
+            <!-- breadcrum -->
+            <div class="container">
+                <div class="row">
+                    <ul class="breadcrumb">
+                        <li><a href="../Src/homepage.html">Home</a></li>
+                        <li>Furniture</li> 
+                    </ul>
+                </div>
+            </div> <!--breadcrum-->
+        </div>
+    </div>
+    <!--icon topup neo nằm dưới banner + dia chi M-->
+    <div class="container-fuid d-lg-none">
+        <div class="row">
+            <div class="L">
+                <!-- breadcrum -->
+                <div class="container">
+                    <div class="row">
+                        <ul class="breadcrumb">
+                            <li><a href="../Src/homepage.html">Home</a></li>
+                            <li>Furniture</li> 
+                        </ul>
+                    </div>
+                </div> <!--breadcrum-->
+            </div>
+            <div class="R">
+                <div id="popup" class="popup" onclick="openNav()">
+                    <div class="row">
+                        <div class="chuF">Filter</div>
+                        <div><img src="../Image/SourceImageProduct/Other/filter/filter.png" class="img-F"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Product + Filter-->
+    <div class="container-fuid p-f" id="content-below-banner">
+            <div class="row">
+                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12" id="khungproducts">
+                    <div class="row">
+
+                        
+                        <!--Thay hình ở đây-->
+                        <!-- sp1-start -->
+                        <!--<a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="1" href="">
+                            <img src="../Image/ProductImage/AnhSpLe/Tables/Bruno_Coffee_Table/Russet/png.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/AnhSpLe/Tables/Bruno_Coffee_Table/Russet/Bruno-coffee(1).png" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Dalton</p>
+                                    <p class="t2">Dalton Bed</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$229</p>
+                                            <p class="t4"><del></del></p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>-->
+                                            <!--<div class="fa-solid fa-heart icon-change"></div>-->
+                                            
+                                        <!--</div>
+                                    </div>
+                                </div> --><!--cost-->
+                                <!--<div class="t5">
+                                    The Big George radiates a warm charm that extends beyond the practical utility of a seater...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 6 in stock
+                                </div>
+                                
+                            </div>
+                        </a>-->
+                        <!-- sp1-end-->
+
+                        <!-- 1-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="1" href="../Src/detail/Casa-Dining-Table.html">
+                            <img src="../Image/ProductImage/ProductCustom/DiningRoom-2/Table/Casa Dining Table/png.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/ProductCustom/DiningRoom-2/Table/Casa Dining Table/Casa-Rectangular-Dining-Table-Square-Set_1-1692431193.jpg" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Casa</p>
+                                    <p class="t2">Casa Dining</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$899</p>
+                                            <p class="t4"><del>$1099</del></p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    Wide Blade Legs, Chamfer Stop Detail
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 1 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 1-end-->
+                        <!-- 2-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="1" href="../Src/detail/Mori-C-Side.html">
+                            <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Table/Mori_C_Side_Table/png.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Table/Mori_C_Side_Table/Mori-Armchair-Alpine-Square-Set.png" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Mori</p>
+                                    <p class="t2">Mori C Side</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$229</p>
+                                            <p class="t4"><del>$399</del></p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    Minimalist Design, Chamfer Stop Detail
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 3 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 2-end-->
+                        <!-- 3-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="1" href="../Src/detail/Mori_Coffee_Table.html">
+                            <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Table/Mori_Coffee_Table/png.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Table/Mori_Coffee_Table/Mori-Armless-L-Shape-Sectional-S.png" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Mori</p>
+                                    <p class="t2">Mori Coffee</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$499</p>
+                                            <p class="t4"><del>$509</del></p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    Wide Blade Legs, Chamfer Stop Detail
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 2 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 3-end-->
+                        <!-- 4-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="1" href="../Src/detail/Mori_Side_Table.html">
+                            <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Table/Mori_Side_Table/png.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/ProductCustom/LivingRoom-2/Table/Mori_Side_Table/Mor-Side-Table-Square-Set_2-1691.png" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Mori</p>
+                                    <p class="t2">Mori Side</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$299</p>
+                                            <p class="t4"><del>$309</del></p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    Minimalist Design, Chamfer Stop Detail
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 4 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 4-end-->
+                        <!-- 5-start -->
+                         <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="1" href="../Src/detail/Seb-Table.html">
+                            <img src="../Image/ProductImage/ProductCustom/DiningRoom-1/Table/Seb_Extendable_Dining_Table/png.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/AnhSpLe/Tables/Seb_Extendable_Dining/Seb-Table(6).png" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Rustic</p>
+                                    <p class="t2">Seb Extendable</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$649</p>
+                                            <p class="t4"><del>$699</del></p>
+
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 6 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 5-end-->
+                        <!-- 6-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="1" href="../Src/detail/Seb-chair.html">
+                            <img src="../Image/ProductImage/ProductCustom/DiningRoom-1/Chair/Seb_Chair_Dark_Graphite/Chair.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/ProductCustom/DiningRoom-1/Chair/Seb_Chair_Dark_Graphite/Seb-Chair-Dark-Graphite-Square-Set_2-1663208786.webp" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Rustic</p>
+                                    <p class="t2">Seb Chair</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <p class="t3">$538</p>
+                                        <p class="t4"><del></del></p>
+                                        <div class="heart ">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 7 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 6-end-->
+                        <!-- 7-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="1" href="../Src/detail/Austen-Chair.html">
+                            <img src="../Image/ProductImage/ProductCustom/DiningRoom-2/Chair/Austen_Chair_White_Wash/png.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/ProductCustom/DiningRoom-2/Chair/Austen_Chair_White_Wash/Austen-Chair-White-Wash-Set_5-1666342697.jpg" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Austen</p>
+                                    <p class="t2">Austen Chair</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <p class="t3">$658</p>
+                                        <p class="t4"><del></del></p>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    Serve up mid-century modern charm alongside your daily meals with Austen, an elegant...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 8 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 7-end-->
+                        <!-- 8-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="1" href="../Src/detail/Sed-bed.html">
+                            <img src="../Image/ProductImage/ProductCustom/BedRoom-1/Bed/Seb_Bed/png.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/ProductCustom/BedRoom-1/Bed/Seb_Bed/Seb-Bed-Set1.webp" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Rustic</p>
+                                    <p class="t2">Sed Bed</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                        <p class="t3">$999</p>
+                                        <p class="t4"><del></del></p>
+                                    </div>
+                                        <div class="heart ">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 4 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 8-end-->
+                        <!-- 9-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="1" href="../Src/detail/Madison.html">
+                            <img src="../Image/ProductImage/ProductCustom/BedRoom-2/Bed/Madison-Bed-Bisque-Det/png.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/ProductCustom/BedRoom-2/Bed/Madison-Bed-Bisque-Det/Madison-Bed-Bisque-Set_1-1655973031.jpg" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Madison</p>
+                                    <p class="t2">Madison Bed</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$899</p>
+                                            <p class="t4"><del></del></p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    Characterized by its biscuit tufted headboard, the Madison Bed brings comfort and...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 2 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 9-end-->
+                        <!-- 10-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="1" href="../Src/Detail-product/Crescent-Bed.html">
+                            <img src="../Image/ProductImage/AnhSpLe/Beds/Crescent_Bed/png.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/AnhSpLe/Beds/Crescent_Bed/Cresent-Bed-With-2-2-Drawer-Nightstand-Square-Set_1-1698633930.jpg" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Crescent</p>
+                                    <p class="t2">Crescent Bed</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$1.229</p>
+                                            <p class="t4"><del>1299</del></p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    The Crescent Bed is crafted with mindi wood and exudes an airy, earthy appeal. Its softly curved...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 5 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!--10-end-->
+                         <!--11-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="2" href="../Src/Detail-product/Emery-Bed.html">
+                            <img src="../Image/ProductImage/AnhSpLe/Beds/Emery_Bed/png.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/AnhSpLe/Beds/Emery_Bed/Emery-Bed-Square-Set_5-1663669000.jpg" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Emery</p>
+                                    <p class="t2">Emery Bed</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$1,169</p>
+                                            <p class="t4"><del>$1,299</del></p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    The Big George radiates a warm charm that extends beyond the practical utility of a seater...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 1 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!--11-end-->
+                        <!--12-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="2" href="../Src/Detail-product/Adam-Sofa.html">
+                            <img src="../Image/ProductImage/AnhSpLe/sofa/Adams Sofa/tach.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/AnhSpLe/sofa/Adams Sofa/bg.webp" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Adams</p>
+                                    <p class="t2">Adams Sofa</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$1,229</p>
+                                            <p class="t4"><del></del></p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--cost-->
+                                <div class="t5">
+                                    With its tight backrest and gently curved shape, it is a modular product that offers...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 4 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!--12-end-->
+                        <!--13-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="2" href="">
+                            <img src="../Image/ProductImage/AnhSpLe/sofa/Auburn Performance Sofa/tach.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/AnhSpLe/sofa/Auburn Performance Sofa/bg.webp" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Auburn</p>
+                                    <p class="t2">Auburn Performance Sofa</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$2,129</p>
+                                            <p class="t4"><del></del></p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--cost-->
+                                <div class="t5">
+                                    With its tight backrest and gently curved shape, it is a modular product that offers a luxurious...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 6 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!--13-end-->
+                        <!--14-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="2" href="">
+                            <img src="../Image/ProductImage/AnhSpLe/sofa/Owen Sofa/tach.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/AnhSpLe/sofa/Owen Sofa/bg.webp" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Owen</p>
+                                    <p class="t2">Owen Sofa</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$1,429</p>
+                                            <p class="t4"><del></del></p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--cost-->
+                                <div class="t5">
+                                    With its tight backrest and gently curved shape, it is a modular product that offers a luxurious...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 9 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!--14-end-->
+                        <!--15-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="2" href="">
+                            <img src="../Image/ProductImage/AnhSpLe/sofa/Hamilton Round Sofa/tach.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/AnhSpLe/sofa/Hamilton Round Sofa/bg.webp" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Hamilton</p>
+                                    <p class="t2">Hamilton Round Sofa</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$1,929</p>
+                                            <p class="t4"><del></del></p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--cost-->
+                                <div class="t5">
+                                    With its tight backrest and gently curved shape, it is a modular product that offers a luxurious...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 12 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 15-end-->
+                        <!-- 16-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="2" href="">
+                            <img src="../Image/ProductImage/AnhSpLe/sofa/Isaac Leather Sofa/tach.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/AnhSpLe/sofa/Isaac Leather Sofa/bg.webp" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Isaac</p>
+                                    <p class="t2">Isaac Leather Sofa</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$1,889</p>
+                                            <p class="t4"><del></del></p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--cost-->
+                                <div class="t5">
+                                    With its tight backrest and gently curved shape, it is a modular product that offers a luxurious...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 55 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!--16-end-->
+                        <!--17-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="2" href="../Src/detail/Set-Nightstand.html">
+                            <img src="../Image/ProductImage/ProductCustom/BedRoom-1/Storage/Seb_Nightstand/png.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/ProductCustom/BedRoom-1/Storage/Seb_Nightstand/bedsidetable-room2.png" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Rustic</p>
+                                    <p class="t2">Sed Nightstand</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <p class="t3">$359</p>
+                                        <p class="t4"><del></del></p>
+                                        <div class="heart ">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 13 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 17-end-->
+                        <!-- 18-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="2" href="../Src/detail/Seb-Storage.html">
+                            <img src="../Image/ProductImage/ProductCustom/DiningRoom-1/Storage/Seb_Nightstand_Storage/png.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/ProductCustom/DiningRoom-1/Storage/Seb_Nightstand_Storage/Seb-Sideboard-160cm-Lifestyle-Crop.webp" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Rustic</p>
+                                    <p class="t2">Seb Sideboard </p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <p class="t3">$1,199</p>
+                                        <p class="t4"><del></del></p>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    Rustic, homey and thoughtfully crafted, Seb is a mid-century collection made to create warm...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 44 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 18-end-->
+                        <!-- 19-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="2" href="../Src/detail/Casa-Sideboard.html">
+                            <img src="../Image/ProductImage/ProductCustom/DiningRoom-2/Storge/Casa_Sideboard/png.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/ProductCustom/DiningRoom-2/Storge/Casa_Sideboard/casasideboard-room1.jpg" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Casa</p>
+                                    <p class="t2">Casa Sideboard</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <p class="t3">$1,199</p>
+                                        <p class="t4"><del></del></p>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    With a rounded chamfer stop that adds subtle visual appeal, Casa delivers sophistiction and...
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 12 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!--19-end-->
+                        <!-- 20-start -->
+                        <a class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 productcard" data-page="2" href="../Src/detail/Casa-Bench.html">
+                            <img src="../Image/ProductImage/ProductCustom/DiningRoom-2/LoungeChair/casa_bench/none_Bg.png" class="img-fluid default">
+                            <img src="../Image/ProductImage/ProductCustom/DiningRoom-2/LoungeChair/casa_bench/Casa-Becnh-Square-Set_2-1692756113.jpg" class="img-fluid hover">
+                            <div class="info">
+                                <div>
+                                    <p class="t1">Natural Variations</p>
+                                    <p class="t2">Casa Bench</p>
+                                </div>
+                                <div class="cost">
+                                    <div class="row" id="row">
+                                        <div class="price-product">
+                                            <p class="t3">$259</p>
+                                            <p class="t4"><del></del></p>
+                                        </div>
+                                        <div class="heart">
+                                            <i class="fa-light fa-heart icon1"></i>
+                                            <i class="fa-solid fa-heart icon2"></i>
+                                        </div>
+                                    </div>
+                                </div> <!--cost-->
+                                <div class="t5">
+                                    Casa's angled legs elegantly offer refined simplicity and effortlessly maximize space.
+                                </div>
+                                <div class="t6">
+                                    <i class="fa-solid fa-circle-check" style="color: #5e6c5b;"></i> 9 in stock
+                                </div>
+                            </div>
+                        </a>
+                        <!--20-end-->
+                        
+
+
+
+
+                        
+                    </div>
+                </div>
+                <!-- Filter-LG trở lên
+                =========================================== -->
+                <div class="col-xl-3 col-lg-3 d-none d-lg-block filterall" >
+                <!-- So Thong Tin
+                ============================= -->
+                <div class="container p-0">
+                    <div class="detail-text">
+                        <div class="accordion">
+                            <!-- Start -->
+                            <div class="accordion-item active">
+                                <div class="accordion-header">
+                                    <div class="tittle">
+                                        <div class="row" id="row1">
+                                            <p class="t7">Classify</p>
+                                            <div class="heart1">
+                                                <i class="arrow fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-body">
+                                    <div class="content1">
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Newest</p>
+                                        </div>
+                    
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Low - high</p>
+                                        </div>
+                    
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">High - low</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- So Thong Tin
+                ============================= -->
+
+
+
+                 
+
+
+
+                <!-- So Thong Tin
+                ============================= -->
+                <div class="container p-0">
+                    <div class="detail-text">
+                        <div class="accordion">
+                            <!-- Start -->
+                            <div class="accordion-item active">
+                                <div class="accordion-header">
+                                    <!--color-->
+                                    <div class="tittle">
+                                        <div class="row" id="row1">
+                                            <p class="t7">Color</p>
+                                            <div class="heart1">
+                                                <i class="arrow fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-body">
+                                    <div class="color">
+                                        <div class="row" id="row1">
+                                            <div class="heart2">
+                                                <img class="icon1" id="color1" src="../Image/SourceImageProduct/Other/color/1-d.png" alt="Icon 1">
+                                                <img class="icon2" id="color2" src="../Image/SourceImageProduct/Other/color/1-f.png" alt="Icon 2">
+                                            </div>
+                            
+                                            <div class="heart2">
+                                                <img class="icon1" id="color1" src="../Image/SourceImageProduct/Other/color/2-d.png" alt="Icon 1">
+                                                <img class="icon2" id="color2" src="../Image/SourceImageProduct/Other/color/2-f.png" alt="Icon 2">
+                                            </div>
+                            
+                                            <div class="heart2">
+                                                <img class="icon1" id="color1" src="../Image/SourceImageProduct/Other/color/3-d.png" alt="Icon 1">
+                                                <img class="icon2" id="color2" src="../Image/SourceImageProduct/Other/color/3-f.png" alt="Icon 2">
+                                            </div>
+                            
+                                            <div class="heart2">
+                                                <img class="icon1" id="color1" src="../Image/SourceImageProduct/Other/color/4-d.png" alt="Icon 1">
+                                                <img class="icon2" id="color2" src="../Image/SourceImageProduct/Other/color/4-f.png" alt="Icon 2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="color" id="content2">
+                                        <div class="row" id="row1">
+                                            <div class="heart2">
+                                                <img class="icon1" id="color1" src="../Image/SourceImageProduct/Other/color/5-d.png" alt="Icon 1">
+                                                <img class="icon2" id="color2" src="../Image/SourceImageProduct/Other/color/5-f.png" alt="Icon 2">
+                                            </div>
+                            
+                                            <div class="heart2">
+                                                <img class="icon1" id="color1" src="../Image/SourceImageProduct/Other/color/6-d.png" alt="Icon 1">
+                                                <img class="icon2" id="color2" src="../Image/SourceImageProduct/Other/color/6-f.png" alt="Icon 2">
+                                            </div>
+                            
+                                            <div class="heart2">
+                                                <img class="icon1" id="color1" src="../Image/SourceImageProduct/Other/color/7-d.png" alt="Icon 1">
+                                                <img class="icon2" id="color2" src="../Image/SourceImageProduct/Other/color/7-f.png" alt="Icon 2">
+                                            </div>
+                            
+                                            <div class="heart2">
+                                                <img class="icon1" id="color1" src="../Image/SourceImageProduct/Other/color/8-d.png" alt="Icon 1">
+                                                <img class="icon2" id="color2" src="../Image/SourceImageProduct/Other/color/8-f.png" alt="Icon 2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="color" id="content3">
+                                        <div class="row" id="row1">
+                                            <div class="heart2">
+                                                <img class="icon1" id="color1" src="../Image/SourceImageProduct/Other/color/9-d.png" alt="Icon 1">
+                                                <img class="icon2" id="color2" src="../Image/SourceImageProduct/Other/color/9-f.png" alt="Icon 2">
+                                            </div>
+                            
+                                            <div class="heart2">
+                                                <img class="icon1" id="color1" src="../Image/SourceImageProduct/Other/color/10-d.png" alt="Icon 1">
+                                                <img class="icon2" id="color2" src="../Image/SourceImageProduct/Other/color/10-f.png" alt="Icon 2">
+                                            </div>
+                            
+                                            <div class="heart2">
+                                                <img class="icon1" id="color1" src="../Image/SourceImageProduct/Other/color/11-d.png" alt="Icon 1">
+                                                <img class="icon2" id="color2" src="../Image/SourceImageProduct/Other/color/11-f.png" alt="Icon 2">
+                                            </div>
+                            
+                                            <div class="heart2">
+                                                <img class="icon1" id="color1" src="../Image/SourceImageProduct/Other/color/12-d.png" alt="Icon 1">
+                                                <img class="icon2" id="color2" src="../Image/SourceImageProduct/Other/color/12-f.png" alt="Icon 2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="color" id="content4">
+                                        <div class="row" id="row1">
+                                            <div class="heart2">
+                                                <img class="icon1" id="color1" src="../Image/SourceImageProduct/Other/color/13-d.png" alt="Icon 1">
+                                                <img class="icon2" id="color2" src="../Image/SourceImageProduct/Other/color/13-f.png" alt="Icon 2">
+                                            </div>
+                            
+                                            <div class="heart2">
+                                                <img class="icon1" id="color1" src="../Image/SourceImageProduct/Other/color/14-d.png" alt="Icon 1">
+                                                <img class="icon2" id="color2" src="../Image/SourceImageProduct/Other/color/14-f.png" alt="Icon 2">
+                                            </div>
+                            
+                                            <div class="heart2">
+                                                
+                                            </div>
+                            
+                                            <div class="heart2">
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- So Thong Tin
+                ============================= -->
+
+
+
+
+                <!-- So Thong Tin
+                ============================= -->
+                <div class="container p-0">
+                    <div class="detail-text">
+                        <div class="accordion">
+                            <!-- Start -->
+                            <div class="accordion-item active">
+                                <div class="accordion-header">
+                                    <!--category-->
+                                    <div class="tittle">
+                                        <div class="row" id="row1">
+                                            <p class="t7">Category</p>
+                                            <div class="heart1">
+                                                <i class="arrow fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-body">
+                                    <div class="content1">
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Sofa</p>
+                                        </div>
+                    
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Lounge  Chairs</p>
+                                        </div>
+                    
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Tables</p>
+                                        </div>
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Lighting</p>
+                                        </div>
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Beds</p>
+                                        </div>
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Chairs</p>
+                                        </div>
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8" id="fixfilter">Storage & Shelving</p>
+                                        </div>
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Mirror</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- So Thong Tin
+                ============================= -->
+
+
+
+                <!-- So Thong Tin
+                ============================= -->
+                <div class="container p-0">
+                    <div class="detail-text">
+                        <div class="accordion">
+                            <!-- Start -->
+                            <div class="accordion-item active">
+                                <div class="accordion-header">
+                                    <!--category-->
+                                    <div class="tittle">
+                                        <div class="row" id="row1">
+                                            <p class="t7">Material</p>
+                                            <div class="heart1">
+                                                <i class="arrow fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-body">
+                                    <div class="content1">
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Wood</p>
+                                        </div>
+                    
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Fabric</p>
+                                        </div>
+                    
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Sherpa</p>
+                                        </div>
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Bouclé</p>
+                                        </div>
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Metal</p>
+                                        </div>
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Plastic</p>
+                                        </div>
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8" id="fixfilter">Feather</p>
+                                        </div>
+                                        <div class="row" id="row2">
+                                            <div class="heart">
+                                                <img class="icon1" id="iconclick1" src="../Image/SourceImageProduct/Other/click/default.png" alt="Icon 1">
+                                                <img class="icon2" id="iconclick" src="../Image/SourceImageProduct/Other/click/final.png" alt="Icon 2">
+                                            </div>
+                                            <p class="t8">Leather</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- So Thong Tin
+                ============================= -->
+
+
+                <!-- So Thong Tin
+                ============================= -->
+                <div class="container p-0">
+                    <div class="detail-text">
+                        <div class="accordion">
+                            <!-- Start -->
+                            <div class="accordion-item active">
+                                <div class="accordion-header">
+                                    <!--price-->
+                                    <div class="tittle">
+                                        <div class="row" id="row1">
+                                            <p class="t7">Price</p>
+                                            <div class="heart1">
+                                                <i class="arrow fas fa-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-body">
+                                    <div class="price-bar">
+                                        <div class="slider">
+                                            <div class="progress"></div>
+                                        </div>
+                                        <div class="range-input">
+                                            <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                            <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                        </div>
+                                        <div class="price-input">
+                                            <div class="field">
+                                                <span class="currency">$</span>
+                                                <input type="number" class="input-min" value="2500">
+                                            </div>
+                                            <div class="separator">To</div>
+                                            <div class="field">
+                                                <span class="currency">$</span>
+                                                <input type="number" class="input-max" value="7500">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Thêm nhiều phần tử .price-bar nếu cần -->
+                                </div>
+                            </div>
+                            <!-- End -->
+                        </div>
+                    </div>
+                </div>
+                <!-- So Thong Tin
+                ============================= -->
+            
+                    <!--apply filter-->
+    
+                    <div class="apply">
+                        <div class="apply1" id="apply1">APPLY FILTER</div>
+                        <div class="apply2" id="apply2">APPLY FILTER</div>
+                    </div>
+                </div>               
+            </div>
+    </div>
+    
+    
+        <div class="container pagination-container">
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-4 pagination" id="pagination">
+                <i class="fa-light fa-angle-left  d-md-block d-none iconchapva"></i>
+                <a style="margin-top: 6px;" href="#" id="prev"><i class="fa-light fa-angle-left"></i></a>
+                <a href="#" class="page-link active" data-page="1">1</a>
+                <a href="#" class="page-link" data-page="2">2</a>
+                <a style="margin-top: 6px;" href="#" id="next"><i class="fa-light fa-angle-right"></i></a>
+                <i class="fa-light fa-angle-right  d-md-block d-none iconchapva"></i>
+            </div>
+        </div>
+    
+
+
+<script>
+    
+</script>
+
+<!-- Code trong này nha -->
+    <!-- ================================== Footer ================================= -->
+    <div class="container-fluid" id="bg-footer">
+        <div class="row">
+            <div class="col-xl-4
+                        col-lg-5
+                        col-md-4
+                        col-sm-6
+                        col-6" id="footer-slogan">
+            </div><!-- SLOGAN -->
+            <!-- ================== Only XL =================== -->
+            <div class="footer-header col-xl-2 d-none d-xl-block"> 
+                <p>About Us</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/introduction.html">Introduction</a></li>
+                    <li><a href="../Src/our history.html">Our History</a></li>
+                    <li><a href="../Src/team.html">Join Our Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Inspire</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/PersonalShopping.html">Personal shopping</a></li>
+                    <li><a href="../Src/Brochure.html">Brochure</a></li>
+                    <li><a href="../Src/BuyingGuide.html">Buying Guides</a></li>
+                    <li><a href="../Src/giftcard.html">Gift cards</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Customer service</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/ContactUs.html">Contact Us</a></li>
+                    <li><a href="../Src/HelpAdvice.html">Help and advice</a></li>
+                    <li><a href="../Src/Delivery.html">Delivery</a></li>
+                    <li><a href="../Src/MadeToOrder.html">Made to order</a></li>
+                </ul>
+            </div>
+            <div class="footer-header col-xl-2 d-none d-xl-block">
+                <p>Professional</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/Contract.html">Contracts</a></li>
+                    <li><a href="../Src/Contactourbuyers.html">Contact our buyers</a></li>
+                </ul>
+            </div>
+            <!-- ================== Only XL =================== -->
+
+
+
+
+            <!-- ================== Only responsive =================== -->
+            <div class="footer-header 
+                        col-lg-4 offset-lg-0 
+                        col-md-3 offset-md-1
+                        d-none
+                        d-md-block
+                        d-xl-none"> 
+                <p>About Us</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/introduction.html">Introduction</a></li>
+                    <li><a href="../Src/our history.html">Our History</a></li>
+                    <li><a href="../Src/team.html">Join Our Team</a></li>
+                </ul>
+            </div><!--footer phien ban lg va md-->
+
+            <div class="footer-header 
+                        col-lg-3 
+                        col-md-3 
+                        d-none
+                        d-md-block
+                        d-xl-none">
+                <p>Inspire</p>
+                <ul class="footer-list">
+                    <li><a href="../Src/PersonalShopping.html">Personal shopping</a></li>
+                    <li><a href="../Src/Brochure.html">Brochure</a></li>
+                    <li><a href="../Src/BuyingGuide.html">Buying Guides</a></li>
+                    <li><a href="../Src/giftcard.html">Gift cards</a></li>
+                </ul>
+            </div><!--footer phien ban lg va md-->
+
+            <div class="footer-header
+                        d-md-none
+                        col-sm-5 offset-sm-1
+                        col-5 offset-1">
+                <a href="../Src/about-all.html">About Us</a>
+                <a href="../Src/Inspire-all.html">Inspire</a>
+            </div><!--Phien ban sm va xs-->
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12" id="bg-footer-content">
+
+                <div class="footer-social 
+                            col-xl-12 
+                            col-lg-5 
+                            col-md-4
+                            col-sm-6
+                            col-6">
+                    <p>Follow Us</p>
+                    <div>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div><!--Social media full phien ban-->
+
+                <div class="footer-header
+                            d-md-none
+                            col-sm-5 offset-sm-1
+                            col-5 offset-1">
+                    <a href="../Src/CustomService-All.html">Customer service</a>
+                    <a href="../Src/Professional-All.html">Professional</a>
+                </div><!--Phien ban sm va xs-->
+
+                <div class="footer-header 
+                            col-lg-4 offset-lg-0 
+                            col-md-3 offset-md-1 
+                            d-none d-md-block d-xl-none">
+                    <p>Customer service</p>
+                    <ul class="footer-list">
+                        <li><a href="../Src/ContactUs.html">Contact Us</a></li>
+                        <li><a href="../Src/HelpAdvice.html">Help and advice</a></li>
+                        <li><a href="../Src/Delivery.html">Delivery</a></li>
+                        <li><a href="../Src/MadeToOrder.html">Made to order</a></li>
+                    </ul>
+                </div><!--footer phien ban lg va md-->
+
+                <div class="footer-header 
+                            col-lg-3 
+                            col-md-4 
+                            d-none
+                            d-md-block 
+                            d-xl-none">
+                    <p>Professional</p>
+                    <ul class="footer-list">
+                        <li><a href="../Src/Contract.html">Contracts</a></li>
+                        <li><a href="../Src/Contactourbuyers.html">Contact our buyers</a></li>
+                    </ul>
+                </div><!--footer phien ban lg va md-->
+
+            </div><!-- footer-khi_xuong_dong -->
+            <!-- ================== Only responsive =================== -->
+        </div><!--content ben trong footer-->
+        <div id="footer-name">
+        </div><!--NAME HARMONY-->
+    </div><!--bg-footer-->
+    <!-- ============================== Footer ============================== -->
+</div><!--Hàm main code trong này-->
+</body>
+</html>
+
+
+
+
+
+
