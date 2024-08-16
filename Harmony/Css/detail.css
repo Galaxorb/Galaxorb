@@ -1,0 +1,1872 @@
+
+.breadcrumb{
+    background-color: var(--background-color);
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style-type: none;    
+  }
+  
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: block;
+  font-family: 'SVN-Gotham-Regular' ;
+  font-size: 10pt;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: var(--primary-color);
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: var(--secondary-color-200);
+  text-decoration: none;
+  font-family: 'SVN-Gotham-Regular' ;
+  font-size: 10pt;
+}
+
+
+/* ( only Extra large  */
+@media (min-width: 1200px) {
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+
+}
+
+/* only large  */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+}
+/* detail */
+
+
+#smallimg video{
+  float: left;
+  width: 200px;
+}
+/* === Extra Large === */
+@media (min-width: 1200px) {
+ 
+  .reproducts #mainImage{
+    width: 700px;
+
+  }
+  #bigimg.reproducts{
+    text-align: center;
+  }
+  #smallimg{
+    padding: 0;
+  }
+  #smallimg img{
+    float: left;
+  }
+  #smallimg .img-fluid{
+    width: 200px;
+  }
+  .owl-carousel{
+    margin: auto;
+  }
+  .detail{
+    padding: 0;
+  }
+  #imgbox{
+    display: block;
+    margin: 0;
+  }
+  
+  #bigimg {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  #bigimg .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: var(--background-color-600);
+    padding: 0 15px;
+    border-radius: 50%;
+    font-size: 20pt;
+  }
+
+  
+  #bigimg .left-arrow {
+      left: 20px;
+  }
+  
+  #bigimg .right-arrow {
+      right: 20px;
+  }
+
+}
+/* === Large === */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #detailbox{
+    margin-top: 20px;
+  }
+  .detail{
+    padding: 0;
+  }
+  .reproducts #mainImage{
+    width: 500px;
+
+  }
+  #bigimg .reproducts{
+    text-align: center;
+  }
+  
+  #smallimg img{
+    float: left;
+  }
+  
+  .owl-carousel{
+    margin: auto;
+  }
+  #imgbox{
+    display: block;
+    margin: 0;
+    
+  }
+  
+  #bigimg {
+      position: relative;
+      padding: 0;
+      margin-bottom: 20px;
+  }
+  
+  #bigimg .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      background-color: var(--background-color-600);
+      padding: 0 15px;
+      border-radius: 50%;
+      font-size: 20pt;
+  }
+  
+  #bigimg .left-arrow {
+      left: 40px;
+  }
+  
+  #bigimg .right-arrow {
+      right: 40px;
+  }
+}
+/* === Medium === */
+@media (min-width: 768px) and (max-width: 991px) {
+  #smallimg img{
+    float: left;
+  }
+ 
+  #bigimg .reproducts {
+    padding: center;
+  }
+  
+  .owl-carousel{
+    margin: auto;
+  }
+  #imgbox{
+    display: block;
+    margin: 0;
+  }
+  
+  #bigimg {
+      position: relative;
+      padding: 0;
+      margin-bottom: 20px;
+  }
+  
+  #bigimg .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      background-color: var(--background-color-600);
+      padding: 0 15px;
+      border-radius: 50%;
+      font-size: 20pt;
+  }
+  
+  #bigimg .left-arrow {
+      left: 20px;
+  }
+  
+  #bigimg .right-arrow {
+      right: 20px;
+  }
+  #smallimg{
+    padding: 0;
+  }
+ 
+}
+/* === Small === */
+@media (min-width: 576px) and (max-width: 767px) {
+
+  #smallimg img{
+    float: left;
+  }
+  .owl-carousel{
+    margin: auto;
+  }
+  #imgbox{
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  #bigimg {
+    position: relative;
+    padding: 0;
+    margin-bottom: 20px;
+}
+  
+  #bigimg .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      background-color: var(--background-color-600);
+      padding: 0 10px;
+      border-radius: 50%;
+      font-size: 13pt;
+  }
+  
+  #bigimg .left-arrow {
+      left: 20px;
+  }
+  
+  #bigimg .right-arrow {
+      right: 20px;
+  }
+}
+/* === Extra Small === */
+@media (max-width: 575px) {
+  #smallimg img{
+    float: left;
+  }
+  
+  .owl-carousel{
+    margin: auto;
+  }
+  #imgbox{
+    display: block;
+    margin: 0;
+  }
+  
+  #bigimg {
+      position: relative;
+      padding: 0;
+      margin-bottom: 20px;
+  }
+  
+  #bigimg .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      background-color: var(--background-color-600);
+      padding: 0 10px;
+      border-radius: 50%;
+      font-size: 13pt;
+  }
+  
+  #bigimg .left-arrow {
+      left: 20px;
+  }
+  
+  #bigimg .right-arrow {
+      right: 20px;
+  }
+  .breadcrumb{
+    background-color: var(--background-color);
+    margin-top: 10px;
+    margin-left: 0;
+}
+}
+/* === Extra Large === */
+@media (min-width: 1200px) {
+  #detailbox h5{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 14pt;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+  #detailbox h2{
+    font-family: 'SVN-Gotham-Bold';
+  }
+  #detailbox h4{
+    font-family: 'SVN-Gotham-Bold';
+    padding-bottom: 10px;
+    color: var(--secondary-color);
+  }
+  #detailbox h6{
+    font-family: 'SVN-Gotham-Bold';
+    padding-top: 10px;
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  #detailbox p{
+    font-family: 'SVN-Gotham-book';
+    color: var(--primary-color);
+    margin-bottom: 5px;
+  }
+  .price {
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+  }
+  .discounted-price {
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+    font-size: 15pt;
+  }
+  .original-price {
+    text-decoration: line-through;
+    color: var(--secondary-color-200);
+    margin-left: 10px;
+    font-family:'SVN-Gotham-Bold' ;
+    
+  }
+  .material{
+    padding-top: 5px;
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+    padding-bottom: 10px;
+  }
+  .setting{
+      font-family: 'SVN-Gotham-Bold';
+  }
+  .original{
+    font-family: 'SVN-Gotham-Book';
+  }
+  #reasons{
+    font-family: 'SVN-Gotham-Bold';
+    color: var(--primary-color);
+  }
+  .detail ul{
+    display: block;
+    list-style-type: none;
+  }
+  .detail li{
+    padding-top: 10px;
+  
+  }
+  .detail ul li .img-fluid{
+    height: 18px;
+  }
+  
+}
+/* === Large === */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+  #detailbox h5{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 14pt;
+  }
+  #detailbox h2{
+    font-family: 'SVN-Gotham-Bold';
+  }
+  #detailbox h4{
+    font-family: 'SVN-Gotham-Bold';
+    padding-bottom: 10px;
+    color: var(--secondary-color);
+  }
+  #detailbox h6{
+    font-family: 'SVN-Gotham-Bold';
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-size: 10pt;
+  
+  }
+  #detailbox p{
+    font-family: 'SVN-Gotham-book';
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-size: 10pt;
+  }
+  .price {
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+  }
+  .discounted-price {
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+    font-size: 15pt;
+  }
+  .original-price {
+    text-decoration: line-through;
+    color: var(--secondary-color-200);
+    margin-left: 10px;
+    
+    font-family:'SVN-Gotham-Bold' ;
+    
+  }
+  .material{
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+    padding-bottom: 10px;
+  }
+  .setting{
+      font-family: 'SVN-Gotham-Bold';
+  }
+  .original{
+    font-family: 'SVN-Gotham-Book';
+  }
+  .buy{
+    font-family: 'SVN-Gotham-Bold';
+  }
+  .detail ul{
+    display: block;
+    list-style-type: none;
+  }
+  .detail li{
+    padding-top: 10px;
+    font-size: 10pt;
+  
+  }
+  .detail ul li .img-fluid{
+    height: 18px;
+  }
+  
+}
+/* === Medium === */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  #detailbox h5{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 14pt;
+    padding-bottom: 5px;
+  }
+  #detailbox h2{
+    font-family: 'SVN-Gotham-Bold';
+    padding-bottom: 10px;
+  }
+  #detailbox h4{
+    font-family: 'SVN-Gotham-Bold';
+    padding-bottom: 10px;
+    color: var(--secondary-color);
+  }
+  #detailbox h6{
+    font-family: 'SVN-Gotham-Bold';
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-size: 10pt;
+  
+  }
+  #detailbox p{
+    font-family: 'SVN-Gotham-book';
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-size: 10pt;
+  }
+  .price {
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+    padding-bottom: 10px;
+  }
+  .discounted-price {
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+    font-size: 15pt;
+    
+  }
+  .original-price {
+    text-decoration: line-through;
+    color: var(--secondary-color-200);
+    margin-left: 10px;
+    
+    font-family:'SVN-Gotham-Bold' ;
+    
+  }
+  .material{
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+    padding-bottom: 10px;
+  }
+  .setting{
+      font-family: 'SVN-Gotham-Bold';
+  }
+  .original{
+    font-family: 'SVN-Gotham-Book';
+  }
+  .buy{
+    font-family: 'SVN-Gotham-Bold';
+  }
+  .detail ul{
+    display: block;
+    list-style-type: none;
+  }
+  .detail li{
+    padding-top: 10px;
+    font-size: 10pt;
+  
+  }
+  .detail ul li .img-fluid{
+    height: 18px;
+  }
+}
+/* === Small === */
+@media (min-width: 576px) and (max-width: 767px) {
+  .detail{
+    margin: 0;
+  }
+  
+  #detailbox h5{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 14pt;
+    padding-bottom: 5px;
+  }
+  #detailbox h2{
+    font-family: 'SVN-Gotham-Bold';
+    padding-bottom: 10px;
+  }
+  #detailbox h4{
+    font-family: 'SVN-Gotham-Bold';
+    padding-bottom: 10px;
+    color: var(--secondary-color);
+  }
+  #detailbox h6{
+    font-family: 'SVN-Gotham-Bold';
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-size: 10pt;
+  
+  }
+  #detailbox p{
+    font-family: 'SVN-Gotham-book';
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-size: 10pt;
+  }
+  .price {
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+    padding-bottom: 10px;
+  }
+  .discounted-price {
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+    font-size: 15pt;
+  }
+  .original-price {
+    text-decoration: line-through;
+    color: var(--secondary-color-200);
+    margin-left: 10px;
+    
+    font-family:'SVN-Gotham-Bold' ;
+    
+  }
+  .material{
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+    padding-bottom: 10px;
+  }
+  .setting{
+      font-family: 'SVN-Gotham-Bold';
+  }
+  .original{
+    font-family: 'SVN-Gotham-Book';
+  }
+  .buy{
+    font-family: 'SVN-Gotham-Bold';
+  }
+  .detail ul{
+    display: block;
+    list-style-type: none;
+  }
+  .detail li{
+    padding-top: 10px;
+    font-size: 10pt;
+  
+  }
+  .detail ul li .img-fluid{
+    height: 18px;
+  }
+}
+/* === Extra Small === */
+@media (max-width: 575px) {
+  
+  #detailbox h5{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 14pt;
+    padding-bottom: 5px;
+  }
+  #detailbox h2{
+    font-family: 'SVN-Gotham-Bold';
+    padding-bottom: 10px;
+  }
+  #detailbox h4{
+    font-family: 'SVN-Gotham-Bold';
+    padding-bottom: 10px;
+    color: var(--secondary-color);
+  }
+  #detailbox h6{
+    font-family: 'SVN-Gotham-Bold';
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-size: 10pt;
+  
+  }
+  #detailbox p{
+    font-family: 'SVN-Gotham-book';
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-size: 10pt;
+  }
+  .price {
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+    padding-bottom: 10px;
+  }
+  .discounted-price {
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+    font-size: 15pt;
+  }
+  .original-price {
+    text-decoration: line-through;
+    color: var(--secondary-color-200);
+    margin-left: 10px;
+    
+    font-family:'SVN-Gotham-Bold' ;
+    
+  }
+  .material{
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-family:'SVN-Gotham-Bold' ;
+    padding-bottom: 10px;
+  }
+  .setting{
+      font-family: 'SVN-Gotham-Bold';
+  }
+  .original{
+    font-family: 'SVN-Gotham-Book';
+  }
+  .buy{
+    font-family: 'SVN-Gotham-Bold';
+  }
+  .detail ul{
+    display: block;
+    list-style-type: none;
+  }
+  .detail li{
+    padding-top: 10px;
+    font-size: 10pt;
+  
+  }
+  .detail ul li .img-fluid{
+    height: 18px;
+  }
+  .accordion{
+    padding: 15px;
+  }
+}
+
+
+
+
+.quantity-selector {
+  display: flex;
+  margin-top: 10px;
+}
+
+.quantity-selector button {
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--background-color);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 0 0 5px;
+  font-family: 'SVN-Gotham-Book'
+  
+}
+
+.quantity-selector input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid var(--primary-color);
+  background-color: var(--background-color);
+  height: 40px;
+  font-size: 18px;
+  margin: 0 -1px; /* Overlap borders */
+  font-family: 'SVN-Gotham-Book';
+}
+
+.quantity-selector button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.quantity-selector button:focus, .quantity-selector input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+.add-to-basket {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+
+
+
+/* === Extra Large === */
+@media (min-width: 1200px) {
+  .add-to-heart{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 5px 10px 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    width: 50px;
+  }
+  .payment-methods{
+    padding: 0;
+    margin-top: 20px;
+  }
+  .payment-methods img {
+    width: 50px;
+    height: auto;
+    margin-right: 30px;
+  
+  }
+  .button{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .tab-text{
+    padding-left: 20px;
+    margin-top: 15px;
+  }
+  /* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px 22px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: var(--background-color);
+}
+.add-to-basket:hover {
+  background-color: var(--secondary-color);
+}
+
+.add-to-heart:hover {
+  background-color: var(--secondary-color);
+}
+}
+/* === Large === */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .add-to-heart{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 5px 10px 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    width: 50px;
+  }
+  .payment-methods{
+    font-family: 'SVN-Gotham-Book';
+    padding-left: 15px;
+    margin-top: 15px;
+  }
+  .payment-methods{
+    padding: 0;
+    margin-top: 20px;
+  }
+  .payment-methods img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+  
+  }
+  .button{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .tab-text{
+    padding-left: 20px;
+    margin-top: 15px;
+  }
+  /* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px 22px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: var(--background-color);
+}
+.add-to-basket:hover {
+  background-color: var(--secondary-color);
+}
+
+.add-to-heart:hover {
+  background-color: var(--secondary-color);
+}
+}
+/* === Medium === */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  .add-to-heart{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+  }
+ 
+  .payment-methods{
+    margin-top: 20px;
+  }
+  .payment-methods img {
+    width: 50px;
+    height: auto;
+    margin-right: 50px;
+  
+  }
+  .tab-text{
+    padding-left: 20px;
+    margin-top: 15px;
+  }
+  /* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px 22px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: var(--background-color);
+}
+}
+/* === Small === */
+@media (min-width: 576px) and (max-width: 767px) {
+  .add-to-heart{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+  }
+  #basket{
+    padding: 0 16px;
+  }
+  .payment-methods{
+    margin-top: 20px;
+  }
+  .payment-methods img {
+    width: 50px;
+    height: auto;
+    margin-right: 50px;
+  
+  }
+  .tab .tablinks{
+    font-size: 9pt;
+  }
+  .tab-text{
+    padding-left: 5px;
+    margin-top: 15px;
+  }
+  .material-text .setting{
+    font-size: 9pt;
+  }
+  .material-text .original{
+    font-size: 9pt;
+  }
+  /* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px 22px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: var(--background-color);
+}
+}
+/* === Extra Small === */
+@media (max-width: 575px) {
+  
+  .add-to-heart{
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+  }
+  #basket{
+    padding: 0 25px;
+    
+  }
+  .payment-methods{
+    margin-top: 20px;
+  }
+  .payment-methods img {
+    width: 45px;
+    height: auto;
+    margin-right: 40px;
+  
+  }
+  .tab .tablinks{
+    font-size: 8pt;
+  }
+  .tab-text{
+    padding-left: 5px;
+    margin-top: 15px;
+  }
+  .material-text .setting{
+    font-size: 10pt;
+  }
+  .material-text .original{
+    font-size: 10pt;
+  }
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 14.5px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: var(--background-color);
+  }
+}
+.detail-text{
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#wrapper {
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background-color);
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family:  'SVN-Gotham-Book';
+}
+.accordion-body{
+  font-family:  'SVN-Gotham-Book';
+}
+
+#detailbox .accordion-body h6{
+  font-family:  'SVN-Gotham-Bold';
+  display: block;
+  text-decoration:none;
+
+}
+
+/* === Extra Large === */
+@media (min-width: 1200px) {
+  #detailbox .accordion-header h5{
+    font-family:  'SVN-Gotham-Bold';
+    font-size: 11pt;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3px;
+  }
+  .recomment {
+    padding-left: 50px;
+  }
+  .mui-ten .left-arrow {
+    position: absolute;
+    left: 55px;
+  }
+  .designer p{
+  font-family: 'SVN-Gotham-Book';
+  }
+  .designer .img-fluid{
+    border-radius: 50%;
+    max-width: 200px;
+    margin-left: 150px;
+  }
+}
+/* === Large === */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #detailbox .accordion-header h5{
+    font-family:  'SVN-Gotham-Bold';
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3px;
+  }
+  .recomment {
+    padding-left: 40px;
+  }
+  .designer p{
+    font-family: 'SVN-Gotham-Book';
+  }
+  .designer .img-fluid{
+    border-radius: 50%;
+    max-width: 200px;
+    margin-left: 100px;
+  }
+  .mui-ten .left-arrow {
+    position: absolute;
+    left: 55px;
+  }
+}
+/* === Medium === */
+@media (min-width: 768px) and (max-width: 991px) {
+  #detailbox .accordion-header h5{
+    font-family:  'SVN-Gotham-Bold';
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3px;
+  }
+  .recomment {
+    padding-left: 35px;
+  }
+  .designer p{
+    font-family: 'SVN-Gotham-Book';
+  }
+  .designer .img-fluid{
+    border-radius: 50%;
+    max-width: 200px;
+    margin-left: 260px;
+  }
+  .mui-ten .left-arrow {
+    position: absolute;
+    left: 40px;
+  }
+}
+/* === Small === */
+@media (min-width: 576px) and (max-width: 767px) {
+  #detailbox .accordion-header h5{
+    font-family:  'SVN-Gotham-Bold';
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3px;
+  }
+  .recomment {
+    padding-left: 25px;
+  }
+  .designer p{
+    font-family: 'SVN-Gotham-Book';
+  }
+  .designer .img-fluid{
+    border-radius: 50%;
+    max-width: 200px;
+    margin-left: 170px;
+  }
+  
+}
+/* === Extra Small === */
+@media (max-width: 575px) {
+  #detailbox .accordion-header h5{
+    font-family:  'SVN-Gotham-Bold';
+    font-size: 10pt;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3px;
+  }
+  .viewmore h3{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 15pt;
+  }
+  .recomment h3{
+    font-size: 15pt;
+  }
+  
+  .designer p{
+    font-family: 'SVN-Gotham-Book';
+    font-size: 9pt;
+    
+  }
+  .designer h3{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 15pt;
+  }
+  .story p{
+    font-family: 'SVN-Gotham-Book';
+    font-size: 9pt;
+  }
+  .story h3{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 15pt;
+  }
+  .designer .img-fluid{
+    border-radius: 50%;
+    max-width: 200px;
+    margin-left: 95px;
+  }
+  .mui-ten .left-arrow {
+    position: absolute;
+    left: 10px;
+  }
+}
+
+.accordion-item.active .accordion-header {
+  background: var(--primary-color);
+  color: var(--background-color);
+}
+
+.arrow {
+  transition: all 0.3s;
+}
+
+.accordion-item.active .arrow {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  padding: 10px 10px;
+  display: none;
+}
+
+
+/*Product*/
+.owl-carousel a {
+  text-decoration: none;
+}
+.t1{
+  font-family: 'SVN-Gotham-Book';
+  font-size: 12px;
+  margin:0;
+  
+  color: var(--primary-color);
+}
+.t2{
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 16px;
+  padding: 0;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+.t3{
+  font-family: 'SVN-Gotham-Regular';
+  font-size: 14px;   
+  color:#5E6C5B;
+}
+.t4{
+  font-family: 'SVN-Gotham-Regular';
+  font-size: 14px;   
+  color:#B5BBB4;
+}
+.t5{
+  font-family: 'SVN-Gotham-book';
+  font-size: 10px; 
+  color: var(--primary-color);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.t6{
+  font-family: 'SVN-Gotham-regular';
+  font-size: 10px; 
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+.cost{
+  height:48px;
+  padding: 0 0px 0 15px ;
+  margin-bottom: -18px;
+}
+
+.mui-ten .arrow {
+  cursor: pointer;
+  font-size: 20pt;
+  margin-bottom: 5px;
+}
+
+.mui-ten .right-arrow {
+  right: 20px;
+  padding-left: 50px;
+}
+.hover-img {
+  object-fit: cover;
+  transition:  0.3s ease-in-out;
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .t2{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 12px;
+    padding: 0;
+    margin-bottom: 5px;
+    color:#162A2C;
+  }
+  .t3{
+    font-family: 'SVN-Gotham-Regular';
+    font-size: 12px;   
+    color:#5E6C5B;
+  }
+  .t5{
+    margin-top: 0;
+    font-family: 'SVN-Gotham-book';
+    font-size: 9px; 
+  }
+  .mui-ten .arrow {
+    cursor: pointer;
+    font-size: 15pt;
+    margin-bottom: 10px;
+  }
+  .mui-ten .left-arrow {
+    position: absolute;
+    left: 30px;
+  
+  }
+  .mui-ten .right-arrow {
+    right: 20px;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .t1{
+    font-family: 'SVN-Gotham-Book';
+    font-size: 9px;
+    
+    color:#162A2C;
+  }
+  .t2{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 10px;
+    padding: 0;
+    margin-bottom: 5px;
+    color:#162A2C;
+  }
+  .t3{
+    font-family: 'SVN-Gotham-Regular';
+    font-size: 10px;   
+    color:#5E6C5B;
+  }
+  .t4{
+    font-family: 'SVN-Gotham-Regular';
+    font-size: 14px;   
+    color:#B5BBB4;
+    margin-bottom: 0;
+  }
+  .t5{
+    margin-top: 0;
+    font-family: 'SVN-Gotham-book';
+    font-size: 8px; 
+  }
+  .t6{
+    font-family: 'SVN-Gotham-regular';
+    font-size: 10px; 
+    
+  }
+  .cost{
+    height:20px;
+    padding: 0 0 0 15px ;
+    margin-bottom: 0;
+  }
+  .mui-ten .arrow {
+    cursor: pointer;
+    font-size: 15pt;
+  }
+  .mui-ten .left-arrow {
+    position: absolute;
+    left: 20px;
+  
+  }
+  .mui-ten .right-arrow {
+    right: 20px;
+    padding-left: 50px;
+  }
+}
+
+#bg-footer{
+  margin-top: 20px;
+}
+.viewmore .img-fluid{
+  height: auto;
+}
+
+.bg-viewmore{
+  display: block;
+}
+
+/* Style the tab */
+.tabcontent .img-fluid{
+  width: 500px;
+  margin-top: 20px;
+}
+.bg-content .tab-img {
+  text-align: center;
+}
+.bg-content{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tab {
+  overflow: hidden;
+  background-color: var(--primary-color);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+
+/* / only Extra large / */
+@media (min-width: 1200px) {
+  .tab button:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+  }
+
+
+}
+
+/* / only large / */
+
+@media (min-width: 992px) and (max-width:1199px) {
+  .tab button:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+  }
+
+
+}
+/* Change background color of buttons on hover */
+
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  border-bottom: none;
+  border: 1px solid var(--primary-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
+}
+
+/* Display the default tab content */
+#London {
+  display: block;
+}
+
+
+
+.active-thumbnail {
+  border: 1px solid var(--primary-color); /* Adjust the style as needed */
+  padding: 5px;
+}
+
+/* PopupCart
+__________________________________ */
+#Overlay-PopupCart{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 501;
+}
+.popup-cart {
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 502;
+}
+/* Only xl */
+@media (min-width: 1200px) {
+  .popup-cart{
+      width: 560px;
+  }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .popup-cart{
+      width: 530px;
+  }
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+  .popup-cart{
+      width: 500px;
+  }
+  .popup-title{
+      width: 300px;
+  }
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+  .popup-cart{
+      width: 420px;
+  }
+  .popup-title{
+      width: 300px;
+  }
+}
+/* Only xs */
+@media (max-width: 575px) {
+  .popup-cart{
+      width: 400px;
+  }
+  .popup-title{
+      width: 300px;
+  }
+}
+/* Popup_Header
+=============== */
+.popup-header{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'SVN-Gotham-Regular';
+}
+.close-popupcart{
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Popup_Content
+=============== */
+.popup-img{
+  width: 100%;
+  height: 100%;
+}
+.popup-img a img{
+  object-fit: cover;
+  width: 150px;
+}
+
+.popup-brand p{
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 14px;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+
+.popup-title_price, .popup-title_price a{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 16px;
+  color: var(--primary-color);
+  text-decoration: none;
+}   
+.popup-note{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.icon-note{
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+}
+.popup-date,.popup-ship{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-family: 'SVN-Gotham-Book';
+}
+.popup-date i, .popup-ship i{
+  font-size: 18px;
+}
+.popup-date span, .popup-ship span{
+  font-size: 14px;
+}
+.popup-date span{
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.popup-quantity{
+  margin-top: 50px;
+}
+.quantity-title{
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.quantity-selector {
+  display: flex;
+  margin-top: 10px;
+}
+
+.quantity-selector button {
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+background-color: var(--background-color);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 0 0 5px;
+  font-family: 'SVN-Gotham-Book'
+  
+}
+
+.quantity-selector input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid var(--primary-color);
+  background-color: var(--background-color);
+  height: 40px;
+  font-size: 18px;
+  margin: 0 -1px; /* Overlap borders */
+  font-family: 'SVN-Gotham-Book';
+}
+
+.quantity-selector button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.quantity-selector button:focus, .quantity-selector input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.remove-item{
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.remove-item a{
+  text-decoration: underline;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-family: 'SVN-Gotham-Book';
+}
+
+
+/* Popup_Footer
+=============== */
+.popup-footer{
+  margin-top: 40px;
+  border-top: 1pt solid var(--primary-color);
+}
+.total{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total-select{
+  font-family: 'SVN-Gotham-Regular';
+  font-size: 16px;
+}
+.total-price{
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 18px;
+}
+.total-btn{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.total-btn button{
+  width: 48%;
+}
+/* PopupCart
+__________________________________ */
+
+
+
+
+/* You May Like */
+a.reproducts{
+  text-decoration: none;
+  margin-bottom: 50px;
+  color: var(--primary-color);
+}
+.hover-img {
+  object-fit: cover;
+  height: 122px;
+  transition:  0.3s ease-in-out;
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .t2{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 12px;
+    padding: 0;
+    margin-bottom: 5px;
+    color:#162A2C;
+  }
+  .t3{
+    font-family: 'SVN-Gotham-Regular';
+    font-size: 12px;   
+    color:#5E6C5B;
+  }
+  .t5{
+    margin-top: 0;
+    font-family: 'SVN-Gotham-book';
+    font-size: 9px; 
+  }
+  .mui-ten .arrow {
+    cursor: pointer;
+    font-size: 15pt;
+    margin-bottom: 10px;
+  }
+  .mui-ten .left-arrow {
+    position: absolute;
+    left: 20px;
+  
+  }
+  .mui-ten .right-arrow {
+    right: 20px;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .t1{
+    font-family: 'SVN-Gotham-Book';
+    font-size: 9px;
+    
+    color:#162A2C;
+  }
+  .t2{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 10px;
+    padding: 0;
+    margin-bottom: 5px;
+    color:#162A2C;
+  }
+  .t3{
+    font-family: 'SVN-Gotham-Regular';
+    font-size: 10px;   
+    color:#5E6C5B;
+  }
+  .t4{
+    font-family: 'SVN-Gotham-Regular';
+    font-size: 14px;   
+    color:#B5BBB4;
+    margin-bottom: 0;
+  }
+  .t5{
+    margin-top: 0;
+    font-family: 'SVN-Gotham-book';
+    font-size: 7px; 
+  }
+  .t6{
+    font-family: 'SVN-Gotham-regular';
+    font-size: 10px; 
+    
+  }
+  .cost{
+    height:20px;
+    padding: 0 0 0 15px ;
+    margin-bottom: 0;
+  }
+  .mui-ten .arrow {
+    cursor: pointer;
+    font-size: 15pt;
+  }
+  .mui-ten .left-arrow {
+    position: absolute;
+    left: 20px;
+  
+  }
+  .mui-ten .right-arrow {
+    right: 20px;
+    padding-left: 50px;
+  }
+}
+/* You May Like */
+
+
+
+
+/*Hover Product*/
+.hover{
+  display:none;
+  object-fit: cover;
+}
+/* === Large === */
+@media (min-width: 992px) {
+  .productcard {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+  }
+  .productcard:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  .productcard .img-fluid {
+display: block;
+      width: 100%;
+      transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  }
+  
+  .productcard .img-fluid.default {
+      opacity: 1; /* Default image visible */
+  }
+  .productcard .img-fluid.hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0; /* Hover image hidden by default */
+  }
+  .productcard .heart{
+      display: none;
+  }
+  .productcard:hover .heart{
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+  }
+  .productcard:hover .img-fluid.default {
+      opacity: 0; /* Hide default image on hover */
+  }
+  
+  .productcard:hover .img-fluid.hover {
+      opacity: 1; /* Show hover image on hover */
+  }
+}
+/*Hover Product*/
+.original-img .img-fluid{
+  border-radius: 50%;
+  width: 40px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.first-img {
+  border: 2px solid var(--primary-color); /* Change the color and width of the border as needed */
+  border-radius: 50%; /* Makes the border circular */
+  padding: 3px; /* Optional: Adjust the padding as needed */
+}
+
+

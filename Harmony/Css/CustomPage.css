@@ -1,0 +1,1023 @@
+
+/* BreadCrumb
+============================ */
+.breadcrumb{
+    background-color: var(--background-color);
+    margin-top: 10px;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style-type: none;    
+  }
+  
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: block;
+  font-family: 'SVN-Gotham-Regular' ;
+  font-size: 10pt;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: var(--primary-color);
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: var(--secondary-color-200);
+  text-decoration: none;
+  font-family: 'SVN-Gotham-Regular' ;
+  font-size: 10pt;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+/* BreadCrumb
+============================ */
+
+
+
+/* Cus Header
+============================ */
+
+    .owl-nav button{
+        outline: none;
+        border: none;
+        text-align: center;
+    }
+    .owl-next{
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .owl-prev{
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    /* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+    .owl-next{
+        right: -10px;
+    }
+    .owl-prev{
+        left: -20px;
+    }
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+    .owl-next{
+        right: -20px;
+    }
+    .owl-prev{
+        left: -25px;
+    }
+}
+/* Only xs */
+@media (max-width: 575px) {
+    .owl-next{
+        right: -10px;
+    }
+    .owl-prev{
+        left: -20px;
+    }
+}
+
+.Header-Cus{
+    margin-top: 20px;
+    text-align: center;
+}
+.Cus-Title{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 52px;
+    color: var(--primary-color);
+    text-align: center;
+}
+.Cus-Caption{
+    font-family: 'SVN-Gotham-Book';
+    font-size: 16px;
+}
+#RoomAll-Btn, #BedRoom-Btn , #DiningRoom-Btn , #Living-Btn{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.Cus-Btn button i{
+    font-size: 22px;
+    margin-left: 20px;
+    transition: ease-in-out 0.3s;
+}
+.additional-buttons {
+    display: none;
+}
+
+/* Thay đổi biểu tượng khi hover */
+#RoomAll-Btn:hover i {
+    transform: rotate(180deg); /* Xoay biểu tượng 180 độ */
+}
+.additional-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: none;
+    text-align: left;
+    border-radius: 5px;
+}
+.additional-buttons button {
+    margin: 10px 10px;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.additional-buttons button:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.additional-buttons button:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.additional-buttons button:nth-child(3) {
+    transition-delay: 0.3s;
+}
+.Cus-Btn:hover .additional-buttons button {
+    opacity: 1;
+    transform: none;
+}
+.Cus-Btn {
+    margin-top: 20px;
+}
+button.active {
+    padding: var(--btn-border-radius);
+    border-radius: var(--btn-border-radius);
+    background-color: var(--primary-color);
+    font-size: 16px;
+    font-family: 'SVN-Gotham-Book';
+    color: white;
+    outline: none;
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+
+.owl-dots{
+    display: none;
+}
+/* Only xl */
+@media (min-width: 1200px) {
+    .Cus-Btn button{
+        padding: var(--btn-border-radius);
+        border-radius: var(--btn-border-radius);
+        font-size: 16px;
+    }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Cus-Btn button{
+        padding: var(--btn-border-radius);
+        border-radius: var(--btn-border-radius);
+        font-size: 16px;
+    }
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+    .Cus-Btn button{
+        padding: var(--btn-border-radius);
+        border-radius: var(--btn-border-radius);
+        font-size: 14px;
+    }
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+    .Cus-Btn button{
+        padding: var(--btn-border-radius);
+        border-radius: var(--btn-border-radius);
+        font-size: 14px;
+    }
+}
+/* Only xs */
+@media (max-width: 575px) {
+    .Cus-Btn button{
+        padding: var(--btn-border-radius);
+        border-radius: var(--btn-border-radius);
+        font-size: 14px;
+    }
+}
+/* Cus Header
+============================ */
+
+
+
+/* Trái tim
+====================== */
+.icon1{
+    cursor: pointer;
+    font-size: 24px;
+}
+.icon2 {
+    font-size: 24px;
+    display: none;
+}
+/* Trái tim
+====================== */
+
+
+/* Congtat
+====================== */
+/* The switch - the box around the slider */
+.switch {
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 29px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.Click_See_All label{
+    margin: 0;
+}
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color);
+    transition: .4s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.27em;
+    bottom: 0.25em;
+    background-color: var(--secondary-color);
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--secondary-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(1.4em);
+    background-color: #fff;
+}
+/* Congtat
+====================== */
+
+
+/* Dot-Ripple-Container
+============================ */
+.ripple-container {
+    position: relative;
+}
+.ripple {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.714);
+    transform: translate(-50%, -50%);
+    animation: ripple-animation 1.5s infinite;
+}
+.center-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background: white;
+    transform: translate(-50%, -50%);
+}
+/* Only xl */
+@media (min-width: 1200px) {
+    @keyframes ripple-animation {
+        0% {
+            transform: translate(-50%, -50%) scale(0.3);
+            opacity: 1;
+        }
+        70% {
+            transform: translate(-50%, -50%) scale(1.2);
+            opacity: 0.3;
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(1.5);
+            opacity: 0;
+        }
+    }
+    .center-dot{
+        width: 15px;
+        height: 15px;
+    }
+    .ripple-container{
+        width: 30px;
+        height: 30px;
+    }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+    @keyframes ripple-animation {
+        0% {
+            transform: translate(-50%, -50%) scale(0.2);
+            opacity: 1;
+        }
+        70% {
+            transform: translate(-50%, -50%) scale(1.1);
+            opacity: 0.3;
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(1.4);
+            opacity: 0;
+        }
+    }
+    .center-dot{
+        width: 14px;
+        height: 14px;
+    }
+    .ripple-container{
+        width: 30px;
+        height: 30px;
+    }
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+    @keyframes ripple-animation {
+        0% {
+            transform: translate(-50%, -50%) scale(0.2);
+            opacity: 1;
+        }
+        70% {
+            transform: translate(-50%, -50%) scale(1.1);
+            opacity: 0.3;
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(1.4);
+            opacity: 0;
+        }
+    }
+    .center-dot{
+        width: 13px;
+        height: 13px;
+    }
+    .ripple-container{
+        width: 27px;
+        height: 27px;
+    }
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+    @keyframes ripple-animation {
+        0% {
+            transform: translate(-50%, -50%) scale(0.1);
+            opacity: 1;
+        }
+        70% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0.3;
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(1.);
+            opacity: 0;
+        }
+    }
+    .center-dot{
+        width: 12px;
+        height: 12px;
+    }
+    .ripple-container{
+        width: 25px;
+        height: 25px;
+    }
+}
+/* Only xs */
+@media (max-width: 575px) {
+    @keyframes ripple-animation {
+        0% {
+            transform: translate(-50%, -50%) scale(0.1);
+            opacity: 1;
+        }
+        70% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0.3;
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(1.1);
+            opacity: 0;
+        }
+    }
+    .center-dot{
+        width: 10px;
+        height: 10px;
+    }
+    .ripple-container{
+        width: 24px;
+        height: 24px;
+    }
+}
+/* Dừng hiệu ứng ripple khi hover vào Dot*/
+.ripple-container:hover .ripple {
+    animation-play-state: paused;
+    opacity: 1; /* Giữ lại vòng màu đen mờ */
+    transform: translate(-50%, -50%) scale(1.2); /* Giữ lại kích thước vòng */
+}
+.ripple-container:hover .center-dot {
+    transform: translate(-50%, -50%) scale(1.1); /* Làm lớn center-dot */
+}
+
+/* Only xl */
+@media (min-width: 1200px) {
+/* Các phần tử Popup Bị Ẩn đi ban đầu
+========== */
+.popup-main {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+/* Hiển thị Popup khi hover vào Dot 
+=============*/
+.ripple-container:hover .popup-main {
+    display: flex;
+    opacity: 1;
+}
+
+.popup-main {
+    display: none; /* Ẩn popup theo mặc định */
+}
+.popup-main.show {
+    display: block; /* Hiển thị popup khi có lớp "show" */
+}
+.popup-main {
+    display: none; /* Ẩn popup theo mặc định */
+}
+.popup-main.show {
+    opacity: 1;
+    display: block; /* Hiển thị popup khi có lớp "show" */
+}
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+/* Các phần tử Popup Bị Ẩn đi ban đầu
+========== */
+.popup-main {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+/* Hiển thị Popup khi hover vào Dot 
+=============*/
+.ripple-container:hover .popup-main {
+    display: flex;
+    opacity: 1;
+}
+
+.popup-main {
+    display: none; /* Ẩn popup theo mặc định */
+}
+.popup-main.show {
+    display: block; /* Hiển thị popup khi có lớp "show" */
+}
+.popup-main {
+    display: none; /* Ẩn popup theo mặc định */
+}
+.popup-main.show {
+    opacity: 1;
+    display: block; /* Hiển thị popup khi có lớp "show" */
+}
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+    .popup-main {
+        display: none; /* Ẩn popup theo mặc định */
+    }
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+    .popup-main {
+        display: none; /* Ẩn popup theo mặc định */
+    }
+}
+/* Only xs */
+@media (max-width: 575px) {
+    .popup-main {
+        display: none; /* Ẩn popup theo mặc định */
+    }
+}
+/* Dot-Ripple-Container
+============================ */
+
+/* Cus-Footer
+=========================== */
+/* Only xl */
+@media (min-width: 1200px) {
+    .Cus-Footer{
+        display: flex;
+        flex-direction: row;
+        padding: 20px 0;
+        justify-content: space-between;
+    }
+    .Cus-Footer i{
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Cus-Footer{
+        display: flex;
+        flex-direction: row;
+        padding: 20px 0;
+        justify-content: space-between;
+    }
+    .Cus-Footer i{
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+    .Cus-Footer{
+        display: flex;
+        flex-direction: row;
+        padding: 10px 0;
+        justify-content: space-between;
+    }
+    .Cus-Footer i{
+        font-size: 18px;
+        cursor: pointer;
+    }
+}
+/* Only sm */
+@media (min-width: 401px) and (max-width: 767px) {
+    .Cus-Footer{
+        display: flex;
+        flex-direction: row;
+        padding: 10px 0;
+        justify-content: space-between;
+    }
+    .Cus-Footer i{
+        font-size: 18px;
+        cursor: pointer;
+    }
+}
+/* Only xs */
+@media (max-width: 400px) {
+    .Cus-Footer{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        justify-content: space-between;
+    }
+    .Cus-Footer i{
+        font-size: 18px;
+        cursor: pointer;
+    }
+}
+.Click_See_All{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family: 'SVN-Gotham-Book';
+    font-size: 18px;
+}
+.CLick-To-Love{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex: end;
+    gap: 20px;
+    font-family: 'SVN-Gotham-Book';
+    font-size: 18px;
+}
+.Click_See_All p,.CLick-To-Love p{
+    margin: 0;
+    padding: 0;
+}
+/* Cus-Footer
+=========================== */
+
+
+/* Popup-Product
+=========================== */
+.Popup-Product{
+    width: 300px;
+    min-height: 100px;
+    padding: 10px 15px;
+    z-index: 2;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .3);
+    background-color: #fff;
+    border-radius: 8px;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+.popup-img_info{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.Popup-Img{
+    width: 80px;
+}
+.Popup-Img img{
+    width: 100%;
+    object-fit: cover;
+}
+.Popup-Info{
+    display: flex;
+    flex-direction: column;
+    font-family: 'SVN-Gotham-Book';
+    font-size: 16px;
+    color: var(--primary-color);
+}
+.Popup-Info p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.Popup-Aggle{
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+.ripple-container a{
+    text-decoration: none;
+}
+/* Popup-Product
+=========================== */
+
+
+
+
+
+/* CusTom Product
+============================ */
+
+/* Only xl */
+@media (min-width: 1200px) {
+    .bg-custom-product{
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .bg-custom-product{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+    .bg-custom-product{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+    .bg-custom-product{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+/* Only xs */
+@media (max-width: 575px) {
+    .bg-custom-product{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.Anh-Bg{
+    position: relative;
+    padding-top: 56.25%;
+    width: 100%;
+    grid-area: 1 / 1 / 21 / 21;
+}
+.Cus_GirdContainer{
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.Anh-Bg img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+
+
+
+/* Seb-Bed
+_______________________________________________________ */
+#Popup-Seb-Storage{
+    transform: translateY(-50%);
+    top: 50%;
+    left: 100%;
+}
+#Popup-Seb-Bed{
+    left: -420%;
+    bottom: 100%;
+}
+#Seb-Bed{
+    margin: 40px auto;
+    margin-top: 20px;
+}
+#Dot-Bed-Seb{
+    grid-area: 8 / 8 / 9 / 9;
+}
+#Dot-Storage-Seb{
+    grid-area: 13 / 3 / 14 / 4;
+}
+
+
+
+
+/* Madison-Bed
+_______________________________________________________ */
+#madison-bed{
+    margin: 20px auto;
+}
+#Popup-Madison-Bed{
+    left: -420%;
+    bottom: 100%;
+}
+#Popup-Madison-Sofa{
+    transform: translateY(-50%);
+    top: 50%;
+    left: 100%;
+}
+#Popup-Madison-Storage{
+    left: -420%;
+    bottom: 100%;
+}
+#Dot-Bed-Madison{
+    grid-area: 8 / 11 / 9 / 12;
+}
+#Dot-Storage-Madison{
+    grid-area: 13 / 5 / 14 / 7;
+}
+#Dot-Sofa-Madison{
+    grid-area: 17 / 3 / 18 / 4;
+}
+
+
+
+/* Dining-1
+_______________________________________________________ */
+#DiningRoom-1{
+    margin: 20px auto;
+}
+#Dot-Storage-Dining-1{
+    grid-area: 8 / 3 / 9 / 4;
+}
+#Dot-Table-Dining-1{
+    grid-area: 9 / 10 / 10 / 11;
+}
+#Dot-Chair-Dining-1{
+    grid-area: 12 / 17 / 12 / 18;
+}
+#Popup-Dining-1-Chair{
+    left: -420%;
+    bottom: 100%;
+}
+#Popup-Dining-1-Storage{
+    transform: translateY(-50%);
+    top: 50%;
+    left: 100%;
+}
+#Popup-Dining-1-Table{
+    left: -420%;
+    bottom: 100%;
+}
+
+
+
+/* Dining-2
+_______________________________________________________ */
+#DiningRoom-2{
+    margin: 20px auto;
+}
+#Dot-Storage-Dining-2{
+    grid-area: 6 / 10 / 6 / 11;
+}
+#Dot-Table-Dining-2{
+    grid-area: 8 / 10 / 8 / 11;
+}
+#Dot-Lounge-Dining-2{
+    grid-area: 12 / 8 / 12 / 9;
+}
+#Dot-Chair-Dining-2{
+    grid-area: 12 / 16 / 12 / 19;
+}
+#Popup-Dining-2-Chair{
+    left: -420%;
+    bottom: 100%;
+}
+#Popup-Dining-2-Lounge{
+    left: -420%;
+    bottom: 100%;
+}
+#Popup-Dining-2-Storage{
+    left: -420%;
+    bottom: 100%;
+}
+#Popup-Dining-2-Table{
+    transform: translateY(-50%);
+    top: 50%;
+    left: 100%;
+}
+
+
+
+/* Living-1
+_______________________________________________________ */
+#LivingRoom-1{
+    margin: 20px auto;
+}
+#Dot-Sofa1-Living-1{
+    grid-area: 12 / 6 / 13 / 7;
+}
+#Dot-Sofa2-Living-1{
+    grid-area: 17 / 11 / 18 / 12;
+}
+#Popup-Living-1-Sofa1{
+    transform: translateY(-50%);
+    top: 50%;
+    left: 100%;
+}
+#Popup-Living-1-Sofa2{
+    left: -420%;
+    bottom: 100%;
+}
+
+
+
+/* Living-2
+_______________________________________________________ */
+#LivingRoom-2{
+    margin: 20px auto;
+}
+#Popup-Living-2-Sofa2{
+    left: -420%;
+    bottom: 100%;
+}
+#Popup-Living-2-Sofa1{
+    left: -420%;
+    bottom: 100%;
+}
+#Popup-Living-2-Table1{
+    left: -420%;
+    bottom: 100%;
+}
+#Popup-Living-2-Table2{
+    transform: translateY(-50%);
+    top: 50%;
+    left: 120%
+}
+#Popup-Living-2-Table3{
+    left: -420%;
+    bottom: 100%;
+}
+#Dot-Table1-Living-2{
+    grid-area: 14 / 2 / 15 / 4;
+}
+#Dot-Table2-Living-2{
+    grid-area: 13 / 11 / 14 / 12;
+}
+#Dot-Table3-Living-2{
+    grid-area: 15 / 16 / 16 / 17;
+}
+#Dot-Sofa1-Living-2{
+    grid-area: 11 / 13 / 11 / 14;
+}
+#Dot-Sofa2-Living-2{
+    grid-area: 13 / 5 / 13 / 6;
+}
+
+
+
+
+/* Menu-Product
+_______________________________________________________ */
+/* Keyframes for slide up and slide down animations */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+#Overlay-MenuProduct{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 999;
+    transition: ease-in;
+}
+/* Add animation to Menu-Product */
+.Menu-Product {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background-color: var(--background-color);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(100%); /* Start position for slide up */
+    transition: transform 0.3s ease-in-out;
+    display: none;
+}
+
+.Menu-Product.show {
+    animation: slideUp 0.3s forwards;
+    display: flex; /* Change to flex to make it visible */
+}
+
+.Menu-Product.hide {
+    animation: slideDown 0.3s forwards;
+}
+.Menu-Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    border-bottom: 1pt solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.Menu-Header p {
+    margin: 0;
+    font-family: 'SVN-Gotham-Bold';
+}
+.Menu-Header i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.List-ProductinMenu {
+    flex-grow: 1; /* Để phần List-ProductinMenu chiếm không gian còn lại */
+    overflow-y: auto; /* Kích hoạt cuộn dọc */
+}
+
+.Menu-Content a{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.Menu-Content a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+/* Prevent scrolling of the body when Menu-Product is visible */
+.no-scroll {
+    overflow: hidden;
+}

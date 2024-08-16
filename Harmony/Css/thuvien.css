@@ -1,0 +1,330 @@
+/* ===== Khử padding và margin + cố định layout */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background-color);
+}
+
+/* ============================ Font ======================= */
+@font-face {
+    font-family: 'SVN-Gotham-Regular';
+    src: url(../Element/SVN-GothamFont/SVN-GothamRegular/SVN-Gotham.eot),
+        url(../Element/SVN-GothamFont/SVN-GothamRegular/SVN-Gotham.ttf),
+        url(../Element/SVN-GothamFont/SVN-GothamRegular/SVN-Gotham.woff);
+}
+@font-face {
+    font-family: 'SVN-Gotham-Black';
+    src: url(../Element/SVN-GothamFont/SVN-GothamBlack/SVN-GothamBlack.eot),
+        url(../Element/SVN-GothamFont/SVN-GothamBlack/SVN-GothamBlack.ttf),
+        url(../Element/SVN-GothamFont/SVN-GothamBlack/SVN-GothamBlack.woff);
+}
+@font-face {
+    font-family: 'SVN-Gotham-Bold';
+    src: url(../Element/SVN-GothamFont/SVN-GothamBold/SVN-GothamBold.eot),
+        url(../Element/SVN-GothamFont/SVN-GothamBold/SVN-GothamBold.ttf),
+        url(../Element/SVN-GothamFont/SVN-GothamBold/SVN-GothamBold.woff);
+}
+@font-face {
+    font-family: 'SVN-Gotham-Book';
+    src: url(../Element/SVN-GothamFont/SVN-GothamBook/SVN-GothamBook.eot),
+        url(../Element/SVN-GothamFont/SVN-GothamBook/SVN-GothamBook.ttf),
+        url(../Element/SVN-GothamFont/SVN-GothamBook/SVN-GothamBook.woff);
+}
+@font-face {
+    font-family: 'SVN-Gotham-Light';
+    src: url(../Element/SVN-GothamFont/SVN-GothamLight/SVN-GothamLight.eot),
+        url(../Element/SVN-GothamFont/SVN-GothamLight/SVN-GothamLight.ttf),
+        url(../Element/SVN-GothamFont/SVN-GothamLight/SVN-GothamLight.woff);
+}
+@font-face {
+    font-family: 'SVN-Gotham-Thin';
+    src: url(../Element/SVN-GothamFont/SVN-GothamThin/SVN-GothamThin.eot),
+        url(../Element/SVN-GothamFont/SVN-GothamThin/SVN-GothamThin.ttf),
+        url(../Element/SVN-GothamFont/SVN-GothamThin/SVN-GothamThin.woff);
+}
+@font-face {
+    font-family: 'SVN-Gotham-Ultra';
+    src: url(../Element/SVN-GothamFont/SVN-GothamUltra/SVN-GothamUltra.eot),
+        url(../Element/SVN-GothamFont/SVN-GothamUltra/SVN-GothamUltra.ttf),
+        url(../Element/SVN-GothamFont/SVN-GothamUltra/SVN-GothamUltra.woff)
+}
+@font-face {
+    font-family: 'SVN-TrangTri';
+    src: url(../Element/Font-TrangTri/Adusian-Signature.eot),
+        url(../Element/Font-TrangTri/Adusian-Signature.ttf),
+        url(../Element/Font-TrangTri/Adusian-Signature.woff);
+}
+
+
+/* ============================ Thư viện màu sắc ======================= */
+/* =========== Màu chính =========== */
+:root{
+    --primary-color: #162A2C;
+    --secondary-color: #5E6C5B;
+    --background-color: #FEFCF6;
+    --text-color:#EEEEEE;
+    --white-color: #fff;
+    --black-color: #000000;
+}
+
+/* =========== Màu phụ 1 =========== */
+:root{
+    --background-color-50: #FFFFFE;
+    --background-color-100: #FFFEFC;
+    --background-color-200: #FFFEFB;
+    --background-color-300: #FEFDF9;
+    --background-color-400: #FEFDF8;
+    --background-color-600: #E7E5E0;
+    --background-color-700: #B4B3AF;
+    --background-color-800: #8C8B87;
+    --background-color-900: #6B6A67;
+}
+
+/* =========== Màu phụ 2 =========== */
+:root{
+    --secondary-color-50: #EFF0EF;
+    --secondary-color-100: #CDD1CC;
+    --secondary-color-200: #B5BBB4;
+    --secondary-color-300: #939D91;
+    --secondary-color-400: #7E897C;
+    --secondary-color-600: #566253;
+    --secondary-color-700: #434D41;
+    --secondary-color-800: #343B32;
+    --secondary-color-900: #272D26;
+}
+
+/* =========== Màu phụ 3 =========== */
+:root{
+    --primary-color-50: #E8EAEA;
+    --primary-color-100: #B7BDBE;
+    --primary-color-200: #949D9E;
+    --primary-color-300: #637072;
+    --primary-color-400: #455556;
+    --primary-color-600: #142628;
+    --primary-color-700: #101E1F;
+    --primary-color-800: #0C1718;
+    --primary-color-900: #091212;
+}
+/* ============================ Thư viện màu sắc ======================= */
+
+
+/* ============================ Thư viện cho button ======================= */
+:root{
+    --btn-padding: 10px 24px;
+    --btn-border-radius: 15px;
+}
+/* === Button Mẫu === */
+.button-mau{
+    padding: var(--btn-border-radius);
+    background-color: var(--primary-color);
+    font-size: 16px;
+    font-family: 'SVN-Gotham-Book';
+    color: white;
+    outline: none;
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+.button-mau:focus{
+    outline: none;
+}
+
+/* === Button Mẫu === */
+
+
+/* === Button Mẫu Radius === */
+.button-mau-radius{
+    padding: var(--btn-border-radius);
+    border-radius: var(--btn-border-radius);
+    background-color: var(--primary-color);
+    font-size: 16px;
+    font-family: 'SVN-Gotham-Book';
+    color: white;
+    outline: none;
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+.button-mau-radius:focus{
+    outline: none;
+}
+
+/* === Button Mẫu Radius === */
+
+
+/* === Button Line === */
+.button-line {
+    padding: var(--btn-padding);
+    color: var(--primary-color);
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    border: 1px solid var(--primary-color);    
+    font-size: 16px;
+    font-family: 'SVN-Gotham-Book';
+}
+.button-line:focus{
+    outline: none;
+}
+   
+.button-line::before, .button-line::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--primary-color);
+    transition: 1s ease;
+}
+   
+.button-line::before {
+    top: -1em;
+    left: -1em;
+}
+   
+   .button-line::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+   
+
+   
+
+   
+.button-line:active {
+    filter: brightness(.8);
+}
+/* === Button Line === */
+
+
+
+
+/* === Button Line Radius === */
+.button-line-radius {
+    border-radius: var(--btn-border-radius);
+    padding: var(--btn-padding);
+    color: var(--primary-color);
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    border: 1px solid var(--primary-color);    
+    font-size: 16px;
+    font-family: 'SVN-Gotham-Book';
+}
+.button-line-radius:focus{
+    outline: none;
+}
+   
+.button-line-radius::before, .button-line-radius::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--primary-color);
+    transition: 1s ease;
+}
+   
+.button-line-radius::before {
+    top: -1em;
+    left: -1em;
+}
+   
+   .button-line-radius::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+   
+
+   
+
+   
+.button-line-radius:active {
+    filter: brightness(.8);
+}
+/* === Button Line Radius === */
+
+
+/* === Button Không Khung Không Nền === */
+.button-text{
+    background-color: transparent;
+    font-family: 'SVN-Gotham-Bold';
+    color: var(--primary-color);
+    border: none;
+    transition: ease-in-out 0.2s;
+}
+
+.button-text:focus{
+    outline: none;
+}
+
+/* ============================ Thư viện cho button ======================= */
+
+
+/* Only xl */
+@media (min-width: 1200px) {
+    .button-mau:hover{
+        background-color: var(--secondary-color);
+    }
+    .button-mau-radius:hover{
+        background-color: var(--secondary-color);
+    }
+    .button-line:hover::before, .button-line:hover::after {
+        height: 410px;
+        width: 410px;
+    }
+    .button-line:hover {
+        color: white;
+    }
+    .button-line-radius:hover::before, .button-line-radius:hover::after {
+        height: 410px;
+        width: 410px;
+    }
+    .button-line-radius:hover {
+        color: white;
+    }
+    .button-text:hover{
+        background-color: transparent;
+        color: var(--secondary-color);
+        text-decoration: underline;
+    }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .button-mau:hover{
+        background-color: var(--secondary-color);
+    }
+    .button-mau-radius:hover{
+        background-color: var(--secondary-color);
+    }
+    .button-line:hover::before, .button-line:hover::after {
+        height: 410px;
+        width: 410px;
+    }
+    .button-line:hover {
+        color: white;
+    }
+    .button-line-radius:hover::before, .button-line-radius:hover::after {
+        height: 410px;
+        width: 410px;
+    }
+    .button-line-radius:hover {
+        color: white;
+    }
+    .button-text:hover{
+        background-color: transparent;
+        color: var(--secondary-color);
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,1132 @@
+/*linkfont*/
+@font-face {
+  font-family: adusian;
+  src: url("../Element/Font-TrangTri/Adusian-Signature.eot");
+  src: url("../Element/Font-TrangTri/Adusian-Signature.ttf");
+  src: url("../Element/Font-TrangTri/Adusian-Signature.woff");
+}
+
+/* BreadCrumb
+============================ */
+.breadcrumb{
+  background-color: var(--background-color);
+  margin-top: 10px;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style-type: none;    
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+display: block;
+font-family: 'SVN-Gotham-Regular' ;
+font-size: 10pt;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+padding: 5px;
+content: "/\00a0";
+}
+/* Màu dấu gạch chéo giữa li thứ 1 và li thứ 2 */
+ul.breadcrumb li:first-child + li:before {
+  color: #949D9E; /* Màu cho dấu chéo giữa li đầu tiên và li thứ hai */
+}
+
+/* Màu dấu gạch chéo giữa các li tiếp theo */
+ul.breadcrumb li:nth-child(2) + li:before {
+  color: #162A2C; /* Màu cho dấu chéo giữa li thứ hai và li thứ ba */
+}
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+color: var(--secondary-color-200);
+text-decoration: none;
+font-family: 'SVN-Gotham-Regular' ;
+font-size: 10pt;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+color: var(--primary-color);
+text-decoration: none;
+}
+/*tắt hover dưới md nhé*/
+@media (max-width: 991px){
+  ul.breadcrumb li a:hover {
+    color: var(--secondary-color-200);
+    text-decoration: none;
+    }
+}
+
+/* BreadCrumb
+============================ */
+#pinContainer {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+            perspective: 1000;
+}
+#slideContainer {
+    width: 400%; /* to contain 4 panels, each with 100% of window width */
+    height: 100%;
+    display: flex; /* use flexbox for layout */
+}
+.panel {
+    height: 100vh;
+    width: 100%; /* relative to parent -> 25% of 400% = 100% of window width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+
+
+.p04 { background-color: bordeaux; }
+
+
+
+
+/*p01 pannel 1*/
+
+
+
+.breadcrumb {
+  font-family: 'SVN-Gotham-Regular';
+  font-size: 14px;
+  height:40px;
+  background-color: #FDFCF7;
+  margin-bottom: 15px;
+}
+.breadcrumb .home a {
+  padding-right: 5px;
+  color: #949D9E;
+  text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+  background-color: none; /* Đặt màu nền trong suốt */
+}
+
+.breadcrumb .furniture {
+  padding-left: 5px;
+  color: #162A2C;
+  background-color: transparent; /* Đặt màu nền trong suốt */
+}
+.separator-01{
+  color: #949D9E;
+}
+.left-panel, .right-panel {
+    position:relative;
+    top:0;
+    bottom:0;
+    width: 50%;
+    height:400px;
+    transition: transform 3s ease-out;
+}
+
+.left-panel {
+    margin-top: 30px;
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.right-panel {
+    margin-bottom: 10%;
+    right: 0;
+    transform: translateX(100%);
+}
+.aus{
+    font-family: 'SVN-Gotham-Bold';
+    color:#162A2C;
+    font-size: 44px;
+}
+.tittle{
+    font-family: adusian;
+    color:#939D91;
+    font-size: 96px;
+    margin-top: -8px;
+    
+}
+#b-16{
+    margin-left: 145px;
+    margin-top: -40px;
+    font-family: 'SVN-Gotham-Bold';
+    color:#455556;
+    font-size: 22px;
+}
+.loaded .left-panel {
+    transform: translateX(0);
+}
+
+.loaded .right-panel {
+    transform: translateX(0);
+}
+.row{
+    margin:0;
+    padding:0;
+}
+
+#book-12{
+    margin-top: -5px;
+    font-family: 'SVN-Gotham-Book';
+    color:#162A2C;
+    font-size: 12px;
+}
+/*==================*/
+
+
+/*p03 Panel3*/
+#chuphai{
+    border-left: #162A2C 1pt solid;
+    margin-left: -1%;
+    margin-top: 6%;
+    height:440px;   
+    color:#FEFCF6;
+    padding-left: 30px;
+    padding-top: 20px;
+    
+    margin-bottom: 50px;
+    
+}
+
+.what{
+    font-family: 'SVN-Gotham-Bold';
+    color:#41473E;
+    font-size: 70px;
+   
+}
+.what1{
+    font-family: 'SVN-Gotham-Light';
+    color:#41473E;
+    font-size: 70px;
+   
+}
+
+.chose{
+    margin-bottom: 7%;
+    background-color:#FEFCF6;
+}
+.chon{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'SVN-Gotham-Light';
+    color:#434D41;
+    font-size: 52px;
+   
+}
+xx{
+    color:#434D41;
+    font-family: 'SVN-Gotham-Bold';
+}
+#book-12-p02{
+    margin-top: 0px;
+    font-family: 'SVN-Gotham-Light';
+    color:#434D41;
+    font-size: 16px;
+    
+
+}
+
+b-16{
+    font-family: 'SVN-Gotham-Bold';
+    color:#162A2C;
+    font-size: 16px;
+   
+}
+.chutrai {
+
+    margin-top:6%;
+    text-align: right;
+    
+    
+}
+#text-right {
+    text-align: right; /* Căn phải cho các phần tử con */
+}
+
+/*==================*/
+
+
+
+
+/*hiệu ứng 3 thẻ*/
+.p03{
+    display: flex;
+    align-items: center;
+}
+.btns {
+    display:flex;
+    column-gap: 2rem;
+    margin-top: 50px;
+    
+
+}
+.chose .btn {
+    width:320px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    height:221px;
+    border: solid 1pt #566253;
+    border-radius: 2px;
+    color:#162A2C;
+    cursor: pointer;
+    transition: 
+    scale 0.5s ease-in,
+    opacity 0.25s ease-in,
+    filter 0.25s ease-in;
+    
+}
+
+
+/*fix bang LG cho p03*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .btn {
+    margin-left: 10px;
+    margin-right: 10px; 
+  }
+  .btn:hover .trich{
+    margin-top: 10px;
+
+  }
+}
+
+/*======*/
+
+
+
+.btn:hover{
+    scale: 1.2;
+    background-color:#B7BDBE;
+    border:none;
+}
+.btns:has(.btn:hover) .btn:not(:hover){
+    scale : 0.8;
+    opacity:0.5;
+    border: solid 1pt #566253;
+    border-radius: 2px;
+}
+
+.trich{
+    font-family: 'SVN-Gotham-Book';
+    color:#434D41;
+    padding:15px;
+    font-size: 16px;
+}
+/* Only xl */
+@media (min-width: 1200px) {
+  .trich{
+    font-family: 'SVN-Gotham-Book';
+    color:#434D41;
+    padding:15px;
+    font-size: 18px;
+}
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .trich{
+    font-family: 'SVN-Gotham-Book';
+    color:#434D41;
+    padding:15px;
+    font-size: 14px;
+}
+}
+.b-none{
+    display:none;
+    font-family: 'SVN-Gotham-Book';
+    color:#434D41;
+    padding:15px;
+    font-size: 12px;
+    padding-top: 20px;
+    
+}
+.btn:hover .b-none {
+    display: block;
+    font-size: 12px;
+}
+.btn:hover .align-left{
+    display: none;
+}
+.btn:hover .trich{
+    display:none;
+}
+.btn:hover .trich{
+  margin-top: 15px;
+
+}
+
+.align-left {
+    display: block;
+    margin-left: 15px;
+    margin-top: 25px;
+
+}
+/*==================*/
+
+
+/*po4*/
+/* Bán Footer
+================================================================ */
+/**************  We are here to help  ****************/
+.p04 {
+  display: flex;
+  flex-direction: column; /* Hiển thị các phần tử theo chiều dọc */
+  height: 100vh; /* Chiều cao của section là 100% chiều cao của viewport */
+  justify-content: flex-start; /* Căn phần tử lên đầu container */
+  align-items: center; /* Căn các phần tử theo chiều ngang */
+  text-align: center; /* Căn giữa nội dung văn bản */
+  margin: 20px 0;
+}
+
+.thankyou {
+  flex: 1; /* Phần container-fluid sẽ chiếm phần còn lại của section */
+  display: flex;
+  justify-content: center; /* Căn giữa nội dung container-fluid */
+  align-items: center; /* Căn giữa nội dung container-fluid */
+  flex-direction: column; /* Hiển thị các phần tử theo chiều dọc */
+}
+
+/*thankyou*/
+.thankyou h1:first-child{
+  color:#162A2C;
+  font-size: 52px;
+  font-family: 'SVN-Gotham-Bold';
+}
+.thankyou h2:last-child{
+  color:#162A2C;
+  font-size: 52px;
+  font-family: 'SVN-Gotham-Book';
+}
+
+
+
+
+
+/*===*/
+
+
+#bg-help{
+    background-color: var(--primary-color);
+    padding: 70px 0;
+    text-align: center;
+}
+ 
+.help-content p{
+    padding:0;
+    margin: 0;
+}
+.help-content p a{
+    color: var(--background-color);
+    text-decoration: underline;
+}
+  /* Only xl */
+  @media (min-width: 1200px) {
+    .help-header p{
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 48px;
+      color: var(--background-color);
+    }
+    .help-header img{
+      width: 103px;
+      height: 103px;
+    }
+    .help-content{
+      color: var(--background-color);
+      text-align: center;
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 18px;
+    }
+  }
+  /* Only lg */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .help-header p{
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 42px;
+      color: var(--background-color);
+    }
+    .help-header img{
+      width: 100px;
+      height: 101px;
+    }
+    .help-content{
+      color: var(--background-color);
+      text-align: center;
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 18px;
+    }
+    #bg-navi a{
+      padding: 0 18px 5px 18px !important;
+    }
+  }
+  /* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+  #bg-help{
+      text-align: center;
+      background-color: var(--primary-color);
+      padding: 70px 0;
+  }
+   
+  .help-content p{
+      padding:0;
+      margin: 0;
+  }
+  .help-content p a{
+      color: var(--background-color);
+      text-decoration: underline;
+  }
+  .help-header p{
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 36px;
+      color: var(--background-color);
+  }
+  .help-header img{
+      width: 80px;
+      height: 80px;
+  }
+  .help-content{
+      color: var(--background-color);
+      text-align: center;
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 16px;
+  }
+}
+  /* Only sm */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .help-header p{
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 32px;
+      color: var(--background-color);
+    }
+    .help-header img{
+      width: 80px;
+      height: 80px;
+    }
+    .help-content{
+      color: var(--background-color);
+      text-align: center;
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 14px;
+    }
+  }
+  /* Only xs */
+  @media (max-width: 575px) {
+    .help-header p{
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 28px;
+      color: var(--background-color);
+    }
+    .help-header img{
+      width: 80px;
+      height: 80px;
+    }
+    .help-content{
+      color: var(--background-color);
+      text-align: center;
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 14px;
+    }
+  }
+  /**************  We are here to help  ****************/
+  
+  
+  
+  
+  /**************   Sign up to receive 10% off ****************/
+#KM{
+    display: flex;
+    position: relative;
+}
+.KM-Title{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 29px;
+    color: var(--primary-color);
+}
+.KM-Caption{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 15px;
+    color: var(--primary-color);
+}
+.KM-info button{
+    display: flex;
+    justify-content: space-around;
+    width: 220px;
+}
+.KM-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Only xl */
+@media (min-width: 1200px) {
+    .KM-img{
+      position: absolute;    
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 100%;
+    }
+    .bg-kmall{
+      display: flex;
+      padding: 100px 0;
+    }
+    .KM-info{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding-right: 50px;
+    }
+
+    #chuphai p:first-child{
+      display:block
+    }
+    #chuphai p:last-child{
+      display:none;
+    }
+}
+  /* Only lg */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .KM-img{
+      position: absolute;    
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 100%;
+    }
+    .bg-kmall{
+      display: flex;
+      padding: 100px 0;
+    }
+    .KM-info{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding-right: 50px;
+    }
+
+    .p01 #book-12{
+      
+      letter-spacing: -0.4px; 
+    }
+
+    .p01 .right-panel{
+      margin-top: 35px;
+    }
+
+    #chuphai p:first-child{
+      display:none;
+    }
+    #chuphai p:last-child{
+      display:block;
+      
+    }
+    #chuphai{
+      padding-top: 15px;
+    }
+    
+  }
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+    .bg-kmall{
+      display: flex;
+      padding: 50px 0;
+    }
+    .KM-img{
+      width: 100%;
+      height: 300px;
+    }
+    .KM-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    #KM{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .KM-info {
+      text-align: center; /* Căn giữa văn bản */
+    }
+    .KM-Btn{
+      display: flex;
+      justify-content: center;
+    }
+
+  #b-16{
+      margin-left: 145px;
+      margin-top: -40px;
+      font-family: 'SVN-Gotham-Bold';
+      color:#E8EAEA;
+      font-size: 22px;
+  }
+  #book-12{
+    margin-top: -5px;
+    font-family: 'SVN-Gotham-Book';
+    color:#FEFCF6;
+    font-size: 12px;
+    letter-spacing: -0.4px;
+
+  }
+
+  .part-01{
+    height:400px;
+    background: linear-gradient(to bottom, var(--background-color) 30%, #637072 30%);
+  }
+  .panel-trai{
+    padding-left: 5vh;
+    
+  }
+  .part-03-md{
+    padding: 3vh 0;
+  }
+  
+  .thankyou {
+    padding:5vh 0;
+    flex: 1; /* Phần container-fluid sẽ chiếm phần còn lại của section */
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung container-fluid */
+    align-items: center; /* Căn giữa nội dung container-fluid */
+    flex-direction: column; /* Hiển thị các phần tử theo chiều dọc */
+  }
+
+  /*thankyou*/
+  .thankyou h1:first-child{
+    text-align: center;
+    color:#162A2C;
+    font-size: 52px;
+    font-family: 'SVN-Gotham-Bold';
+  }
+  .thankyou h2:last-child{
+    text-align: center;
+    color:#162A2C;
+    font-size: 48px;
+    font-family: 'SVN-Gotham-Book';
+  }
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+  .thankyou {
+    padding:5vh 0;
+    flex: 1; /* Phần container-fluid sẽ chiếm phần còn lại của section */
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung container-fluid */
+    align-items: center; /* Căn giữa nội dung container-fluid */
+    flex-direction: column; /* Hiển thị các phần tử theo chiều dọc */
+  }
+
+  /*thankyou*/
+  .thankyou h1:first-child{
+    text-align: center;
+    color:#162A2C;
+    font-size: 52px;
+    font-family: 'SVN-Gotham-Bold';
+  }
+  .thankyou h2:last-child{
+    text-align: center;
+    color:#162A2C;
+    font-size: 52px;
+    font-family: 'SVN-Gotham-Book';
+  }
+    .bg-kmall{
+      display: flex;
+      padding: 50px 0;
+    }
+    .KM-img{
+      width: 100%;
+      height: 300px;
+    }
+    .KM-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    #KM{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .KM-info {
+      text-align: center; /* Căn giữa văn bản */
+    }
+    .KM-Btn{
+      display: flex;
+      justify-content: center;
+    }
+    .part-01{
+      display:none;
+    }
+    .trai-sm{
+      padding: 40px 0 0 3vh;
+    }
+    .phai-sm{
+      padding-top: 30px;
+      padding-right: 0 !important;
+      width:48vw;
+      max-height:400px;
+      
+    }
+    .phai-sm img{
+      padding: 0 !important;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      
+    }
+  #b-16{
+      margin-left: 145px;
+      margin-top: -40px;
+      font-family: 'SVN-Gotham-Bold';
+      color:#E8EAEA;
+      font-size: 22px;
+  }
+  #book-12{
+    margin-top: -5px;
+    font-family: 'SVN-Gotham-Book';
+    color:#FEFCF6;
+    font-size: 12px;
+    letter-spacing: -0.4px;
+  }  
+  .part-01-sm{
+    height:400px;
+  background: linear-gradient(to bottom, var(--background-color) 40%, #637072 40%);
+  }
+  .tt-01-sm{
+    padding: 10px 3vh 3vh 3vh ;
+  }
+  .part-03-md{
+    padding: 2vh 0;
+  }
+  
+}
+/* Only xs */
+
+@media (max-width: 575px) {
+
+  .thankyou {
+    padding:5vh 0;
+    flex: 1; /* Phần container-fluid sẽ chiếm phần còn lại của section */
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung container-fluid */
+    align-items: center; /* Căn giữa nội dung container-fluid */
+    flex-direction: column; /* Hiển thị các phần tử theo chiều dọc */
+  }
+
+  /*thankyou*/
+  .thankyou h1:first-child{
+    text-align: center;
+    color:#162A2C;
+    font-size: 52px;
+    font-family: 'SVN-Gotham-Bold';
+  }
+  .thankyou h2:last-child{
+    text-align: center;
+    color:#162A2C;
+    font-size: 48px;
+    font-family: 'SVN-Gotham-Book';
+  }
+    .bg-kmall{
+      display: flex;
+      padding: 50px 0;
+    }
+    .KM-img{
+      width: 100%;
+      height: 300px;
+    }
+    .KM-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    #KM{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .KM-info {
+      text-align: center; /* Căn giữa văn bản */
+    }
+    .KM-Btn{
+      display: flex;
+      justify-content: center;
+    }
+    
+    .part-01-sm{
+      display:none;
+    }
+    .part-01{
+      
+    }
+
+
+    .panel-phai{
+      
+      display:none;
+      width:100vw;
+      max-height:400px;
+      
+    }
+    .diachi-in {
+      width: 100%; /* Chiếm toàn bộ chiều rộng phần tử chứa */
+      background-image: url('../img/about/1.png'); /* Đặt đường dẫn đến ảnh nền */
+      background-size: cover; /* Đảm bảo ảnh phủ toàn bộ phần tử */
+      background-position: center; /* Căn giữa ảnh nền */
+      background-repeat: no-repeat; /* Ngăn ảnh nền lặp lại */
+      /* Các thuộc tính khác nếu cần */
+    }
+
+    .breadcrumb {
+      font-family: 'SVN-Gotham-Regular';
+      font-size: 14px;
+      height:40px;
+      background-color: #fdfcf700;
+      margin-bottom: 15px;
+    }
+    .part-01{
+     padding: 20px 0;
+      background-color: #455556;
+
+    }
+
+  .aus{
+      font-family: 'SVN-Gotham-Bold';
+      color:#E6E6E6;
+      font-size: 36px;
+  }
+  .tittle{
+      font-family: adusian;
+      color:#939D91;
+      font-size: 96px;
+      margin-top: -8px;
+      
+  }
+  #b-16{
+      margin-left: 145px;
+      margin-top: -40px;
+      font-family: 'SVN-Gotham-Bold';
+      color:#FEFCF6;
+      font-size: 22px;
+  }
+  #book-12{
+    margin-top: -5px;
+    font-family: 'SVN-Gotham-Book';
+    color:#FEFCF6;
+    font-size: 12px;
+  }
+  .panel-trai{
+    padding-left: 1,5vh;
+    
+  }
+
+  .part-03-md{
+    padding: 3vh 2vw;
+  }
+  
+
+
+
+
+}
+
+  /* Bán Footer
+  ================================================================ */
+
+
+/*==================*/
+.hide{
+  display:block;
+}
+@media(max-width: 991px) {
+  .hide{
+    display:none;
+  }
+}
+
+
+.panel-phai{
+  padding-top: 90px;
+  padding-right: 0 !important;
+  width:48vw;
+  max-height:400px;
+  
+}
+.panel-phai img{
+  padding: 0 !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+
+/*fix lổi rớt chữ book-12*/
+
+@media (max-width: 350px) {
+  #book-12{
+    letter-spacing: -0.2px ;
+    
+  }
+  #book-12{
+    margin-top: -5px;
+    font-family: 'SVN-Gotham-Book';
+    color:#FEFCF6;
+    font-size: 10px;
+  }
+  .aus{
+    font-family: 'SVN-Gotham-Bold';
+    color:#E6E6E6;
+    font-size: 36px;
+  }
+  .tittle{
+      font-family: adusian;
+      color:#939D91;
+      font-size: 50px;
+      margin-top: -8px;
+      
+  }
+  #b-16{
+      margin-left: 145px;
+      margin-top: -40px;
+      font-family: 'SVN-Gotham-Bold';
+      color:#939D91;
+      font-size: 22px;
+  }
+  
+}
+
+@media (min-width:330px) and (max-width: 350px) {
+  #book-12{
+    letter-spacing: -0.2px ;
+    
+  }
+  
+}
+@media (min-width:390px) and (max-width: 409px) {
+  #book-12{
+    letter-spacing: 0.1px ;
+    font-size: 10px;
+    
+  }
+}
+@media (min-width:425px) and (max-width: 449px) {
+  #book-12{
+    letter-spacing: 0.3px ;
+    
+  }
+}
+@media (min-width:479px) and (max-width: 500px) {
+  #book-12{
+    letter-spacing: -0.2px ;
+    
+  }
+}
+@media (min-width: 600px) and (max-width: 667px) {
+  #book-12{
+    letter-spacing: 0.2px ;
+    
+  }
+}
+@media (min-width: 668px) and (max-width:690px) {
+  #book-12{
+    letter-spacing: 0.5px ;
+    
+  }
+}
+@media (min-width: 691px) and (max-width:779px) {
+  #book-12{
+    letter-spacing: -0.2px ;
+    
+  }
+}
+@media (min-width: 817px) and (max-width:855px) {
+  #book-12{
+    letter-spacing: -0.1px ;
+    
+  }
+}
+@media (min-width: 920px) and (max-width:991px) {
+  #book-12{
+    letter-spacing: 0.1px ;
+    
+  }
+}
+
+.part-02-md img{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.part-01-xs{
+  display:none;
+}
+/*=====fit loi xs==*/
+@media (max-width: 575px) {
+  .bg-only-xs {
+    width: 100%;
+    padding-top: 56.25%; /* Tỷ lệ 16:9 */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../Image/AboutUsImage/about/md-01.png');
+    position: relative;
+  }
+
+  .bg-only-xs .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
+/*==========fix loi rot chu ==========*/
+/* Only xl */
+@media (min-width: 1200px) {
+  .b-none{
+    padding-top: 40px;
+  }
+  .f-rc-01 .b-none{
+    letter-spacing: -0.2px;
+  }
+  .f-rc-02 .b-none{
+    letter-spacing: 0.2px;
+  }
+  .f-rc-03 .b-none{
+    letter-spacing: 0.3px;
+  }
+  
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .f-rc-01 .b-none{
+    letter-spacing: -0.3px;
+  }
+  .f-rc-03 .b-none{
+    letter-spacing: 0.2px;
+  }
+}
+/* === Medium === */
+@media (min-width: 768px) and (max-width: 991px) {
+  .phan-3  p:first-child{
+    letter-spacing: 0.2px;
+  }
+  
+}
+/* === Small === */
+@media (min-width: 576px) and (max-width: 767px) {
+  .phan-3 {
+    letter-spacing: -0.3px;
+  }
+}
+/* === Extra Small === */
+@media (max-width: 575px) {
+  .part-03-md p:last-child{
+    letter-spacing: 0.2px;
+  }
+  
+}

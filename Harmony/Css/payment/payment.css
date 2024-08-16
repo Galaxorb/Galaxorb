@@ -1,0 +1,500 @@
+.bg-payment{
+    background-color: var(--primary-color-50);
+    margin-bottom: 20px;
+}
+.pay-text {
+    padding: 30px ;
+    text-align: center;
+    color: var(--primary-color);
+    justify-content: center;
+}
+
+#country{
+    width: 100%;
+    height: 50px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 0.95rem;
+    border-radius: 3px;
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color-200);
+}
+.bottom-link{
+    color: var(--primary-color-100);
+}
+.bottom-link a {
+    color: var(--secondary-color);
+}
+.bottom-link a:hover {
+    color: var(--primary-color);
+}
+.payment-methods{
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.payment-methods img {
+    width: 50px;
+    height: auto;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.bg-pay{
+    background-color: var(--secondary-color-50);
+    border-radius: 5px;
+    height: 900px;
+}
+.bg-pay h4{
+    text-align: center;
+    padding-top: 15px;
+}
+.pay-img{
+    max-width: 260px;
+    position: absolute;
+    top: 40px;
+    left: 60px;
+}
+.pay-thongtin{
+    position: absolute;
+    top:80px;
+    right: 60px;
+}
+.bg-paythongtin .pay-thongtin p{
+    display: block;
+    margin: 0;
+}
+
+.quantity-selector {
+    display: flex;
+  }
+  
+  .quantity-selector button {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color-50);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px 0 0 3px;
+    font-family: 'SVN-Gotham-Book'
+    
+  }
+  
+  .quantity-selector input {
+    width: 30px;
+    text-align: center;
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    background-color: var(--secondary-color-50);
+    height: 22px;
+    font-size: 15px;
+    margin: 0 -1px; /* Overlap borders */
+    font-family: 'SVN-Gotham-Book';
+  }
+  
+  .quantity-selector button:last-child {
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .quantity-selector button:focus, .quantity-selector input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+
+  .price{
+    position: absolute;
+    right: 0;
+    top: 136px;
+  }
+
+  .pay-costs{
+    position: absolute;
+    top: 300px;
+    margin: 0 30px;
+  }
+  .costs {
+    margin-bottom: 30px;
+}
+
+.cost-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--primary-color-100) ;
+}
+
+.total {
+    font-family: 'SVN-Gotham-Bold';
+}
+
+.note p {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+
+.pay-content p{
+    margin: 0;
+}
+.input_field{
+    background-color: var(--background-color);
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+}
+.stages {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 80px 0;
+}
+
+.steps {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 800px;
+}
+
+.steps-segment {
+    position: relative;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.steps-segment a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.steps-marker {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color-100);
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;
+}
+
+.steps-segment.is-active .steps-marker {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.steps-segment.is-active .steps-content .heading {
+    color: var(--primary-color);
+}
+
+.steps-segment + .steps-segment::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -82px;
+    width: 184px;
+    height: 2px;
+    background-color: var(--primary-color-100);
+    z-index: -1;
+}
+
+.steps-segment.is-active + .steps-segment::before {
+    background-color: var(--primary-color);
+}
+
+.heading {
+    font-size: 12px;
+    color: var(--primary-color-100);
+    margin-top: 0;
+    text-transform: uppercase;
+    position: absolute;
+    top: 40px;
+    left: 83px;
+    font-family: 'SVN-Gotham-Bold';
+}
+.pay-costs a {
+    text-decoration: none;
+}
+
+@media (min-width: 1200px){
+    .continue-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .continue-button:hover {
+        background-color: var(--secondary-color);
+        border: none;
+        text-decoration: none;
+    }
+}
+
+/* === Large === */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .bg-pay{
+        background-color: var(--primary-color-50);
+        border-radius: 5px;
+        height: 940px;
+        margin-bottom: 30px;
+    }
+    .pay-img{
+        max-width: 200px;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+    .pay-thongtin{
+        position: absolute;
+        top:80px;
+        right: 40px;
+    }
+    .pay-thongtin h5{
+        font-size: 15pt;
+    }
+    .bg-paythongtin .pay-thongtin p{
+        font-size: 12pt;
+    }
+    .continue-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .continue-button:hover {
+        background-color: var(--secondary-color);
+        border: none;
+        text-decoration: none;
+    }
+}
+/* === Medium === */
+@media (min-width: 768px) and (max-width: 991px) {
+    .pay-img{
+        max-width: 300px;
+        position: absolute;
+        top: 10px;
+        left: 90px;
+    }
+    .pay-thongtin{
+        position: absolute;
+        top:80px;
+        right: 130px;
+    }
+    .steps-segment + .steps-segment::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: -80px;
+        width: 180px;
+        height: 2px;
+        background-color: var(--primary-color-100);
+        z-index: -1;
+    }
+    .heading {
+        font-size: 12px;
+        color: var(--primary-color-100);
+        margin-top: 0;
+        text-transform: uppercase;
+        position: absolute;
+        top: 40px;
+        left: 80px;
+        font-family: 'SVN-Gotham-Bold';
+    }
+    .bg-pay{
+        background-color: var(--primary-color-50);
+        border-radius: 5px;
+        height: 820px;
+        margin-bottom: 30px;
+    }
+   
+  
+    .payment-methods{
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+  
+    .continue-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+    }
+  
+ 
+}
+/* === Small === */
+@media (min-width: 576px) and (max-width: 767px) {
+    .pay-img{
+        max-width: 250px;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+    .pay-thongtin{
+        position: absolute;
+        top:80px;
+        right:50px;
+    }
+    .steps-segment + .steps-segment::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: -52px;
+        width: 125px;
+        height: 2px;
+        background-color: var(--primary-color-100);
+        z-index: -1;
+    }
+    .heading {
+        font-size: 12px;
+        color: var(--primary-color-100);
+        margin-top: 0;
+        text-transform: uppercase;
+        position: absolute;
+        top: 40px;
+        left: 55px;
+        font-family: 'SVN-Gotham-Bold';
+    }
+    .bg-pay{
+        background-color: var(--primary-color-50);
+        border-radius: 5px;
+        height: 930px;
+        margin-bottom: 30px;
+    }
+   
+ 
+    .payment-methods{
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .continue-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+ 
+}
+/* === Extra Small === */
+@media (max-width: 575px) {
+    .pay-img{
+        max-width: 200px;
+        position: absolute;
+        top: 55px;
+        left: 30px;
+    }
+    .pay-thongtin{
+        position: absolute;
+        top:80px;
+        right:30px;
+        font-size: 10pt;
+    }
+    .price{
+        position: absolute;
+        right: 0;
+        top: 120px;
+      }
+    .steps-segment + .steps-segment::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: -35px;
+        width: 88px;
+        height: 2px;
+        background-color: var(--primary-color-100);
+        z-index: -1;
+    }
+    .heading {
+        font-size: 10px;
+        color: var(--primary-color-100);
+        margin-top: 0;
+        text-transform: uppercase;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        font-family: 'SVN-Gotham-Bold';
+    }
+    .bg-pay{
+        background-color: var(--primary-color-50);
+        border-radius: 5px;
+        height: 1010px;
+        margin-bottom: 30px;
+    }
+    button.continue-button-down {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .payment-methods{
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .quantity-selector input {
+        width: 30px;
+        text-align: center;
+        border-top: 1px solid var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);
+        background-color: var(--secondary-color-50);
+        height: 21px;
+        font-size: 15px;
+        margin: 0 -1px; /* Overlap borders */
+        font-family: 'SVN-Gotham-Book';
+      }
+      .continue-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: var(--primary-color);
+        color: var(--background-color);
+        border: none;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+}

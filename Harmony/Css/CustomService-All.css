@@ -1,0 +1,877 @@
+@font-face {
+  font-family: adusian;
+  src: url("../Element/Font-TrangTri/Adusian-Signature.eot");
+  src: url("../Element/Font-TrangTri/Adusian-Signature.ttf");
+  src: url("../Element/Font-TrangTri/Adusian-Signature.woff");
+}
+
+.bg-trang{
+  background-color: #FEFCF6;
+}
+
+
+.bg-trang-p{
+  background-color: #FEFCF6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/**/
+
+/*dia chi*/
+.breadcrumb {
+  margin-left: -30px;
+  font-family: 'SVN-Gotham-Regular';
+  font-size: 14px;
+  height:40px;
+  background-color: #fdfcf700;
+  
+}
+.breadcrumb .home a {
+  padding-right: 5px;
+  color: #949D9E;
+  text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+  background-color: none; /* Đặt màu nền trong suốt */
+}
+
+.breadcrumb .furniture {
+  padding-left: 5px;
+  color:#FEFCF6;
+  background-color: transparent; /* Đặt màu nền trong suốt */
+}
+.separator-01{
+  color: #FEFCF6;;
+}
+/*tắt hover dưới md nhé*/
+@media (min-width: 992px){
+.home a:hover {
+  color: #FEFCF6;
+  text-decoration: none;
+  }
+}
+/*dia chi*/
+.bg-all-01 img{
+  width: 100%;
+  
+  object-fit: cover;
+}
+
+
+.bg-all-01 {
+height:300vh;
+width: 100%;
+position: absolute;
+z-index: -5;
+top: 0;
+left: 0;
+overflow: hidden; /* Ẩn phần thừa */
+}
+
+
+/*fade*/
+.fade-in {
+opacity: 0;
+transition: opacity 2s ease-in-out;
+}
+
+.fade-in.visible {
+opacity: 1;
+}
+
+/*fade*/
+
+.button a{
+text-decoration: none;
+}
+.button p{
+  width:98px;
+  border:#162A2C 1pt solid ;
+  color:#162A2C;;
+  font-size: 16px;
+  font-family: 'SVN-Gotham-Book';
+  height:40px;
+  padding: 5px 24px 0 24px;
+}
+b-16{
+  font-family: 'SVN-Gotham-Bold';
+  color:#162A2C;
+  font-size: 16px;
+ 
+}
+
+
+#b-32-n{
+  font-family: 'SVN-Gotham-Bold';
+  color:#455556;
+  font-size: 32px;
+}
+
+
+@media (max-width: 991px) {
+#b-32-n{
+  text-align: center;
+  margin-top: -20px;
+  margin-bottom: 35px;
+  font-family: 'SVN-Gotham-Bold';
+  color:#455556;
+  font-size: 32px;
+}
+.part-02, .part-03 {
+  margin-top: 0;
+}
+
+.bg-trang-p{
+  padding: 10px 0;
+}
+.part-03 .p-01{
+  padding: 10px 0;
+  margin-top:0;
+}
+.button {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically center the content */
+}
+.aus{
+  
+  text-align: center;  
+  margin-top: -10px;
+  font-family: 'SVN-Gotham-Bold';
+  color:#162A2C;
+  font-size: 44px;
+}
+.tittle{
+    text-align: center;
+    font-family: adusian;
+    color:#939D91;
+    font-size: 96px;
+    margin-top: -8px;
+    
+}
+#b-16{
+    text-align: center;
+    margin-top: -15px;
+    font-family: 'SVN-Gotham-Bold';
+    color:#455556;
+    font-size: 16px;
+}
+
+#book-12{
+    text-align: center;
+    font-family: 'SVN-Gotham-Book';
+    color:#162A2C;
+    font-size: 12px;
+}
+#b-24-n{
+  text-align: center;
+  margin-top: -23px;
+  margin-bottom: 5px;
+  font-family: 'SVN-Gotham-Bold';
+  color:#455556;
+  font-size: 24px;
+}
+  
+  
+
+}
+/* Only xl */
+@media (min-width: 1200px) {
+.part-02, .part-03 {
+  margin-top: 350px;
+}
+  
+  /*po1*/
+  .tieude-a h1:first-child{
+    text-align: center;
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 52px;
+    color:var(--background-color);
+    letter-spacing: 15px ;
+    margin-top: 25vh;
+}
+
+.tieude-a h1:last-child{
+    text-align: center;
+    font-family: 'SVN-Gotham-Light';
+    font-size: 32px;
+    color: var(--background-color);
+    margin-bottom: 35vh;
+    font-weight: 500;
+    
+}
+  .part-01, .part-02, .part-03 {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5), 0 0 20px 15px rgba(0, 0, 0, 0.5);
+
+  }
+  .part-03 .p-01{
+    margin-top: 42px;
+  }
+  .aus{
+      margin-top: 100px;
+      font-family: 'SVN-Gotham-Bold';
+      color:#162A2C;
+      font-size: 44px;
+  }
+  .tittle{
+      font-family: adusian;
+      color:#939D91;
+      font-size: 96px;
+      margin-top: -8px;
+      
+  }
+  #b-16{
+      margin-left: 145px;
+      margin-top: -35px;
+      font-family: 'SVN-Gotham-Bold';
+      color:#455556;
+      font-size: 16px;
+  }
+  
+  #book-12{
+      margin-top: -5px;
+      font-family: 'SVN-Gotham-Book';
+      color:#162A2C;
+      font-size: 12px;
+  }
+  #b-32-n{
+      margin-left: 145px;
+      margin-top: -95px;
+      margin-bottom: 55px;
+      font-family: 'SVN-Gotham-Bold';
+      color:#455556;
+      font-size: 32px;
+  }
+
+  #b-24-n{
+    margin-left: 50px;
+    margin-top: -53px;
+    margin-bottom: 35px;
+    font-family: 'SVN-Gotham-Bold';
+    color:#455556;
+    font-size: 24px;
+  }
+  .p-01{
+      margin-top: -10px;
+  }
+
+  .button p:hover {
+    background-color: #162A2C;
+    color:#FEFCF6;
+  }
+
+  /*p02*/
+
+  .p-01 h1:first-child{
+    margin-top: 120px;
+  }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+ 
+  
+  /*po1*/
+  .tieude-a h1:first-child{
+    text-align: center;
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 52px;
+    color: var(--background-color);
+    letter-spacing: 15px ;
+    margin-top: 25vh;
+}
+
+.tieude-a h1:last-child{
+    text-align: center;
+    font-family: 'SVN-Gotham-Light';
+    font-size: 32px;
+    color: var(--background-color);
+    margin-bottom: 35vh;
+    font-weight: 500;
+    
+}
+  .part-01, .part-02, .part-03 {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5), 0 0 20px 15px rgba(0, 0, 0, 0.5);
+  
+  }
+  .part-03 .p-01{
+    margin-top: 42px;
+  }
+  .part-02, .part-03 {
+    margin-top: 350px;
+  }
+  .aus{
+      margin-top: 40px;
+      font-family: 'SVN-Gotham-Bold';
+      color:#162A2C;
+      font-size: 44px;
+  }
+  .tittle{
+      font-family: adusian;
+      color:#939D91;
+      font-size: 96px;
+      margin-top: -8px;
+      
+  }
+  #b-16{
+      margin-left: 145px;
+      margin-top: -35px;
+      font-family: 'SVN-Gotham-Bold';
+      color:#455556;
+      font-size: 16px;
+  }
+  
+  #book-12{
+      margin-top: -5px;
+      font-family: 'SVN-Gotham-Book';
+      color:#162A2C;
+      font-size: 12px;
+  }
+  #b-32-n{
+      margin-left: 145px;
+      margin-top: -95px;
+      margin-bottom: 35px;
+      font-family: 'SVN-Gotham-Bold';
+      color:#455556;
+      font-size: 32px;
+  }
+  #b-24-n{
+    margin-left: 50px;
+    margin-top: -53px;
+    margin-bottom: 35px;
+    font-family: 'SVN-Gotham-Bold';
+    color:#455556;
+    font-size: 24px;
+  }
+  .p-01{
+      margin-top: -20px;
+  }
+  /*p02*/
+  .p-01 h1:first-child{
+    margin-top: 80px;
+  }
+ 
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  #KM{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .KM-info {
+    text-align: center; /* Căn giữa văn bản */
+  }
+  .KM-Btn{
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+
+}
+/**part-03***/
+
+/* === Extra Large === */
+@media (min-width: 1200px) {
+.hinhbao{
+  
+  padding:0;
+  display:flex;
+  height:349px;
+  background-color:#455556 ;
+}
+.img-p03{
+  width:100%;
+  object-fit: cover;
+
+}
+
+.avt-member{
+  
+  display:flex;
+  height:134px;
+  
+}
+.hinh-0102{
+  margin-bottom: 83px;
+}
+
+}
+/* === Large === */
+@media (min-width: 992px) and (max-width: 1199px) {
+.hinhbao{
+  padding:0;
+  display:flex;
+  height: 283px;
+  background-color:#455556 ;
+}
+.img-p03{
+  width:100%;
+  object-fit: cover;
+
+}
+.avt-member{
+  
+  display:flex;
+  height:109px;
+  
+}
+.hinh-0102{
+  margin-bottom: 65px;
+}
+}
+/* === Medium === */
+@media (min-width: 768px) and (max-width: 991px) {
+.hinhbao{
+  padding:0;
+  display:flex;
+  height: 320px;
+  background-color:#455556 ;
+}
+.img-p03{
+  width:100%;
+  object-fit: cover;
+}
+
+.avt-member{
+  
+  display:flex;
+  height: 143px;
+  
+}
+.hinh-0102{
+  margin-bottom: 36px;
+}
+  
+}
+/* === Small === */
+@media (min-width: 576px) and (max-width: 767px) {
+.hinhbao{
+  padding:0;
+  display:flex;
+  height: 254px;
+  background-color:#455556 ;
+}
+.img-p03{
+  width:100%;
+  object-fit: cover;
+
+}
+
+.avt-member{
+  
+  display:flex;
+  height: 100px;
+  
+}
+.hinh-0102{
+  
+  margin-bottom: 54px;
+} 
+.padding-top-sm{
+  margin-top: 40px;
+}
+.right-panel{
+  margin-bottom: 50px;
+}
+}
+/* === Extra Small === */
+@media (max-width: 575px) {
+.hinhbao{
+  padding:0;
+  display:flex;
+  height: 99px;
+  background-color:#455556 ;
+}
+.img-p03{
+  width:100%;
+  object-fit: cover;
+
+}
+
+.avt-member{
+  
+  display:flex;
+  height: 100px;
+  
+}
+.hinh-0102{
+  margin-bottom: 54px;
+} 
+.bg-xs{
+  margin-bottom: 109px;
+  padding:29px 0 29px 10px;
+  background-color: #455556;
+}
+.padding-part3{
+  margin-bottom: 100px;
+}
+.bg-xs p:first-child{
+  margin-bottom: -1px;
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 16px;
+  color:#FEFCF6;
+}
+.bg-xs p:last-child{
+  font-family: 'SVN-Gotham-Book';
+  font-size: 12px;
+  color:#FEFCF6;
+}
+
+}
+
+
+
+
+
+
+/**tieu de phien ban md tro xuong**/
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+.tieude-a h1:first-child{
+  text-align: center;
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 52px;
+  color: var(--background-color);
+  letter-spacing: 15px ;
+  margin-top: 10vh;
+}
+
+.tieude-a h1:last-child{
+  text-align: center;
+  font-family: 'SVN-Gotham-Light';
+  font-size: 32px;
+  color:#B7BDBE;
+  margin-bottom: 25vh;
+  font-weight: 500;
+  
+}
+
+
+
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+.tieude-a h1:first-child{
+  text-align: center;
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 36px;
+  color:var(--background-color);
+  letter-spacing: 8px ;
+  margin-top: 6vh;
+}
+
+.tieude-a h1:last-child{
+  text-align: center;
+  font-family: 'SVN-Gotham-Light';
+  font-size: 20px;
+  color: var(--background-color);
+  margin-bottom: 14vh;
+  font-weight: 500;
+  
+}
+
+
+
+
+}
+/* Only xs */
+
+@media (max-width: 575px) {
+.tieude-a h1:first-child{
+  text-align: center;
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 28px;
+  color:var(--background-color);
+  letter-spacing: 6px ;
+  margin-top: 3vh;
+}
+
+.tieude-a h1:last-child{
+  text-align: center;
+  font-family: 'SVN-Gotham-Light';
+  font-size: 16px;
+  color:#B7BDBE;
+  margin-bottom: 7vh;
+  font-weight: 500;
+  
+}
+.breadcrumb .home a {
+  padding-left: 30px;
+  color: #949D9E;
+  text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+  background-color: none; /* Đặt màu nền trong suốt */
+}
+}
+
+
+/* Bán Footer
+================================================================ */
+/**************  We are here to help  ****************/
+#KM{
+background-color: var(--background-color);
+}
+#bg-help{
+background-color: var(--primary-color);
+padding: 70px 0;
+z-index: 1000;
+}
+.help-header{
+text-align: center;
+}
+.help-content p{
+padding:0;
+margin: 0;
+}
+.help-content p a{
+color: var(--background-color);
+text-decoration: underline;
+}
+/* Only xl */
+@media (min-width: 1200px) {
+.help-header p{
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 48px;
+  color: var(--background-color);
+}
+.help-header img{
+  width: 103px;
+  height: 103px;
+}
+.help-content{
+  color: var(--background-color);
+  text-align: center;
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 18px;
+}
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+.help-header p{
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 42px;
+  color: var(--background-color);
+}
+.help-header img{
+  width: 100px;
+  height: 101px;
+}
+.help-content{
+  color: var(--background-color);
+  text-align: center;
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 18px;
+}
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+.help-header p{
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 36px;
+  color: var(--background-color);
+}
+.help-header img{
+  width: 80px;
+  height: 80px;
+}
+.help-content{
+  color: var(--background-color);
+  text-align: center;
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 16px;
+}
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+.help-header p{
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 32px;
+  color: var(--background-color);
+}
+.help-header img{
+  width: 80px;
+  height: 80px;
+}
+.help-content{
+  color: var(--background-color);
+  text-align: center;
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 14px;
+}
+}
+/* Only xs */
+@media (max-width: 575px) {
+.help-header p{
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 28px;
+  color: var(--background-color);
+}
+.help-header img{
+  width: 80px;
+  height: 80px;
+}
+.help-content{
+  color: var(--background-color);
+  text-align: center;
+  font-family: 'SVN-Gotham-Bold';
+  font-size: 14px;
+}
+}
+/**************  We are here to help  ****************/
+
+/**************   Sign up to receive 10% off ****************/
+#KM{
+display: flex;
+position: relative;
+}
+.KM-Title{
+font-family: 'SVN-Gotham-Bold';
+font-size: 29px;
+color: var(--primary-color);
+}
+.KM-Caption{
+font-family: 'SVN-Gotham-Bold';
+font-size: 15px;
+color: var(--primary-color);
+}
+.KM-info button{
+display: flex;
+justify-content: space-around;
+width: 220px;
+}
+.KM-img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+/* Only xl */
+@media (min-width: 1200px) {
+.KM-img{
+  position: absolute;    
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+.bg-kmall{
+  display: flex;
+  padding: 100px 0;
+}
+.KM-info{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-right: 50px;
+}
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+.KM-img{
+  position: absolute;    
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+.bg-kmall{
+  display: flex;
+  padding: 100px 0;
+}
+.KM-info{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-right: 50px;
+}
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+.bg-kmall{
+  display: flex;
+  padding: 50px 0;
+}
+.KM-img{
+  width: 100%;
+  height: 300px;
+}
+.KM-img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+#KM{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.KM-info {
+  text-align: center; /* Căn giữa văn bản */
+}
+.KM-Btn{
+  display: flex;
+  justify-content: center;
+}
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+.bg-kmall{
+  display: flex;
+  padding: 50px 0;
+}
+.KM-img{
+  width: 100%;
+  height: 300px;
+}
+.KM-img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+#KM{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.KM-info {
+  text-align: center; /* Căn giữa văn bản */
+}
+.KM-Btn{
+  display: flex;
+  justify-content: center;
+}
+}
+/* Only xs */
+@media (max-width: 575px) {
+.bg-kmall{
+  display: flex;
+  padding: 50px 0;
+}
+.KM-img{
+  width: 100%;
+  height: 300px;
+}
+.KM-img img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+#KM{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.KM-info {
+  text-align: center; /* Căn giữa văn bản */
+}
+.KM-Btn{
+  display: flex;
+  justify-content: center;
+}
+}
+/* Bán Footer
+================================================================ */
+
+
+

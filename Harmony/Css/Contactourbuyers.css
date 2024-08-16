@@ -1,0 +1,397 @@
+
+.bg-card-buyer{
+    background-color: var(--background-color);
+    border-radius: 40px;
+}
+/* Only xl */
+@media (min-width: 1200px) {
+    .bg-card-buyer{
+        padding: 80px;
+    }
+    #bg-buyer{
+        padding: 90px 0;
+        background-color: var(--secondary-color-50);
+    }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .bg-card-buyer{
+        padding: 70px;
+    }
+    #bg-buyer{
+        padding: 90px 0;
+        background-color: var(--secondary-color-50);
+    }
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+    .bg-card-buyer{
+        padding: 50px;
+    }
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+    .bg-card-buyer{
+        padding: 20px;
+    }
+}
+/* Only xs */
+@media (max-width: 575px) {
+    .bg-card-buyer{
+        padding: 20px;
+    }
+}
+
+.Header-Buyer{
+    font-family: 'SVN-Gotham-Bold';
+    margin-bottom: 10px;
+}
+.Caption-Buyer{
+    font-family: 'SVN-Gotham-Book';
+}
+.Content-Buyer-1 p{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 18px;
+    margin: 0;
+}
+.Content-Buyer-1 ul{
+    margin: 0;
+    padding: 0;
+}
+.Content-Buyer-1 ul li{
+    margin-left: 20px;
+    font-family: 'SVN-Gotham-Book';
+    font-size: 18px;
+}
+.Content-Buyer-2 p{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 18px;
+    margin: 0;
+}
+.Content-Buyer-2 ul{
+    margin: 0;
+    padding: 0;
+}
+.Content-Buyer-2 ul li{
+    margin-left: 20px;
+    font-family: 'SVN-Gotham-Book';
+    font-size: 18px;
+}
+.Content-Buyer-1, .Content-Buyer-2{
+    margin: 40px 0;
+}
+.Footer-Buyer{
+    font-family: 'SVN-Gotham-Book';
+    font-size: 18px;
+}
+
+/* Only xl */
+@media (min-width: 1200px) {
+    .Header-Buyer{
+        font-size: 44px;
+    }
+    .Caption-Buyer{
+        font-size: 18px;
+    }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Header-Buyer{
+        font-size: 38px;
+    }
+    .Caption-Buyer{
+        font-size: 18px;
+    }
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+    .Header-Buyer{
+        font-size: 36px;
+    }
+    .Caption-Buyer{
+        font-size: 16px;
+    }
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+    .Header-Buyer{
+        font-size: 32px;
+    }
+    .Caption-Buyer{
+        font-size: 16px;
+    }
+}
+/* Only xs */
+@media (max-width: 575px) {
+    .Header-Buyer{
+        font-size: 26px;
+    }
+    .Caption-Buyer{
+        font-size: 16px;
+    }
+}
+
+
+/* Bán Footer
+================================================================ */
+/**************  We are here to help  ****************/
+#bg-help{
+    background-color: var(--primary-color);
+    padding: 70px 0;
+  }
+  .help-header{
+    text-align: center;
+  }
+  .help-content p{
+    padding:0;
+    margin: 0;
+  }
+  .help-content p a{
+    color: var(--background-color);
+    text-decoration: underline;
+  }
+  /* Only xl */
+  @media (min-width: 1200px) {
+    .help-header p{
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 48px;
+      color: var(--background-color);
+    }
+    .help-header img{
+      width: 103px;
+      height: 103px;
+    }
+    .help-content{
+      color: var(--background-color);
+      text-align: center;
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 18px;
+    }
+  }
+  /* Only lg */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .help-header p{
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 42px;
+      color: var(--background-color);
+    }
+    .help-header img{
+      width: 100px;
+      height: 101px;
+    }
+    .help-content{
+      color: var(--background-color);
+      text-align: center;
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 18px;
+    }
+  }
+  /* Only md */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .help-header p{
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 36px;
+      color: var(--background-color);
+    }
+    .help-header img{
+      width: 80px;
+      height: 80px;
+    }
+    .help-content{
+      color: var(--background-color);
+      text-align: center;
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 16px;
+    }
+  }
+  /* Only sm */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .help-header p{
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 32px;
+      color: var(--background-color);
+    }
+    .help-header img{
+      width: 80px;
+      height: 80px;
+    }
+    .help-content{
+      color: var(--background-color);
+      text-align: center;
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 14px;
+    }
+  }
+  /* Only xs */
+  @media (max-width: 575px) {
+    .help-header p{
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 28px;
+      color: var(--background-color);
+    }
+    .help-header img{
+      width: 80px;
+      height: 80px;
+    }
+    .help-content{
+      color: var(--background-color);
+      text-align: center;
+      font-family: 'SVN-Gotham-Bold';
+      font-size: 14px;
+    }
+  }
+  /**************  We are here to help  ****************/
+  
+  /**************   Sign up to receive 10% off ****************/
+  #KM{
+    display: flex;
+    position: relative;
+  }
+  .KM-Title{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 29px;
+    color: var(--primary-color);
+  }
+  .KM-Caption{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 15px;
+    color: var(--primary-color);
+  }
+  .KM-info button{
+    display: flex;
+    justify-content: space-around;
+    width: 220px;
+  }
+  .KM-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Only xl */
+  @media (min-width: 1200px) {
+    .KM-img{
+      position: absolute;    
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 100%;
+    }
+    .bg-kmall{
+      display: flex;
+      padding: 100px 0;
+    }
+    .KM-info{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding-right: 50px;
+    }
+  }
+  /* Only lg */
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .KM-img{
+      position: absolute;    
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 100%;
+    }
+    .bg-kmall{
+      display: flex;
+      padding: 100px 0;
+    }
+    .KM-info{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding-right: 50px;
+    }
+  }
+  /* Only md */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .bg-kmall{
+      display: flex;
+      padding: 50px 0;
+    }
+    .KM-img{
+      width: 100%;
+      height: 300px;
+    }
+    .KM-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+    #KM{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .KM-info {
+      text-align: center; /* Căn giữa văn bản */
+    }
+    .KM-Btn{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  /* Only sm */
+  @media (min-width: 576px) and (max-width: 767px) {
+    .bg-kmall{
+      display: flex;
+      padding: 50px 0;
+    }
+    .KM-img{
+      width: 100%;
+      height: 300px;
+    }
+    .KM-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+    #KM{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .KM-info {
+      text-align: center; /* Căn giữa văn bản */
+    }
+    .KM-Btn{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  /* Only xs */
+  @media (max-width: 575px) {
+    .bg-kmall{
+      display: flex;
+      padding: 50px 0;
+    }
+    .KM-img{
+      width: 100%;
+      height: 300px;
+    }
+    .KM-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+    #KM{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .KM-info {
+      text-align: center; /* Căn giữa văn bản */
+    }
+    .KM-Btn{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  /* Bán Footer
+  ================================================================ */
+
+

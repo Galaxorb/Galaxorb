@@ -1,0 +1,562 @@
+/* Breadcrum
+________________________________________ */
+
+.breadcrumb{
+    background-color: var(--background-color);
+    margin-top: 10px;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style-type: none;    
+  }
+  
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: block;
+  font-family: 'SVN-Gotham-Regular' ;
+  font-size: 10pt;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: var(--primary-color);
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: var(--secondary-color-200);
+  text-decoration: none;
+  font-family: 'SVN-Gotham-Regular' ;
+  font-size: 10pt;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Breadcrum
+________________________________________ */
+
+
+
+
+
+/* Header-Wishlist
+________________________________________ */
+.Header-wishlist{
+    text-align: center;
+}
+.Header-wishlist .title{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 36px;
+    color: var(--primary-color);
+    margin: 0;
+}
+.Header-wishlist .caption{
+    font-family: 'SVN-Gotham-Book';
+    font-size: 18px;
+    color: var(--primary-color);
+    margin: 0;
+}
+/* Header-Wishlist
+________________________________________ */
+
+
+
+
+
+/* WishlistCard
+________________________________________ */
+#bg-cart-wishlist{
+    margin-top: 30px;
+}
+a.Wishlist-Card{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.Wishlist-Card{
+    width: 100%;
+    height: fit-content;
+}
+.Wishlist-Card-Img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Withlist-Card-Info{
+    width: 100%;
+    text-align: center;
+}
+.Card-Brand{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+.Card-Name{
+    margin-bottom: 5px;
+    padding: 0 10px;
+    font-family: 'SVN-Gotham-Book';
+    font-size: 16px;
+    color: var(--primary-color);
+}
+.In-stock{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'SVN-Gotham-Book';
+    margin-top: 10px;
+    align-items: center;
+}
+/* Only xl */
+@media (min-width: 1200px) {
+    .Wishlist-Card-Img img{
+        width: 260px;
+    }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Wishlist-Card-Img img{
+        width: 210px;
+    }
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+    .Wishlist-Card-Img img{
+        width: 210px;
+    }
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+    .Wishlist-Card-Img img{
+        width: 230px;
+    }
+    .Card-Brand{
+        font-size: 12px;
+    }
+    .Card-Name{
+        font-size: 14px;
+    }
+    .In-stock{
+        gap: 5px;
+        font-size: 14px;
+    }
+}
+/* Only xs */
+@media (max-width: 575px) {
+    .Wishlist-Card-Img img{
+        width: 100%;
+    }
+    .Card-Brand{
+        font-size: 12px;
+    }
+    .Card-Name{
+        font-size: 14px;
+    }
+    .In-stock{
+        gap: 5px;
+        font-size: 14px;
+    }
+}
+
+.Wishlist-line{
+    margin: 10px 0;
+    border-bottom: 0.5pt solid var(--secondary-color-200);
+}
+
+.Wishlist-Btn{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Wishlist-Btn button{
+    border-radius: 5px;
+}
+.Wishlist-Btn button:last-child{
+    margin-top: 10px;
+}
+/* WishlistCard
+________________________________________ */
+
+
+
+
+
+/* Guides-BG
+________________________________________ */
+.Guides-BG{
+    margin-top: 70px;
+}
+
+/* Only xl */
+@media (min-width: 1200px) {
+    .Guides-Header{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Guides-Header{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+.Guides-Title{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 32px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+/* Only xs */
+@media (max-width: 575px) {
+    .Guides-Title{
+        font-family: 'SVN-Gotham-Bold';
+        font-size: 28px;
+        color: var(--secondary-color);
+        text-align: center;
+    }
+}
+x
+.Guides-Caption{
+    font-family: 'SVN-Gotham-Book';
+    font-size: 16px;
+    text-align: center;
+}
+#Guides-Slider{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.Guides-img{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    text-align: center;
+}
+.Guides-img a{
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: ease-in-out 0.3s;
+}
+.Guides-img p{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 12px;
+    transition: ease-in-out 0.3s;
+    margin: 0;
+    margin-top: 10px;
+}
+.Guides-img img{
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    transition: ease-in-out 0.3s;
+}
+
+/* Only xl */
+@media (min-width: 1200px) {
+    .Guides-img a:hover  img,.Guides-img a:hover p{
+        transform: scale(0.9);
+    }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Guides-img a:hover  img,.Guides-img a:hover p{
+        transform: scale(0.9);
+    }
+}
+.Gudies-Slick{
+    position: relative;
+    padding: 0;
+}
+.Gudies-Slick .prev_arrow{
+    display: inline-block;
+    color: var(--primary-color);
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: -20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.Gudies-Slick .next_arrow{
+    display: inline-block;
+    color: var(--primary-color);
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: -20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.Explore_product{
+    text-align: center;
+    margin-bottom: 70px;
+
+}
+.Explore_product a{
+    text-decoration: underline;
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 14px;
+    color: var(--primary-color);
+}
+/* Guides-BG
+________________________________________ */
+
+
+
+
+/* PopupCart
+__________________________________ */
+#Overlay-PopupCart{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 501;
+}
+.popup-cart {
+    background-color: var(--background-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 502;
+}
+/* Only xl */
+@media (min-width: 1200px) {
+    .popup-cart{
+        width: 560px;
+    }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .popup-cart{
+        width: 530px;
+    }
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+    .popup-cart{
+        width: 500px;
+    }
+    .popup-title{
+        width: 300px;
+    }
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+    .popup-cart{
+        width: 420px;
+    }
+    .popup-title{
+        width: 300px;
+    }
+}
+/* Only xs */
+@media (max-width: 575px) {
+    .popup-cart{
+        width: 400px;
+    }
+    .popup-title{
+        width: 300px;
+    }
+}
+/* Popup_Header
+=============== */
+.popup-header{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'SVN-Gotham-Regular';
+}
+.close-popupcart{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Popup_Content
+=============== */
+.popup-img{
+    width: 100%;
+    height: 100%;
+}
+.popup-img a img{
+    object-fit: cover;
+    width: 150px;
+}
+
+.popup-brand p{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 14px;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+.popup-title_price, .popup-title_price a{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 16px;
+    color: var(--primary-color);
+    text-decoration: none;
+}   
+.popup-note{
+    margin-top: 40px;
+}
+.icon-note{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+}
+.popup-date,.popup-ship{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-family: 'SVN-Gotham-Book';
+}
+.popup-date i, .popup-ship i{
+    font-size: 18px;
+}
+.popup-date span, .popup-ship span{
+    font-size: 14px;
+}
+.popup-date span{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.popup-quantity{
+    margin-top: 50px;
+}
+.quantity-title{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.quantity-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantity-selector {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .quantity-selector button {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 0 0 5px;
+    font-family: 'SVN-Gotham-Book'
+    
+  }
+  
+  .quantity-selector input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    height: 40px;
+    font-size: 18px;
+    margin: 0 -1px; /* Overlap borders */
+    font-family: 'SVN-Gotham-Book';
+  }
+  
+  .quantity-selector button:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .quantity-selector button:focus, .quantity-selector input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+
+.remove-item{
+    display: flex;
+    gap: 5px;
+}
+
+.remove-item a{
+    text-decoration: underline;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-family: 'SVN-Gotham-Book';
+}
+
+
+/* Popup_Footer
+=============== */
+.popup-footer{
+    margin-top: 40px;
+    border-top: 1pt solid var(--primary-color);
+}
+.total{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.total-select{
+    font-family: 'SVN-Gotham-Regular';
+    font-size: 16px;
+}
+.total-price{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 18px;
+}
+.total-btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.total-btn button{
+    width: 48%;
+}
+/* PopupCart
+__________________________________ */

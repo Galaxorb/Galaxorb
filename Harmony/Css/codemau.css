@@ -1,0 +1,1601 @@
+/* Thêm lớp này để khóa scroll */
+.body-no-scroll {
+    overflow: hidden;
+}
+/* backtotop
+================================================ */
+#back-to-top {
+    display: none; /* Ẩn nút mặc định */
+    position: fixed; /* Cố định nút */
+    bottom: 20px; /* Cách đáy 20px */
+    left: 20px; /* Cách phải 30px */
+    z-index: 3; /* Đảm bảo nút ở phía trên cùng */
+    font-size: 24px; /* Kích thước chữ */
+    border: none; /* Không viền */
+    outline: none; /* Không viền */
+    background-color: var(--secondary-color); /* Màu nền */
+    color: white; /* Màu chữ */
+    cursor: pointer; /* Hình dạng con trỏ */
+    width: 40px; /* Chiều rộng nút */
+    height: 40px; /* Chiều cao nút */
+    border-radius: 50%; /* Bo tròn hoàn toàn */
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: center; /* Canh giữa theo chiều ngang */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    transition: ease-in-out 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Only xl */
+@media (min-width: 1200px) {
+    #back-to-top:hover {
+        background-color: var(--primary-color); /* Đổi màu nền khi hover */
+        transform: scale(1.05);
+    }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #back-to-top:hover {
+        background-color: var(--primary-color); /* Đổi màu nền khi hover */
+        transform: scale(1.05);
+    }
+}
+/* ============================ Loading ===================== */
+/* Định kiểu cho phần tử loading */
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--background-color-300);
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Sắp xếp theo hàng ngang */
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* Định kiểu cho các chữ cái */
+.letter {
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 100px;
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: drop 0.8s forwards ease-in-out;
+    /* Thêm hiệu ứng bounce */
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+    .letter {
+        font-size: 80px;
+    }
+}
+
+/* Only xs */
+@media (max-width: 575px) {
+    .letter {
+        font-size: 60px;
+    }
+}
+
+/* Tạo khoảng cách giữa các chữ cái */
+.letter:not(:last-child) {
+    margin-right: 5px;
+}
+
+/* Hiệu ứng rơi */
+@keyframes drop {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tạo độ trễ cho từng chữ cái */
+.letter:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.letter:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.letter:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.letter:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.letter:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.letter:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.letter:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+/* ============================ Loading ===================== */
+/* ===== Logo ==== */
+.bg-logo{
+    width: 290px;
+    height: 60px;
+    background-image: url(../Element/Logo/Logo_Full_Dark.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 0px;
+}
+
+
+/* ===== Header ==== */
+#bg-header{
+    height: 72px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 500;
+}
+
+
+/* ===== Navi ==== */
+/* === Thanh Search === */
+.form-search-lon {
+    display: none; /* Ẩn form ban đầu */
+    opacity: 0;
+    position: absolute; /* Thêm position absolute */
+    top: 170px; /* Điều chỉnh vị trí tùy theo yêu cầu của bạn */
+    left: 0;
+    right: 0;
+    transform: translateY(-20px); /* Di chuyển phần tử lên trên */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Thêm hiệu ứng chuyển động */
+    z-index: 499;
+    background-color: var(--background-color);
+}
+
+.form-search-lon.active {
+    display: block; /* Hiển thị form khi có lớp active */
+    opacity: 1;
+    transform: translateY(0); /* Đưa phần tử về vị trí ban đầu */
+}
+.form-search-xllg {
+    --input-bg: #FFf;
+    --padding: 1.5em;
+    --rotate: 80deg;
+    --gap: 2em;
+    padding-inline-end: 1em;
+    position: relative;
+    border-top: 1pt solid black;
+    border-bottom: 1pt solid black;
+    z-index: 499;
+}
+.form-search-lon.fixed {
+    position: fixed; /* Làm cho form dính trên cùng màn hình */
+    top: 0; /* Đặt ở vị trí trên cùng */
+    left: 0;
+    right: 0;
+    z-index: 998; /* Đảm bảo form nằm trên các phần tử khác */
+}
+.form-search-xllg label {
+    display: flex;
+    align-items: center;
+    height: 70px;
+  }
+  
+.form-search-xllg input {
+    font-family: 'SVN-Gotham-Book';
+    font-size: 18px;
+    width: 100%;
+    padding-inline-start: 60px;
+    outline: none;
+    background: none;
+    border: 0;
+  }
+  /* style for both icons -- search,close */
+  .form-search-xllg i{
+    /* display: block; */
+    color: #111;
+    transition: 0.3s cubic-bezier(.4,0,.2,1);
+    position: absolute;
+    font-size: 24px;
+  }
+  /* search icon */
+  .form-search-xllg .icon {
+    font-size: 24px;
+    position: absolute;
+    left: 30px;
+    transition: 0.3s cubic-bezier(.4,0,.2,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* arrow-icon*/
+  .swap-off {
+    transform: rotate(-80deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* close button */
+  .form-search-xllg .close-btn {
+    /* removing default bg of button */
+    background: none;
+    border: none;
+    right: calc(var(--padding) - var(--gap));
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    padding: 0.1em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 0.3s;
+    opacity: 0;
+    transform: scale(0);
+    visibility: hidden;
+  }
+  
+  .form-search-xllg input:focus ~ .icon {
+    transform: rotate(var(--rotate)) scale(1.3);
+  }
+  
+  .form-search-xllg input:focus ~ .icon .swap-off {
+    opacity: 1;
+    transform: rotate(-80deg);
+    visibility: visible;
+    color: var(--icon-change-color);
+  }
+  
+  .form-search-xllg input:focus ~ .icon .swap-on {
+    opacity: 0;
+    visibility: visible;
+  }
+  
+  .form-search-xllg input:valid ~ .icon {
+    transform: scale(1.3) rotate(var(--rotate))
+  }
+  
+  .form-search-xllg input:valid ~ .icon .swap-off {
+    opacity: 1;
+    visibility: visible;
+    color: var(--icon-change-color);
+  }
+  
+  .form-search-xllg input:valid ~ .icon .swap-on {
+    opacity: 0;
+    visibility: visible;
+  }
+  
+  .form-search-xllg input:valid ~ .close-btn {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: 0s;
+  }
+/* === Thanh Search === */
+#bg-navi ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+#bg-navi ul li{
+    float: left;
+    position: relative;
+}
+#bg-navi ul li .link-top{
+    font-family: 'SVN-Gotham-Bold';
+    color: var(--text-color);
+    text-decoration: none;
+    padding-top: 21px;
+    padding-bottom:28px;
+
+}
+#bg-navi li .link-top{
+    position: relative;
+}
+#bg-navi li .link-top::before{
+    content: "";
+    height: 4px;
+    width: 0%;
+    background: var(--background-color);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+/* === Extra Large === */
+@media (min-width: 1200px) {
+    #bg-navi ul li .link-top{
+        padding-left: 30px;
+        padding-right: 30px;
+    }  
+    #bg-navi li:hover .link-top::before{
+        width: 100%;
+    }
+}
+/* === Large === */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #bg-navi ul li .link-top{
+        padding-left: 20px;
+        padding-right: 20px;
+    }  
+}
+/* === Medium === */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+/* === Small === */
+@media (min-width: 576px) and (max-width: 767px) {
+
+}
+/* === Extra Small === */
+@media (max-width: 575px) {
+
+}
+/* ================== Drop down menu ================== */
+.drop-down {
+    display: none;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 170px;
+    background-color: var(--background-color);
+    border: 1pt solid var(--primary-color);
+    height: 500px;
+    z-index: 10000000; /* Giá trị z-index cao */
+    transition: top 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+#bg-navi ul li:hover .drop-down{
+    display: block;
+}
+.drop-down .content{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 36px 0 40px;
+}
+.dd-col{
+    border-left: 1px solid var(--secondary-color-200);
+    box-sizing: border-box;
+    padding-left: 24px;
+}
+.dd-list-link .icon{
+    font-size: 24px;
+    margin-right: 12px;    
+    width: 24px;
+    height: 24px;
+    color: black;
+}
+.dd-col:first-child{
+    padding: 0;
+    border-left: 0 none;
+}
+.dd-subcol{
+    margin-right: 24px; 
+    width: calc(50% - 24px);
+}
+.dd-subcol-all{
+    display: flex;
+}
+.dd-list-header{
+    color: var(--primary-color);
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 20px;
+}
+.dd-footer-link:first-child, 
+.dd-footer-link:last-child,
+.dd-list-header:first-child,
+.dd-list-header:last-child{
+    margin-top: 0px;
+}
+.dd-footer-link, .dd-list-header{
+    margin-top: 36px;
+}
+a.dd-list-link{
+    color: var(--primary-color);
+    font-family: 'SVN-Gotham-Book';
+    font-size: 16px;
+}
+.dd-footer-link, .dd-list-header, .dd-list-link{
+    align-items: center;
+    display: flex;
+    height: 36px;
+}
+a.dd-footer-link{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 20px;
+    color: var(--primary-color);
+}
+.dd-list-link.highlighted{
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-top: 36px;
+}
+.dd-image{
+    margin-top: 12px;
+}
+.dd-image img{
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+}
+.dd-image-caption{
+    padding: 6px 0;
+    font-family: 'SVN-Gotham-Book';
+    font-size: 14px;
+}
+/* ================== Drop down menu ==================  */
+
+/* ===== Icon For Navi Lớn ==== */
+#bg-icon ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+#bg-icon ul li{
+    float: right;
+    padding-left: 30px;
+}
+#bg-icon ul li i{
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+/* ===== Icon For Navi Lớn ==== */
+
+
+
+
+/* ============================ Navi For Medium And Mobile ===================== */
+/* Logo */
+#bg-logo-ver-small{    
+    width: 100%;
+    height: 40px;
+    background-image: url(../Element/Logo/Logo_Full_Dark.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 20px 0px;
+}
+/* === Icon trái === */
+#bg-navi-ver-small{
+    display: flex;
+    align-items: center;
+}
+#icon-trai i{
+    font-size: 24px;
+}
+/* === Icon trái === */
+
+/* === Icon phải === */
+#icon-phai ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+#icon-phai ul li{
+    float: right;
+    padding-left: 20px;
+}
+#icon-phai ul li i{
+    font-size: 24px;
+}
+#icon-phai ul li a{
+    color: var(--primary-color);
+}
+/* === Icon phải === */
+
+
+/* === Small === */
+@media (min-width: 576px) and (max-width: 767px) {
+    #icon-phai ul li{
+        float: right;
+        padding-left: 10px;
+    }
+}
+/* === Extra Small === */
+@media (max-width: 575px) {
+    #icon-phai ul li{
+        float: right;
+        padding-left: 5px;
+    }
+}
+
+
+
+
+
+/* === Thanh Search === */
+.form-search {
+    --input-bg: #FFf;
+    --padding: 1.5em;
+    --rotate: 80deg;
+    --gap: 2em;
+    padding-inline-end: 1em;
+    position: relative;
+    border-top: 1pt solid black;
+    border-bottom: 1pt solid black;
+}
+  
+  .form-search label {
+    display: flex;
+    align-items: center;
+    height: 45px;
+  }
+  
+  .form-search input {
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 14px;
+    width: 100%;
+    padding-inline-start: 50px;
+    outline: none;
+    background: none;
+    border: 0;
+  }
+  /* style for both icons -- search,close */
+  .form-search svg {
+    /* display: block; */
+    color: #111;
+    transition: 0.3s cubic-bezier(.4,0,.2,1);
+    position: absolute;
+    height: 15px;
+  }
+  /* search icon */
+  .form-search .icon {
+    font-size: 24px;
+    position: absolute;
+    left: 20px;
+    transition: 0.3s cubic-bezier(.4,0,.2,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* arrow-icon*/
+  .swap-off {
+    transform: rotate(-80deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* close button */
+  .close-btn {
+    /* removing default bg of button */
+    background: none;
+    border: none;
+    right: calc(var(--padding) - var(--gap));
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    padding: 0.1em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 0.3s;
+    opacity: 0;
+    transform: scale(0);
+    visibility: hidden;
+  }
+  
+  .form-search input:focus ~ .icon {
+    transform: rotate(var(--rotate)) scale(1.3);
+  }
+  
+  .form-search input:focus ~ .icon .swap-off {
+    opacity: 1;
+    transform: rotate(-80deg);
+    visibility: visible;
+    color: var(--icon-change-color);
+  }
+  
+  .form-search input:focus ~ .icon .swap-on {
+    opacity: 0;
+    visibility: visible;
+  }
+  
+  .form-search input:valid ~ .icon {
+    transform: scale(1.3) rotate(var(--rotate))
+  }
+  
+  .form-search input:valid ~ .icon .swap-off {
+    opacity: 1;
+    visibility: visible;
+    color: var(--icon-change-color);
+  }
+  
+  .form-search input:valid ~ .icon .swap-on {
+    opacity: 0;
+    visibility: visible;
+  }
+  
+  .form-search input:valid ~ .close-btn {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: 0s;
+  }
+/* === Thanh Search === */
+/* ============================ Navi For Medium And Mobile ===================== */
+
+
+
+/* ============================ Navi Popup ===================== */
+#main {
+    transition:  0.7s ease;
+    overflow-x: hidden; /* Ẩn cuộn ngang */
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 2;
+    transition: ease-in;
+}
+.sidenavi{
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: -100%; /* Ban đầu ẩn */
+    background-color: var(--background-color);
+    background-color: var(--background-color);
+    overflow: hidden;
+    transition: 0.3s;
+}
+/* Only md */
+@media (min-width: 768px) and (max-width: 991px) {
+    .sidenavi{
+        width: 50%;
+    }
+}
+/* Only sm */
+@media (min-width: 576px) and (max-width: 767px) {
+    .sidenavi{
+        width: 60%;
+    }
+}
+/* Only xs */
+@media (max-width: 575px) {
+    .sidenavi{
+        width: 70%;
+    }
+}
+.navbar-pannel {
+    height: 87%;
+    position: relative;
+    overflow-y: auto;
+    display: flex;
+    width: 208%;
+    transition: transform 0.3s ease-in-out;
+}
+
+#pannel-1, #pannel-2 {
+    width: 50%; /* Mỗi pannel chiếm một nửa chiều rộng của navbar-pannel */
+    flex-shrink: 0;
+}
+a.title-nav{
+    text-decoration: none;
+}
+.navbars-top{
+    padding: 0 20px 0 13px;
+    position: relative; /* Đảm bảo phần này theo dõi cha */
+    width: 100%;
+    background-color: var(--background-color); /* Nền giống như nền của sidenavi */
+}
+.bg-navbar-btn {
+    padding: 0 20px 0 13px;
+    position: relative; /* Đảm bảo phần này theo dõi cha */
+    width: 100%;
+    background-color: var(--background-color); /* Nền giống như nền của sidenavi */
+}
+.navbar{
+    padding: 10px 0;
+}
+.nav-home a img{
+    width: 32px;
+    height: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.nav-action a i{
+    font-size: 24px;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.navbar-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-btn a{
+    width: 100%;
+} 
+
+.btn-nav{
+    height: 50px;
+    width: 50%;
+}
+button.btn-nav{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: 'SVN-Gotham-Bold';
+}
+button.btn-nav:first-child{
+    border-right: 1pt solid var(--primary-color);
+}
+.list-item a{
+    text-decoration: none;
+}
+   /* ============= Pannel 1 ============= */
+    .bg-list-item1{
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+    .bg-list-item2{
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+    .list-item{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    .list-item a{
+        font-family: 'SVN-Gotham-Regular';
+        font-size: 15px;
+        color: var(--primary-color);
+    }
+
+    .bg-icon-listitem{
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+    }
+    .bg-icon-listitem i{
+        font-size: 18px;
+    }
+    /* ============= Pannel 1 ============= */
+
+
+   /* ============= Pannel 2 ============= */
+   #pannel-2 {
+
+    transition: transform 0.3s ease-in-out;
+}
+   #pannel-2 .list-item a{
+    font-family: 'SVN-Gotham-Book';
+    font-size: 15px;
+    color: var(--primary-color);
+    }
+    .bg-icon-listitem img{
+        width: 20px;
+        height: 20px;
+    }
+    #pannel-2 a.title-nav{
+        color: var(--primary-color);
+        font-family: 'SVN-Gotham-Bold';
+    }
+    .navbar-header button{
+        width: 100%;
+        height: 40px;
+        border-left: none;
+        border-right: none;
+        border-top: 1pt solid var(--primary-color);
+        border-bottom: 1pt solid var(--primary-color);
+        background-color: transparent;
+        font-family: 'SVN-Gotham-Bold';
+        position: relative;
+        outline: none;
+    }
+    .navbar-header button a{
+        text-decoration: none;
+        color: var(--primary-color);
+    }
+    .navbar-header button a i{
+        margin-left:15px;
+        position: absolute;
+        left: 0;
+    }
+    .nav-line{
+        margin: 20px auto;
+        width: 93%;
+        background-color: var(--primary-color-100);
+    }
+    .list-btn{
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .btn button{
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    #btn-first{
+        margin-top: 20px;
+    }
+    #btn-fix{
+        width: 100%;
+    }
+
+    .nav-img img{
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 30px;
+        width: 100%;
+    }
+    .nav-img p{
+        font-family: 'SVN-Gotham-Book';
+        font-size: 12px;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+
+   /* ============= Pannel 2 ============= */
+/* ============================ Navi Popup ===================== */
+
+
+
+
+
+
+/* ============================ Footer ===================== */
+#bg-footer {
+    background-color: var(--primary-color);
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: all 0.5s ease;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-name {
+    background-image: url(../Element/TrangTri/Name.png);
+    width: 100%;
+    height: 360px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#footer-slogan {
+    width: 380px;
+    height: 200px;
+    background-image: url(../Element/TrangTri/Slogan.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer-header p {
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 18px;
+    color: white;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    display: block;
+    padding-bottom: 10px;
+}
+.footer-list li a {
+    font-family: 'SVN-Gotham-Book';
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: ease 0.3s;
+}
+
+.footer-social p {
+    font-family: 'SVN-Gotham-Bold';
+    font-size: 24px;
+    margin: 0;
+    margin-right: 30px;
+    color: white;
+}
+
+.footer-social a i {
+    color: white;
+    font-size: 24px;
+    padding: 0 15px;
+}
+
+.fullscreen-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-header{
+    padding: 0;
+}
+.footer-social{
+    padding: 0;
+}
+#bg-footer-content{
+    padding: 0;
+}
+
+/* === Extra Large === */
+@media (min-width: 1200px) {
+    .footer-social {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+/* === Large === */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #bg-footer-content{
+        display: flex;
+        margin-top: 100px;
+    }
+
+    .footer-social a i{
+        padding: 0;
+        padding-right: 20px;
+        font-size: 30px;
+
+    }
+}
+/* === Medium === */
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer-header p{
+        font-size: 16px;
+    }
+    #bg-footer-content{
+        display: flex;
+        margin-top: 100px;
+    }
+
+    .footer-social a i{
+        padding: 0;
+        padding-right: 20px;
+        font-size: 30px;
+    }
+    #footer-slogan {
+        width: 380px;
+        height: 150px;
+        background-image: url(../Element/TrangTri/Slogan.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+}
+/* === Small === */
+@media (min-width: 576px) and (max-width: 767px) {
+    #bg-footer-content{
+        display: flex;
+    }
+    .footer-social{
+        margin-top: 20px;
+    }
+    .footer-social a i{
+        padding: 0;
+        padding-right: 30px;
+        font-size: 30px;
+
+    }
+    #footer-slogan {
+        width: 380px;
+        height: 150px;
+        background-image: url(../Element/TrangTri/Slogan.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .footer-header{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-header a{
+        font-family: 'SVN-Gotham-Bold';
+        color: white;
+        font-size: 20px;
+        padding-bottom: 35px;
+    }
+    .fullscreen-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 600px;
+        overflow-y: auto;
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #bg-footer-content .footer-header:nth-child(2) a:first-child{
+        
+        
+        margin-bottom: 10px !important;
+    }
+    .footer-header:nth-child(8) a:last-child{
+        
+        margin-top: 10px
+        
+    }
+    .footer-header a{
+        
+        text-decoration: none;
+
+    }
+}
+/* === Extra Small === */
+@media (max-width: 575px) {
+    #footer-slogan {
+        width: 380px;
+        height: 100px;
+        background-image: url(../Element/TrangTri/Slogan.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #bg-footer-content{
+        display: flex;
+    }
+    .footer-social{
+        margin-top: 10px;
+    }
+    .footer-social p{
+        font-size: 16px;
+    }
+    .footer-social a i{
+        padding: 0;
+        
+        font-size: 22px;
+    }
+    .footer-header{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-header a{
+        font-family: 'SVN-Gotham-Bold';
+        font-size: 16px;
+        color: white;
+        padding-bottom: 20px;
+        text-decoration: none;
+        text-decoration: none;
+
+    }
+    #footer-name {
+        background-image: url(../Element/TrangTri/Name.png);
+        width: 100%;
+        height: 150px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .fullscreen-footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 450px;
+        overflow-y: auto;
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #bg-footer-content .footer-header:nth-child(2) a:first-child{
+        
+        
+        margin-bottom: 10px !important;
+    }
+    .footer-header:nth-child(8) a:last-child{
+        
+        margin-top: 10px
+        
+    }
+    .footer-header a{
+        
+        text-decoration: none;
+
+    }
+}
+/* ============================ Footer ===================== */
+
+
+
+
+
+
+
+
+
+/* Chat Button */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--secondary-color); /* Màu nền của nút */
+    border-radius: 50%; /* Làm cho nút tròn */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+/* Only xl */
+@media (min-width: 1200px) {
+    .chat-button:hover {
+        background-color: var(--primary-color); /* Màu khi hover */
+        transform: scale(1.1); /* Phóng to nhẹ khi hover */
+    }
+}
+/* Only lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .chat-button:hover {
+        background-color: var(--primary-color); /* Màu khi hover */
+        transform: scale(1.1); /* Phóng to nhẹ khi hover */
+    }
+}
+
+/* Định dạng biểu tượng chat */
+.chat-button i{
+    font-size: 22px;
+    color: white;
+}
+/* Định dạng biểu tượng thông báo */
+.notification-badge {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    background-color: red; /* Màu nền của biểu tượng thông báo */
+    color: white; /* Màu chữ */
+    font-family: 'SVN-Gotham-Bold';
+    border-radius: 50%; /* Làm cho hình tròn */
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px; /* Kích thước chữ */
+}
+
+
+/* Chat box */
+.messages-container {
+    background-color: var(--background-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 350px;
+    position: fixed;
+    bottom: 85px; /* Điều chỉnh khoảng cách với bottom của màn hình */
+    right: 20px; /* Điều chỉnh khoảng cách với right của màn hình */
+    padding-bottom: 50px; /* Ensure space for the absolute button */
+    opacity: 0; /* Ẩn mặc định */
+    transform-origin: bottom right; /* Điểm xoay là góc dưới bên phải */
+    transform: scale(0.5); /* Kích thước ban đầu nhỏ đi */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Hiệu ứng chuyển động */
+    z-index: -999; /* Đảm bảo container hiển thị phía trên nút chat */
+    border: 0.5pt solid white;
+}
+
+.messages-container.show-messages {
+    z-index: 501; /* Đảm bảo container hiển thị phía trên nút chat */
+    opacity: 1; /* Hiển thị khi được kích hoạt */
+    transform: scale(1); /* Kích thước to lên */
+}
+
+.messages-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    font-family: 'SVN-Gotham-Bold';
+    padding: 15px;
+}
+.messages-header p{
+    padding: 0;
+    margin: 0;
+}
+.messages-header i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.message-height {
+    height: 450px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+
+.message:last-child {
+    border-bottom: none;
+}
+
+.message img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.message-content {
+    flex-grow: 1;
+}
+
+.message-title {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.message-time {
+    color: #888;
+    font-size: 12px;
+}
+
+.send-message {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: 'SVN-Gotham-Book';
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added box shadow */
+    transition: 0.3s;
+}
+
+.send-message:hover {
+    background-color: var(--secondary-color);
+    transform: translateX(-50%) scale(1.05); /* Zoom in on hover */
+}
+
+
+/* Hiển thị container tin nhắn khi được kích hoạt */
+.messages-container.show-messages {
+    display: block;
+}
+/* Chat box */
+
+
+
+
+
+/* sign */
+.blur-bg-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background-color: var(--background-color-700) ;
+    transition: 0.1s ease;
+    z-index: 1000;
+  }
+  .show-popup .blur-bg-overlay{
+    opacity: 50%;
+    pointer-events: auto;
+  }
+  .form-content p{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .form-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 720px;
+    padding: 20px;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background-color: var(--background-color);
+    border: solid 2px var(--background-color);
+    transform: translate(-50%, -100%);
+    z-index: 1001;
+  }
+  .show-popup .form-popup{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, opacity 0.1s;
+    border-radius: 5px;
+  }
+  .form-popup .close{
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+  .form-popup .form-box{
+    display: flex;
+    
+  }
+  .quick-login {
+    margin-bottom: 30px;
+  }
+  .form-details{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .form-details p{
+    padding: 10px 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .form-details h2{
+    padding: 10px 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .form-box h2{
+    text-align: center;
+    margin-bottom: 30px
+  }
+  .form-box .form-content{
+    width: 100%;
+    padding: 35px;
+  }
+  form .input-field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+  }
+  form .input-field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 0.95rem;
+    border-radius: 3px;
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color-200);
+  }
+  .input-field input:focus{
+    border-color: var(--primary-color);
+  }
+  .input-field input:is(:focus, :valid){
+    padding: 16px 15px 0;
+  }
+  form .input-field label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: var(--primary-color);
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+  }
+  .input-field input:is(:focus, :valid) ~ label{
+    color: var(--primary-color);
+    font-size: 0.75rem;
+    transform: translateY(-120%);
+  }
+  .form-box a{
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  .form-box a:hover{
+    text-decoration: underline;
+  }
+  .form-box :where(.forgot-pass, .policy-text){
+    display: inline-flex;
+    margin-top: 14px;
+    font-size: 0.95rem;
+  }
+  form button {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 0;
+    border-radius: 3px;
+    margin: 25px 0;
+    color: var(--background-color);
+    cursor: pointer;
+    background: var(--primary-color);
+  }
+  form button:hover{
+    background: var(--secondary-color);
+    transition: 0.2s ease;
+  }
+  .form-box .bottom-link{
+    text-align: center;
+  }
+  .form-popup .signup,
+  .form-popup .forgot-password,
+  .form-popup.show-signup .forgot-password,
+  .form-popup.show-signup .login{
+    display: none;
+  }
+  .form-popup.show-signup .signup{
+    display: flex;
+  }
+  .signup .policy-text{
+    display: flex;
+    align-items: center;
+  }
+  .signup .policy-text input{
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+    margin-top: -7px;
+  }
+  .border{
+    border: solid 1px var(--primary-color);
+    border-radius: 5px;
+    max-width: 100%;
+  }
+  .social-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: var(--background-color);
+    border-radius: 5px;
+    font-family: 'SVN-Gotham-Bold';
+    outline: none;
+  }
+  
+  .facebook-btn {
+    background-color: #3b5998;
+  }
+  
+  .apple-btn {
+    background-color: #000;
+  }
+  
+  .google-btn {
+    background-color: var(--background-color);
+    border: solid 1pt var(--primary-color);
+  }
+  
+  .social-btn.google-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: var(--primary-color);
+    border-radius: 5px;
+  }
+  
+  
+  .social-btn img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  @media (min-width: 576px){
+    .form-popup{
+      width: 95%;
+    }
+    .form-box .form-details{
+      display: none;
+    }
+    .form-box .form-content{
+      padding: 30px 20px;
+    }
+  }
+
+
+
+
+
+/* .fix-image-navi{
+    display: flex;
+    flex-direction: row;
+} */
+
+
+/*fix loi rot chu footer*/
+@media (max-width: 400px ){
+    .footer-header a{
+        font-size: 12px !important;
+    }
+    
+}
+
+@media (max-width: 460px ){
+   
+    .footer-social a i{
+        
+        padding-right: 10px;
+        
+    }
+}
+@media (min-width: 460px ) and (max-width: 575px ){
+   
+    .footer-social a i{
+        
+        padding-right: 20px;
+        
+    }
+}
+@media (min-width: 576px ) and (max-width: 605px ){
+   
+    .footer-social a i{
+        
+        padding-right: 15px;
+        
+    }
+}
