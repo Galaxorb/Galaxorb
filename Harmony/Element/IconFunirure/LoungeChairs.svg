@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 11.33 15.61">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #231f20;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .35px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M8.5.78c-.02-.44-.38-.78-.82-.78h-3.97c-.44,0-.8.34-.82.78l-.38,7.52h6.38l-.38-7.52Z"/>
+  <path class="cls-1" d="M1.26,8.31v.53c0,.61.49,1.1,1.1,1.1h6.65c.61,0,1.1-.49,1.1-1.1v-.53H1.26Z"/>
+  <path class="cls-1" d="M.05,5.89h.72c.27,0,.5.22.5.5v1.92"/>
+  <path class="cls-1" d="M11.33,5.89h-.72c-.27,0-.5.22-.5.5v1.92"/>
+  <line class="cls-1" x1="5.69" y1="9.94" x2="5.69" y2="14.64"/>
+  <g>
+    <path class="cls-1" d="M2.81,14.64v-.39c0-.37.3-.67.67-.67h2.21"/>
+    <path class="cls-1" d="M8.57,14.64v-.39c0-.37-.3-.67-.67-.67h-2.21"/>
+  </g>
+  <path class="cls-1" d="M6.07,15.15c0,.21-.17.39-.39.39s-.39-.17-.39-.39.17-.39.39-.39.39.17.39.39Z"/>
+  <path class="cls-1" d="M3.19,15.15c0,.21-.17.39-.39.39s-.39-.17-.39-.39.17-.39.39-.39.39.17.39.39Z"/>
+  <path class="cls-1" d="M8.95,15.15c0,.21-.17.39-.39.39s-.39-.17-.39-.39.17-.39.39-.39.39.17.39.39Z"/>
+  <path class="cls-1" d="M5.69,10.63h1.38c.37,0,.67.3.67.67v.1"/>
+</svg>
