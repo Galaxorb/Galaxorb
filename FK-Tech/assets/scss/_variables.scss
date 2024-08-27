@@ -1,0 +1,37 @@
+$main-black: #000000;
+$bg-black: #484747;
+$xanh: #116acc;
+$bg-white: #fff;
+$body-bg: #F8F8FC;
+$den: #1E1E1E;
+$do: #FF0000;
+
+$mobile-width: 425px;
+$tablet-width: 768px; 
+$desktop-width: 1024px; 
+$desktop-xl-width: 1366px; 
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.bg-main-black{
+    background: $main-black;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+section{
+    width: 100%;
+}
